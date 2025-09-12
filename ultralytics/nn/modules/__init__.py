@@ -66,6 +66,8 @@ from .conv import (
     Concat,
     Conv,
     Conv2,
+    DeformConv, 
+    DeformC2f,
     ConvTranspose,
     DWConv,
     DWConvTranspose2d,
@@ -105,6 +107,8 @@ from .transformer import (
 __all__ = (
     "Conv",
     "Conv2",
+    "DeformConv",
+    "DeformC2f",
     "LightConv",
     "RepConv",
     "DWConv",

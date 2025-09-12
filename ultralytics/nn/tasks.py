@@ -43,6 +43,8 @@ from ultralytics.nn.modules import (
     Conv,
     Conv2,
     ConvTranspose,
+    DeformConv, 
+    DeformC2f,
     Detect,
     DWConv,
     DWConvTranspose2d,
@@ -1577,6 +1579,7 @@ def parse_model(d, ch, verbose=True):
             C1,
             C2,
             C2f,
+            DeformC2f,
             C3k2,
             RepNCSPELAN4,
             ELAN1,
@@ -1595,6 +1598,7 @@ def parse_model(d, ch, verbose=True):
             SCDown,
             C2fCIB,
             A2C2f,
+            DeformConv,
         }
     )
     repeat_modules = frozenset(  # modules with 'repeat' arguments
@@ -1614,6 +1618,7 @@ def parse_model(d, ch, verbose=True):
             C2fCIB,
             C2PSA,
             A2C2f,
+            DeformC2f,
         }
     )
     for i, (f, n, m, args) in enumerate(d["backbone"] + d["head"]):  # from, number, module, args
