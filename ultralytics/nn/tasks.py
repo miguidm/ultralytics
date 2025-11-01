@@ -1621,6 +1621,7 @@ def parse_model(d, ch, verbose=True):
             DeformBottleneck,
             DCNv3Conv,
             DCNv3Bottleneck,
+            DCNv3C2f,
         }
     )
     repeat_modules = frozenset(  # modules with 'repeat' arguments
