@@ -17,13 +17,6 @@ try:
     MMCV_AVAILABLE = True
 except (ImportError, ModuleNotFoundError):
     MMCV_AVAILABLE = False
-    # Use torchvision's deformable conv (supports CPU/MPS/CUDA)
-    try:
-        from torchvision.ops import DeformConv2d as TVDeformConv2d
-
-        TORCHVISION_DCN_AVAILABLE = True
-    except ImportError:
-        TORCHVISION_DCN_AVAILABLE = False
 
 # Import DCNv3 from OpenGVLab's InternImage (CUDA-optimized)
 try:
@@ -222,54 +215,42 @@ class DeformConv(nn.Module):
         self.c1 = c1
         self.c2 = c2
 
-        # Select deformable conv backend based on availability
-        if MMCV_AVAILABLE:
-            # MMCV implementation (CUDA-optimized, supports both modulated and non-modulated)
-            if modulated:
-                self.conv = MMCVModulatedDeformConv2d(c1, c2, k, stride=s, padding=p, dilation=d, groups=g, bias=False)
-            else:
-                self.conv = MMCVDeformConv2d(c1, c2, k, stride=s, padding=p, dilation=d, groups=g, bias=False)
-            self.backend = "mmcv"
-        elif TORCHVISION_DCN_AVAILABLE and not modulated:
-            # TorchVision implementation (CPU/MPS/CUDA support, non-modulated only)
-            self.conv = TVDeformConv2d(c1, c2, k, stride=s, padding=p, dilation=d, groups=g, bias=False)
-            self.backend = "torchvision"
-        else:
-            # Standard convolution fallback when no DCN backend is available
-            self.conv = nn.Conv2d(c1, c2, k, stride=s, padding=p, dilation=d, groups=g, bias=False)
-            self.backend = "standard"
-            import warnings
-
-            warnings.warn(
-                f"DeformConv: No DCN backend available (MMCV: {MMCV_AVAILABLE}, TorchVision: {TORCHVISION_DCN_AVAILABLE}). "
-                f"Using standard Conv2d. Install mmcv-full for CUDA support or torchvision>=0.11 for CPU/MPS support."
+        # Require MMCV implementation (CUDA-optimized, supports both modulated and non-modulated)
+        if not MMCV_AVAILABLE:
+            raise RuntimeError(
+                "DeformConv: MMCV is required. "
+                "Install mmcv-full for CUDA support: pip install mmcv-full"
             )
+
+        if modulated:
+            self.conv = MMCVModulatedDeformConv2d(c1, c2, k, stride=s, padding=p, dilation=d, groups=g, bias=False)
+        else:
+            self.conv = MMCVDeformConv2d(c1, c2, k, stride=s, padding=p, dilation=d, groups=g, bias=False)
+        self.backend = "mmcv"
 
         self.bn = nn.BatchNorm2d(c2)
         self.act = nn.SiLU(inplace=True)
 
         # Offset/mask predictor for deformable convolution
         # Outputs: g * 2*k*k (offsets only) or g * 3*k*k (offsets + modulation masks)
-        # Only created when using actual deformable conv backends
         # Reference: Zhu et al. (2019) Section 3.2 - "Modulated Deformable Convolution"
-        if self.backend != "standard":
-            offset_channels = self.groups * (
-                3 * self.k * self.k if modulated and self.backend == "mmcv" else 2 * self.k * self.k
-            )
-            self.offset_mask_conv = nn.Conv2d(
-                c1,
-                offset_channels,
-                kernel_size=3,
-                stride=s,
-                padding=autopad(3, None, d),
-                bias=True,
-            )
+        offset_channels = self.groups * (
+            3 * self.k * self.k if modulated and self.backend == "mmcv" else 2 * self.k * self.k
+        )
+        self.offset_mask_conv = nn.Conv2d(
+            c1,
+            offset_channels,
+            kernel_size=3,
+            stride=s,
+            padding=autopad(3, None, d),
+            bias=True,
+        )
 
-            # Zero-initialization for training stability
-            # Ensures DCN behaves like regular convolution at initialization
-            # Reference: Zhang et al. (2022) "Offset-decoupled deformable convolution" Section 3.3
-            nn.init.constant_(self.offset_mask_conv.weight, 0.0)
-            nn.init.constant_(self.offset_mask_conv.bias, 0.0)
+        # Zero-initialization for training stability
+        # Ensures DCN behaves like regular convolution at initialization
+        # Reference: Zhang et al. (2022) "Offset-decoupled deformable convolution" Section 3.3
+        nn.init.constant_(self.offset_mask_conv.weight, 0.0)
+        nn.init.constant_(self.offset_mask_conv.bias, 0.0)
 
     def forward(self, x):
         # Input validation for robustness
@@ -280,49 +261,45 @@ class DeformConv(nn.Module):
             f"DeformConv: Input spatial dims {x.shape[2:]} smaller than kernel size {self.k}"
         )
 
-        if self.backend == "standard":
-            # Standard convolution fallback
-            out = self.conv(x)
+        # Deformable convolution forward pass (MMCV or TorchVision)
+        offset_mask = self.offset_mask_conv(x)
+
+        # Verify offset/mask channels match expected configuration
+        expected_channels = self.groups * (
+            3 * self.k * self.k if self.modulated and self.backend == "mmcv" else 2 * self.k * self.k
+        )
+        assert offset_mask.shape[1] == expected_channels, (
+            f"Offset/mask channel mismatch in DeformConv: "
+            f"got {offset_mask.shape[1]}, expected {expected_channels} "
+            f"(groups={self.groups}, k={self.k}, modulated={self.modulated})"
+        )
+
+        off_ch = self.groups * 2 * self.k * self.k
+        if self.modulated and self.backend == "mmcv":
+            # Modulated DCN: split into offsets and modulation masks
+            # Reference: Zhu et al. (2019) Equation 4
+            o1 = offset_mask[:, :off_ch, :, :]
+
+            # Clip offsets to prevent extreme sampling locations
+            # Prevents numerical instability during bilinear interpolation
+            # Reference: Dai et al. (2017) "Deformable Convolutional Networks" Section 3.1
+            max_offset = self.k * self.dilation * 2
+            o1 = o1.clamp(-max_offset, max_offset)
+
+            # Sigmoid activation for modulation masks (range [0,1])
+            # Reference: Zhu et al. (2019) Section 3.2
+            mask = offset_mask[:, off_ch : off_ch + self.groups * self.k * self.k, :, :].sigmoid()
+            out = self.conv(x, o1, mask)
         else:
-            # Deformable convolution forward pass (MMCV or TorchVision)
-            offset_mask = self.offset_mask_conv(x)
+            # Non-modulated DCN: offsets only
+            # Reference: Dai et al. (2017) "Deformable Convolutional Networks"
+            o1 = offset_mask
 
-            # Verify offset/mask channels match expected configuration
-            expected_channels = self.groups * (
-                3 * self.k * self.k if self.modulated and self.backend == "mmcv" else 2 * self.k * self.k
-            )
-            assert offset_mask.shape[1] == expected_channels, (
-                f"Offset/mask channel mismatch in DeformConv: "
-                f"got {offset_mask.shape[1]}, expected {expected_channels} "
-                f"(groups={self.groups}, k={self.k}, modulated={self.modulated})"
-            )
+            # Clip offsets to prevent extreme sampling locations
+            max_offset = self.k * self.dilation * 2
+            o1 = o1.clamp(-max_offset, max_offset)
 
-            off_ch = self.groups * 2 * self.k * self.k
-            if self.modulated and self.backend == "mmcv":
-                # Modulated DCN: split into offsets and modulation masks
-                # Reference: Zhu et al. (2019) Equation 4
-                o1 = offset_mask[:, :off_ch, :, :]
-
-                # Clip offsets to prevent extreme sampling locations
-                # Prevents numerical instability during bilinear interpolation
-                # Reference: Dai et al. (2017) "Deformable Convolutional Networks" Section 3.1
-                max_offset = self.k * self.dilation * 2
-                o1 = o1.clamp(-max_offset, max_offset)
-
-                # Sigmoid activation for modulation masks (range [0,1])
-                # Reference: Zhu et al. (2019) Section 3.2
-                mask = offset_mask[:, off_ch : off_ch + self.groups * self.k * self.k, :, :].sigmoid()
-                out = self.conv(x, o1, mask)
-            else:
-                # Non-modulated DCN: offsets only
-                # Reference: Dai et al. (2017) "Deformable Convolutional Networks"
-                o1 = offset_mask
-
-                # Clip offsets to prevent extreme sampling locations
-                max_offset = self.k * self.dilation * 2
-                o1 = o1.clamp(-max_offset, max_offset)
-
-                out = self.conv(x, o1)
+            out = self.conv(x, o1)
 
         out = self.bn(out)
         out = self.act(out)
@@ -567,13 +544,8 @@ class DCNv3Conv(nn.Module):
             )
             self.backend = "dcnv3"
         else:
-            # Standard convolution fallback when DCNv3 is not available
-            self.dcn = nn.Conv2d(c1, c2, k, s, p, dilation=d, groups=1, bias=False)
-            self.backend = "standard"
-            import warnings
-
-            warnings.warn(
-                "DCNv3: CUDA implementation not found. Using standard convolution. "
+            raise RuntimeError(
+                "DCNv3: CUDA implementation not found. "
                 "Install DCNv3 for deformable convolution: pip install DCNv3 (from OpenGVLab/InternImage)"
             )
 
@@ -590,13 +562,10 @@ class DCNv3Conv(nn.Module):
             f"DCNv3Conv: Input spatial dims {x.shape[2:]} smaller than kernel size {self.kernel_size}"
         )
 
-        if self.backend == "standard":
-            out = self.dcn(x)
-        else:
-            # DCNv3 handles offset prediction and sampling internally
-            # Offset clipping and normalization handled inside CUDA ops
-            # Reference: Wang et al. (2023) Section 3.2 - "Implementation Details"
-            out = self.dcn(x)
+        # DCNv3 handles offset prediction and sampling internally
+        # Offset clipping and normalization handled inside CUDA ops
+        # Reference: Wang et al. (2023) Section 3.2 - "Implementation Details"
+        out = self.dcn(x)
 
         out = self.bn(out)
         out = self.act(out)
