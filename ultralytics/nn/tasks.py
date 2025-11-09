@@ -428,7 +428,10 @@ class DetectionModel(BaseModel):
 
             self.model.eval()  # Avoid changing batch statistics until training begins
             m.training = True  # Setting it to True to properly return strides
-            m.stride = torch.tensor([s / x.shape[-2] for x in _forward(torch.zeros(1, ch, s, s))])  # forward
+            # Use CUDA if available for modules that require it (e.g., DCNv3)
+            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            self.model.to(device)  # Move model to device before forward pass
+            m.stride = torch.tensor([s / x.shape[-2] for x in _forward(torch.zeros(1, ch, s, s, device=device))])  # forward
             self.stride = m.stride
             self.model.train()  # Set model back to training(default) mode
             m.bias_init()  # only run once
@@ -1628,6 +1631,7 @@ def parse_model(d, ch, verbose=True):
             DeformBottleneck,
             DCNv3Conv,
             DCNv3Bottleneck,
+            DCNv3C2f,
         }
     )
     repeat_modules = frozenset(  # modules with 'repeat' arguments

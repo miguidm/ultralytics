@@ -20,12 +20,12 @@ except (ImportError, ModuleNotFoundError):
 
 # Import DCNv3 from OpenGVLab's InternImage (CUDA-optimized)
 try:
-    from dcnv3 import DCNv3 as DCNv3_Op
+    from DCNv3_pkg import DCNv3 as DCNv3_Op
 
     DCNV3_AVAILABLE = True
 except ImportError:
     DCNV3_AVAILABLE = False
-
+print(f"DCNv3_AVAILABLE={DCNV3_AVAILABLE}")
 __all__ = (
     "CBAM",
     "ChannelAttention",
@@ -87,6 +87,22 @@ class Conv(nn.Module):
             act (bool | nn.Module): Activation function.
         """
         super().__init__()
+        # Validate groups parameter - handle all edge cases
+        try:
+            if g is None or g is False or g == 0:
+                g = 1
+            elif g is True:
+                g = 1
+            else:
+                g = int(g)
+                if g < 1:
+                    g = 1
+            # Ensure groups divides c1
+            if c1 % g != 0:
+                g = 1
+        except (ValueError, TypeError):
+            g = 1
+        
         self.conv = nn.Conv2d(c1, c2, k, s, autopad(k, p, d), groups=g, dilation=d, bias=False)
         self.bn = nn.BatchNorm2d(c2)
         self.act = self.default_act if act is True else act if isinstance(act, nn.Module) else nn.Identity()
@@ -522,23 +538,29 @@ class DCNv3Conv(nn.Module):
         self.stride = s
         self.padding = p
         self.dilation = d
-        self.groups = g
         self.center_feature_scale = center_feature_scale
         self.dw_kernel_size = dw_kernel_size or kernel_size
 
         # ===== FIX: Validate and adjust groups =====
-        # Ensure groups divides c1 evenly
-        if c1 % g != 0:
+        # Ensure groups divides c1 evenly and is positive
+        valid_g = max(1, int(g)) if isinstance(g, (int, float)) else 1
+        if c1 % valid_g != 0:
             # Find largest valid group
-            for valid_g in [16, 8, 4, 2, 1]:
-                if c1 % valid_g == 0:
-                    print(f"Warning: DCNv3Conv adjusted groups from {g} to {valid_g} for c1={c1}")
-                    g = valid_g
+            for test_g in [16, 8, 4, 2, 1]:
+                if c1 % test_g == 0:
+                    print(f"Warning: DCNv3Conv adjusted groups from {g} to {test_g} for c1={c1}")
+                    valid_g = test_g
                     break
-            self.groups = g
+        self.groups = valid_g  # Validated groups
 
         # Select DCNv3 backend based on availability
         if DCNV3_AVAILABLE:
+            # Validate channels for DCNv3
+            if c1 < 1:
+                raise ValueError(f"DCNv3Conv: c1={c1} must be >= 1")
+            if self.groups < 1:
+                raise ValueError(f"DCNv3Conv: groups={self.groups} must be >= 1")
+            
             # ===== CRITICAL: DCNv3_Op outputs same channels as input =====
             # It does NOT have a channels_out parameter!
             self.dcn = DCNv3_Op(
@@ -576,8 +598,14 @@ class DCNv3Conv(nn.Module):
         assert x.ndim == 4, f"DCNv3Conv expected 4D input (B,C,H,W), got {x.ndim}D with shape {x.shape}"
         assert x.shape[1] == self.c1, f"DCNv3Conv: Channel mismatch - expected {self.c1}, got {x.shape[1]}"
 
-        # DCNv3 operation (outputs c1 channels)
-        out = self.dcn(x)
+        # Convert from PyTorch format (N, C, H, W) to DCNv3 format (N, H, W, C)
+        x_nhwc = x.permute(0, 2, 3, 1).contiguous()
+        
+        # DCNv3 operation (expects and returns N, H, W, C format)
+        out_nhwc = self.dcn(x_nhwc)
+        
+        # Convert back to PyTorch format (N, C, H, W)
+        out = out_nhwc.permute(0, 3, 1, 2).contiguous()
         
         # Project to c2 channels if needed
         out = self.project(out)
@@ -623,7 +651,7 @@ class DCNv3Bottleneck(nn.Module):
             center_feature_scale (bool): Scale center feature (default: False)
         """
         super().__init__()
-        c_ = int(c2 * e)  # hidden channels
+        c_ = max(1, int(c2 * e))  # hidden channels, ensure at least 1
 
         # ===== FIX: Validate groups for hidden channels =====
         valid_g = g
@@ -708,7 +736,7 @@ class DCNv3C2f(nn.Module):
             center_feature_scale (bool): Scale center feature (default: False)
         """
         super().__init__()
-        self.c = int(c2 * e)  # hidden channels
+        self.c = max(1, int(c2 * e))  # hidden channels, ensure at least 1
 
         # Validate groups for hidden channels
         valid_g = g
