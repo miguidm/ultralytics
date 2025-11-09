@@ -74,6 +74,13 @@ from ultralytics.nn.modules import (
     YOLOEDetect,
     YOLOESegment,
     v10Detect,
+    DCNv3Conv,
+    DCNv3Bottleneck,
+    DCNv3C2f,
+    DeformConv,
+    DeformBottleneck,
+    DeformC2f,
+
 )
 from ultralytics.utils import DEFAULT_CFG_DICT, LOGGER, YAML, colorstr, emojis
 from ultralytics.utils.checks import check_requirements, check_suffix, check_yaml
@@ -1621,7 +1628,6 @@ def parse_model(d, ch, verbose=True):
             DeformBottleneck,
             DCNv3Conv,
             DCNv3Bottleneck,
-            DCNv3C2f,
         }
     )
     repeat_modules = frozenset(  # modules with 'repeat' arguments

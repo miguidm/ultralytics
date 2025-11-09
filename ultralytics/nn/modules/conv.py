@@ -526,16 +526,28 @@ class DCNv3Conv(nn.Module):
         self.center_feature_scale = center_feature_scale
         self.dw_kernel_size = dw_kernel_size or kernel_size
 
+        # ===== FIX: Validate and adjust groups =====
+        # Ensure groups divides c1 evenly
+        if c1 % g != 0:
+            # Find largest valid group
+            for valid_g in [16, 8, 4, 2, 1]:
+                if c1 % valid_g == 0:
+                    print(f"Warning: DCNv3Conv adjusted groups from {g} to {valid_g} for c1={c1}")
+                    g = valid_g
+                    break
+            self.groups = g
+
         # Select DCNv3 backend based on availability
         if DCNV3_AVAILABLE:
-            # OpenGVLab's CUDA-optimized implementation
+            # ===== CRITICAL: DCNv3_Op outputs same channels as input =====
+            # It does NOT have a channels_out parameter!
             self.dcn = DCNv3_Op(
-                channels=c1,
+                channels=c1,  # Input and output channels are SAME
                 kernel_size=kernel_size,
                 stride=s,
                 pad=p,
                 dilation=d,
-                group=g,
+                group=self.groups,  # Use validated groups
                 offset_scale=1.0,
                 act_layer="GELU",
                 norm_layer="LN",
@@ -549,28 +561,31 @@ class DCNv3Conv(nn.Module):
                 "Install DCNv3 for deformable convolution: pip install DCNv3 (from OpenGVLab/InternImage)"
             )
 
+        # ===== FIX: Add projection layer when c1 != c2 =====
+        if c1 != c2:
+            self.project = Conv(c1, c2, 1, 1)  # 1x1 conv for channel adjustment
+        else:
+            self.project = nn.Identity()
+
         self.bn = nn.BatchNorm2d(c2)
         self.act = nn.SiLU(inplace=True)
 
     def forward(self, x):
         """Forward pass through DCN v3."""
-        # Input validation for robustness
+        # Input validation
         assert x.ndim == 4, f"DCNv3Conv expected 4D input (B,C,H,W), got {x.ndim}D with shape {x.shape}"
-        assert x.shape[0] > 0, f"DCNv3Conv: Empty batch not supported (batch_size={x.shape[0]})"
         assert x.shape[1] == self.c1, f"DCNv3Conv: Channel mismatch - expected {self.c1}, got {x.shape[1]}"
-        assert x.shape[2] >= self.kernel_size and x.shape[3] >= self.kernel_size, (
-            f"DCNv3Conv: Input spatial dims {x.shape[2:]} smaller than kernel size {self.kernel_size}"
-        )
 
-        # DCNv3 handles offset prediction and sampling internally
-        # Offset clipping and normalization handled inside CUDA ops
-        # Reference: Wang et al. (2023) Section 3.2 - "Implementation Details"
+        # DCNv3 operation (outputs c1 channels)
         out = self.dcn(x)
-
+        
+        # Project to c2 channels if needed
+        out = self.project(out)
+        
+        # Batch norm and activation
         out = self.bn(out)
         out = self.act(out)
         return out
-
 
 class DCNv3Bottleneck(nn.Module):
     """
@@ -610,18 +625,47 @@ class DCNv3Bottleneck(nn.Module):
         super().__init__()
         c_ = int(c2 * e)  # hidden channels
 
-        # 1x1 conv for channel reduction (with BN + activation)
+        # ===== FIX: Validate groups for hidden channels =====
+        valid_g = g
+        if c_ % g != 0:
+            for test_g in [16, 8, 4, 2, 1]:
+                if c_ % test_g == 0:
+                    valid_g = test_g
+                    break
+
+        # 1x1 conv: c1 → c_ (channel reduction)
         self.cv1 = Conv(c1, c_, k[0], 1)
 
-        # 3x3 DCN v3 for adaptive spatial sampling
-        self.cv2 = DCNv3Conv(c_, c2, k[1], 1, g=g, kernel_size=kernel_size, center_feature_scale=center_feature_scale)
+        # ===== FIX: DCNv3 with same input/output channels =====
+        # DCNv3: c_ → c_ (no channel change in DCNv3)
+        self.cv2_dcn = DCNv3Conv(
+            c_, c_,  # Same channels in and out!
+            k[1], 1, 
+            g=valid_g, 
+            kernel_size=kernel_size, 
+            center_feature_scale=center_feature_scale
+        )
+        
+        # 1x1 conv: c_ → c2 (channel expansion/projection)
+        self.cv3 = Conv(c_, c2, 1, 1)
 
         # Residual connection when dimensions match
         self.add = shortcut and c1 == c2
 
     def forward(self, x):
         """Forward pass with optional residual connection."""
-        return x + self.cv2(self.cv1(x)) if self.add else self.cv2(self.cv1(x))
+        identity = x
+        
+        # Through bottleneck: reduce → DCNv3 → expand
+        out = self.cv1(x)      # c1 → c_
+        out = self.cv2_dcn(out) # c_ → c_
+        out = self.cv3(out)     # c_ → c2
+        
+        # Add residual if dimensions match
+        if self.add:
+            out = out + identity
+            
+        return out
 
 
 class DCNv3C2f(nn.Module):
@@ -666,18 +710,27 @@ class DCNv3C2f(nn.Module):
         super().__init__()
         self.c = int(c2 * e)  # hidden channels
 
+        # Validate groups for hidden channels
+        valid_g = g
+        if self.c % g != 0:
+            for test_g in [16, 8, 4, 2, 1]:
+                if self.c % test_g == 0:
+                    valid_g = test_g
+                    break
+
         # Dual-path CSP split
         self.cv1 = Conv(c1, 2 * self.c, 1, 1)
 
         # Process one path through n DCN v3 bottlenecks
+        # IMPORTANT: Bottlenecks work on self.c → self.c
         self.m = nn.ModuleList(
             DCNv3Bottleneck(
-                self.c,
-                self.c,
+                self.c,      # Input channels
+                self.c,      # Output channels (same as input!)
                 shortcut,
-                g,
+                valid_g,     # Use validated groups
                 k=(3, 3),
-                e=1.0,
+                e=1.0,       # No further expansion in bottleneck
                 kernel_size=kernel_size,
                 center_feature_scale=center_feature_scale,
             )
@@ -698,12 +751,14 @@ class DCNv3C2f(nn.Module):
             torch.Tensor: Output tensor (B, c2, H, W)
         """
         # Split into 2 paths (CSP design)
-        y = list(self.cv1(x).chunk(2, 1))  # [path1(c), path2(c)]
+        y = list(self.cv1(x).chunk(2, 1))  # [path1(self.c), path2(self.c)]
 
         # Process path2 through DCN v3 bottlenecks
+        # Each bottleneck: self.c → self.c
         y.extend(m(y[-1]) for m in self.m)  # [path1, path2, bottle1, ..., bottleN]
 
-        # Concatenate all paths and merge
+        # Concatenate all paths: (2 + n) * self.c
+        # Project to c2 channels
         return self.cv2(torch.cat(y, 1))
 
 
