@@ -53,8 +53,8 @@
 #   - PAN bottom-up pathway design
 
 nc: 6
-depth_multiple: 0.33
-width_multiple: 0.25
+depth_multiple: 0.67
+width_multiple: 0.75
 
 backbone:
   # [from, repeats, module, args]
