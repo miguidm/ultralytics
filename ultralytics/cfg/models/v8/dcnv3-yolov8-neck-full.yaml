@@ -81,8 +81,8 @@
 # - Liu et al. "Path Aggregation Network for Instance Segmentation" CVPR 2018 (PAN)
 
 nc: 6
-depth_multiple: 0.33
-width_multiple: 0.25
+depth_multiple: 0.67
+width_multiple: 0.75
 
 backbone:
   # [from, repeats, module, args]
