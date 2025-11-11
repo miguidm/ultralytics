@@ -256,7 +256,7 @@ class DeformConv(nn.Module):
         offset = offset.clamp(-max_offset, max_offset)
         
         # Apply sigmoid to mask
-        mask = mask.sigmoid()
+        mask = mask.sigmoid_()
         
         # Apply deformable convolution
         out = self.conv(x, offset, mask)
@@ -273,7 +273,9 @@ class DeformBottleneck(nn.Module):
         super().__init__()
         c_ = int(c2 * e)
         self.cv1 = Conv(c1, c_, k[0], 1)
-        self.cv2 = DeformConv(c_, c2, k[1], 1, g=g, deform_groups=deform_groups)  # FIXED
+        self.cv2 = DeformConv(c_, c2, k[1], 1, p=None, g=g, deform_groups=deform_groups)
+
+
         self.add = shortcut and c1 == c2
 
     def forward(self, x):
@@ -282,24 +284,44 @@ class DeformBottleneck(nn.Module):
 
 
 class DeformC2f(nn.Module):
-    """FIXED C2f with DCNv2."""
+    """C2f block using DCNv2 (Deformable Convolution v2)."""
 
     def __init__(self, c1, c2, n=1, shortcut=False, g=1, e=0.5, deform_groups=1):
-        """Initialize with deform_groups parameter."""
         super().__init__()
         self.c = int(c2 * e)
+
+        # First 1×1 conv to split channels into 2
         self.cv1 = Conv(c1, 2 * self.c, 1, 1)
-        self.m = nn.ModuleList(
-            DeformBottleneck(self.c, self.c, shortcut, g, k=(3, 3), e=1.0, deform_groups=deform_groups)
+
+        # ✅ Fixed ModuleList initialization
+        self.m = nn.ModuleList([
+            DeformBottleneck(
+                self.c,
+                self.c,
+                shortcut,
+                g,
+                k=(3, 3),
+                e=1.0,
+                deform_groups=deform_groups,
+            )
             for _ in range(n)
-        )
-        self.cv2 = Conv((2 + n) * self.c, c2, 1)
+        ])
+
+        # Final 1×1 conv merges all C2f paths
+        self.cv2 = Conv((2 + n) * self.c, c2, 1, 1)
 
     def forward(self, x):
         """Forward pass through C2f."""
+        # Split into 2 channel groups
         y = list(self.cv1(x).chunk(2, 1))
-        y.extend(m(y[-1]) for m in self.m)
+
+        # Deformable bottlenecks
+        for m in self.m:
+            y.append(m(y[-1]))
+
+        # Concatenate output and fuse
         return self.cv2(torch.cat(y, 1))
+
 
 
 class DCNv3Conv(nn.Module):
@@ -414,24 +436,33 @@ class DCNv3Bottleneck(nn.Module):
 
 
 class DCNv3C2f(nn.Module):
-    """FIXED C2f with DCNv3."""
+    """C2f block using DCNv3 (optimized and correct)."""
 
     def __init__(self, c1, c2, n=1, shortcut=False, g=4, e=0.5):
-        """Initialize DCNv3 C2f."""
         super().__init__()
         self.c = int(c2 * e)
+
+        # First 1×1 conv: split into 2 feature groups
         self.cv1 = Conv(c1, 2 * self.c, 1, 1)
-        self.m = nn.ModuleList(
+
+        # Proper ModuleList initialization
+        self.m = nn.ModuleList([
             DCNv3Bottleneck(self.c, self.c, shortcut, g, e=1.0)
             for _ in range(n)
-        )
-        self.cv2 = Conv((2 + n) * self.c, c2, 1)
+        ])
+
+        # Final 1×1 conv aggregates (2 + n) branches
+        self.cv2 = Conv((2 + n) * self.c, c2, 1, 1)
 
     def forward(self, x):
-        """Forward pass."""
-        y = list(self.cv1(x).chunk(2, 1))
-        y.extend(m(y[-1]) for m in self.m)
+        y = list(self.cv1(x).chunk(2, 1))  # split channels into 2
+
+        # iterative DCNv3 bottlenecks
+        for m in self.m:
+            y.append(m(y[-1]))
+
         return self.cv2(torch.cat(y, 1))
+
 
 
 
