@@ -1720,6 +1720,26 @@ def parse_model(d, ch, verbose=True):
             c2 = args[0]
             c1 = ch[f]
             args = [*args[1:]]
+            
+        elif m in {DeformConv, DeformBottleneck, DeformC2f}:
+            c1, c2 = ch[f], args[0]
+            if c2 != nc:  # if not output
+                c2 = make_divisible(min(c2, max_channels) * width, 8)
+            
+            args = [c1, c2, *args[1:]]
+            if m in {DeformC2f}:
+                args.insert(2, n)  # number of repeats
+                n = 1
+
+        elif m in {DCNv3Conv, DCNv3Bottleneck, DCNv3C2f}:
+            c1, c2 = ch[f], args[0]
+            if c2 != nc:  # if not output
+                c2 = make_divisible(min(c2, max_channels) * width, 8)
+            
+            args = [c1, c2, *args[1:]]
+            if m in {DCNv3C2f}:
+                args.insert(2, n)  # number of repeats
+                n = 1
         else:
             c2 = ch[f]
 
