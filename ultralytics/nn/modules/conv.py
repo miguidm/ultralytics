@@ -1,8 +1,9 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 """Convolution modules."""
-
 from __future__ import annotations
 
+import sys, os
+import importlib.util
 import math
 
 import numpy as np
@@ -25,7 +26,10 @@ try:
     DCNV3_AVAILABLE = True
 except ImportError:
     DCNV3_AVAILABLE = False
+    DCNv3_Op = None
+
 print(f"DCNv3_AVAILABLE={DCNV3_AVAILABLE}")
+
 __all__ = (
     "CBAM",
     "ChannelAttention",
@@ -36,6 +40,8 @@ __all__ = (
     "DCNv3Bottleneck",
     "DCNv3C2f",
     "DCNv3Conv",
+    "DCNv3_Op",
+    "DCNV3_AVAILABLE",
     "DWConv",
     "DWConvTranspose2d",
     "DeformBottleneck",
@@ -240,7 +246,7 @@ class DeformConv(nn.Module):
         )
 
         self.bn = nn.BatchNorm2d(c2)
-        self.act = Conv.default_act if act is True else act if isinstance(act, nn.Module) else nn.Identity()
+        self.act = nn.SiLU() if act is True else act if isinstance(act, nn.Module) else nn.Identity()
 
         # Offset and mask prediction (3 = 2 for offsets + 1 for mask)
         offset_mask_channels = self.deform_groups * 3 * k * k
@@ -271,8 +277,8 @@ class DeformConv(nn.Module):
         max_offset = max(self.k * self.dilation, 4.0)  # More flexible
         offset = offset.clamp(-max_offset, max_offset)
         
-        # Apply sigmoid to mask
-        mask = mask.sigmoid_()
+        # Apply sigmoid to mask (not in-place to preserve gradients)
+        mask = mask.sigmoid()
         
         # Apply deformable convolution
         out = self.conv(x, offset, mask)
@@ -363,12 +369,10 @@ class DCNv3Conv(nn.Module):
             
         self.c1 = c1
         self.c2 = c2
-        self.kernel_size = kernel_size
+        self.kernel_size = k
         self.stride = s
         self.padding = p
         self.dilation = d
-        self.center_feature_scale = center_feature_scale
-        self.dw_kernel_size = dw_kernel_size or kernel_size
 
         # ===== FIX: Validate and adjust groups =====
         # Ensure groups divides c1 evenly and is positive
@@ -382,6 +386,24 @@ class DCNv3Conv(nn.Module):
                     break
         self.groups = valid_g  # Validated groups
 
+        # ===== FIX: Validate and adjust groups =====
+        # Ensure groups divides c1 evenly and is positive
+        valid_g = max(1, int(g)) if isinstance(g, (int, float)) else 1
+        if c1 % valid_g != 0:
+            # Find largest valid group
+            for test_g in [16, 8, 4, 2, 1]:
+                if c1 % test_g == 0:
+                    print(f"Warning: DCNv3Conv adjusted groups from {g} to {test_g} for c1={c1}")
+                    valid_g = test_g
+                    break
+        self.groups = valid_g  # Validated groups
+
+        # Optional input projection to match DCNv3 expected channel size (DCNv3 preserves channels)
+        self.need_proj = c1 != c2
+        if self.need_proj:
+            self.proj_in = nn.Conv2d(c1, c2, kernel_size=1, stride=1, padding=0, bias=False)
+            self.proj_bn = nn.BatchNorm2d(c2)
+
         # Select DCNv3 backend based on availability
         if DCNV3_AVAILABLE:
             # Validate channels for DCNv3
@@ -394,7 +416,7 @@ class DCNv3Conv(nn.Module):
             # It does NOT have a channels_out parameter!
             self.dcn = DCNv3_Op(
                 channels=c1,  # Input and output channels are SAME
-                kernel_size=kernel_size,
+                kernel_size=k,
                 stride=s,
                 pad=p,
                 dilation=d,
@@ -402,14 +424,12 @@ class DCNv3Conv(nn.Module):
                 offset_scale=1.0,
                 act_layer="GELU",
                 norm_layer="LN",
-                dw_kernel_size=self.dw_kernel_size,
-                center_feature_scale=center_feature_scale,
             )
             self.backend = "dcnv3"
         else:
             raise RuntimeError(
-                "DCNv3: CUDA implementation not found. "
-                "Install DCNv3 for deformable convolution: pip install DCNv3 (from OpenGVLab/InternImage)"
+                "DCNv3: nn.Module wrapper not found. Please install the Python package that provides 'from dcnv3 import DCNv3'.\n"
+                "Hint: pip install 'dcnv3' (the InternImage DCNv3 Python wrapper) and ensure it is importable in this environment."
             )
 
         # ===== FIX: Add projection layer when c1 != c2 =====
@@ -420,7 +440,7 @@ class DCNv3Conv(nn.Module):
         
         # Post-processing
         self.bn = nn.BatchNorm2d(c2)
-        self.act = Conv.default_act if act is True else act if isinstance(act, nn.Module) else nn.Identity()
+        self.act = nn.SiLU() if act is True else act if isinstance(act, nn.Module) else nn.Identity()
 
     def forward(self, x):
         """Forward pass through DCN v3."""
@@ -428,8 +448,15 @@ class DCNv3Conv(nn.Module):
         assert x.ndim == 4, f"DCNv3Conv expected 4D input (B,C,H,W), got {x.ndim}D with shape {x.shape}"
         assert x.shape[1] == self.c1, f"DCNv3Conv: Channel mismatch - expected {self.c1}, got {x.shape[1]}"
 
-        # DCNv3 operation (outputs c1 channels)
-        out = self.dcn(x)
+        # DCNv3 expects (N, H, W, C) format, but PyTorch uses (N, C, H, W)
+        # Permute from (N, C, H, W) -> (N, H, W, C)
+        x_nhwc = x.permute(0, 2, 3, 1).contiguous()
+        
+        # DCNv3 operation (outputs same format: N, H, W, C)
+        out_nhwc = self.dcn(x_nhwc)
+        
+        # Permute back from (N, H, W, C) -> (N, C, H, W)
+        out = out_nhwc.permute(0, 3, 1, 2).contiguous()
         
         # Project to c2 if needed
         out = self.project(out)
@@ -464,7 +491,7 @@ class DCNv3Bottleneck(nn.Module):
         self.cv1 = Conv(c1, c_, k[0], 1)
         
         # DCNv3 (same channels)
-        self.cv2 = DCNv3Conv(c_, c_, k[1], 1, g=dcn_groups)
+        self.cv2 = DCNv3Conv(c_, c_, k[1], 1, g=valid_g)
         
         # 1x1 expand
         self.cv3 = Conv(c_, c2, k[2], 1)

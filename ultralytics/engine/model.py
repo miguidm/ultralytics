@@ -260,7 +260,14 @@ class Model(torch.nn.Module):
         cfg_dict = yaml_model_load(cfg)
         self.cfg = cfg
         self.task = task or guess_model_task(cfg_dict)
-        self.model = (model or self._smart_load("model"))(cfg_dict, verbose=verbose and RANK == -1)  # build model
+        # ✅ Force GPU before building the model
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print(f"🟢 Building model on {device}...")
+
+        model_cls = model or self._smart_load("model")
+        self.model = model_cls(cfg_dict, verbose=verbose and RANK == -1).to(device)
+
+        print(f"✅ Model initialized and moved to {device}")
         self.overrides["model"] = self.cfg
         self.overrides["task"] = self.task
 

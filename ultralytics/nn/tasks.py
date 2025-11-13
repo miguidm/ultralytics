@@ -428,11 +428,37 @@ class DetectionModel(BaseModel):
 
             self.model.eval()  # Avoid changing batch statistics until training begins
             m.training = True  # Setting it to True to properly return strides
-            # Use CUDA if available for modules that require it (e.g., DCNv3)
-            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-            self.model.to(device)  # Move model to device before forward pass
-            m.stride = torch.tensor([s / x.shape[-2] for x in _forward(torch.zeros(1, ch, s, s, device=device))])  # forward
-            self.stride = m.stride
+            # Compute strides with a dummy forward. Some custom ops (e.g., DCNv3) are CUDA-only and will fail on CPU.
+            try:
+                m.stride = torch.tensor([s / x.shape[-2] for x in _forward(torch.zeros(1, ch, s, s))])  # forward
+                self.stride = m.stride
+            except Exception as e:
+                # Fallback: if CUDA is available retry stride init on CUDA (handles CUDA-only ops like DCN)
+                if torch.cuda.is_available():
+                    p0 = next(self.parameters(), None)
+                    prev_device = p0.device if p0 is not None else torch.device("cpu")
+                    LOGGER.warning(
+                        f"Stride init failed on device '{prev_device}': {e}. Retrying on CUDA for initialization."
+                    )
+                    try:
+                        self.to("cuda")
+                        dummy = torch.zeros(1, ch, s, s, device="cuda")
+                        m.stride = torch.tensor([s / x.shape[-2] for x in _forward(dummy)], device="cuda")
+                        self.stride = m.stride
+                    except Exception as ee:
+                        LOGGER.warning(
+                            f"CUDA stride init also failed: {ee}. Falling back to default strides [8, 16, 32]."
+                        )
+                        self.stride = m.stride = torch.tensor([8., 16., 32.], device=(torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")))
+                    finally:
+                        # Move back if original device was CPU (engine will place model later as needed)
+                        if prev_device.type == "cpu":
+                            self.to("cpu")
+                else:
+                    LOGGER.warning(
+                        f"Stride init failed on CPU and no CUDA available: {e}. Using default strides [8, 16, 32]."
+                    )
+                    self.stride = m.stride = torch.tensor([8.0, 16.0, 32.0])
             self.model.train()  # Set model back to training(default) mode
             m.bias_init()  # only run once
         else:
