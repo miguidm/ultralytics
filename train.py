@@ -3,10 +3,6 @@ from ultralytics import YOLO
 
 # Available models and their corresponding YAML paths
 MODEL_MAP = {
-    "DCNv3-Neck-Full": "ultralytics/cfg/models/v8/dcnv3-yolov8-neck-full.yaml",
-    "DCNv3-Neck-Pan": "ultralytics/cfg/models/v8/dcnv3-yolov8-neck-pan.yaml",
-    "DCNv3-Neck-FPN": "ultralytics/cfg/models/v8/dcnv3-yolov8-neck-fpn.yaml",
-    "DCNv3-Liu": "ultralytics/cfg/models/v8/dcnv3-yolov8-liu.yaml",
     "DCNv2-Neck-Pan": "ultralytics/cfg/models/v8/dcnv2-yolov8-neck-pan.yaml",
     "DCNv2-Neck-FPN": "ultralytics/cfg/models/v8/dcnv2-yolov8-neck-fpn.yaml",
     "DCNv2-Liu": "ultralytics/cfg/models/v8/dcnv2-yolov8-liu.yaml",
