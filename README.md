@@ -182,5 +182,12 @@ python -c "from ultralytics import YOLO; print('Ultralytics imported successfull
 ```
 python train.py
 ```
+
+
+
+### Resume Training
 ```
+run python checkpoint.py
+```
+
 
