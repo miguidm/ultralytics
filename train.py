@@ -5,7 +5,6 @@ from ultralytics import YOLO
 MODEL_MAP = {
     "DCNv2-Neck-Pan": "ultralytics/cfg/models/v8/dcnv2-yolov8-neck-pan.yaml",
     "DCNv2-Neck-FPN": "ultralytics/cfg/models/v8/dcnv2-yolov8-neck-fpn.yaml",
-    "DCNv2-Liu": "ultralytics/cfg/models/v8/dcnv2-yolov8-liu.yaml",
     "DCNv2-Neck-Full": "ultralytics/cfg/models/v8/dcnv2-yolov8-neck-full.yaml",
 }
 
@@ -20,6 +19,7 @@ def choose_model():
             "\nEnter the number or name of the model you want to use: ").strip()
 
         # Allow either numeric or string input
+
         if choice.isdigit() and 1 <= int(choice) <= len(MODEL_MAP):
             model_name = list(MODEL_MAP.keys())[int(choice) - 1]
             return model_name
@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
     # Train the model
     results = model.train(
-        data="100data_linux.yaml",  # dataset config
+        data="100data.yaml",  # dataset config
         project=project_dir,        # output directory
         name=selected_model.lower().replace("-", "_"),  # clean experiment name
         epochs=300,
