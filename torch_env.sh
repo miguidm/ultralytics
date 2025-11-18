@@ -38,4 +38,4 @@ pip install \
   opencv-python==4.12.0.88 pandas==2.3.3 matplotlib==3.10.7 \
   scipy==1.16.2 pyyaml==6.0.3 requests==2.28.2 tqdm==4.65.2 rich==13.4.2
 
-pip install mmcv-full==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.0/index.html
+pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.0/index.html
