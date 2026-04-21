@@ -1,0 +1,78 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          Vanilla-YOLOv8n
+Architecture:   Baseline YOLOv8n Nano (6.2M parameters)
+Model Family:   Vanilla
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9984
+  ID Switches (IDSW):              1006
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9968
+  Mostly Tracked (MT):             90.4%
+  Mostly Lost (ML):                0.2%
+  Fragmentations:                  4211
+
+Computational Performance:
+  FPS (Frames Per Second):         134.28
+  Processing Time:                 1h10m
+
+Counting Results:
+  Line Crossing Count:             5723
+
+================================================================
+RANKING ON GATE 3 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #6 out of 9 (0.9984)
+  MOTA (Accuracy):     #6 out of 9 (0.9968)
+  IDSW (Lower Better): #6 out of 9 (1006 switches)
+  FPS (Speed):         #1 out of 9 (134.28)
+  MT% (Coverage):      90.4%
+  ML% (Loss):          0.2%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Fast inference speed (134.28 FPS - rank #1)
+  ✓ Ultra-fast real-time processing (134.28 FPS)
+  ✓ Excellent track coverage (MT: 90.4%)
+  ✓ Minimal track loss (ML: 0.2%)
+
+WEAKNESSES:
+  None significant
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv2-Full)
+================================================================
+
+IDF1:     0.9984 vs 0.9987 (-0.0003)
+MOTA:     0.9968 vs 0.9973 (-0.0005)
+IDSW:     1006 vs 643 (+363)
+FPS:      134.28 vs 102.06 (+32.22)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable performance
+Average Rank: #4.8 out of 9
+
+🏆 FASTEST inference on Gate 3
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Model: Vanilla-YOLOv8n (Nano - 6.2M parameters)
+Rank: #4.8 out of 9 models
+================================================================

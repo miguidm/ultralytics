@@ -1,0 +1,95 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           2.9
+Model:          Vanilla-YOLOv8n
+Architecture:   Baseline YOLOv8n (Nano - Smallest/Fastest Version)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9193
+  ID Switches (IDSW):              1590
+  Class Switches:                  6021
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9185
+  Mostly Tracked (MT):             88.0%
+  Mostly Lost (ML):                0.4%
+
+Computational Performance:
+  FPS (Frames Per Second):         125.56
+  Processing Time:                 1h26m
+
+Counting Results:
+  Total Vehicle Count:             5128
+
+================================================================
+GATE CONTEXT - 2.9
+================================================================
+
+Characteristics:
+  - High count: ~5,128 vehicles
+  - Processing time: 1h 26m
+  - Best MOTA across all gates (0.9185)
+  - Good overall balance of metrics
+
+================================================================
+RANKING (Among 5 gates for YOLOv8n)
+================================================================
+
+  IDF1 (Identity):     #3 out of 5 (0.9193)
+  MOTA (Accuracy):     #1 out of 5 (0.9185)
+  IDSW (Lower Better): #3 out of 5 (1590 switches)
+  FPS (Speed):         #5 out of 5 (125.56)
+  MT% (Coverage):      88.0%
+  ML% (Loss):          0.4%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Best MOTA across all gates (0.9185 - rank #1)
+  ✓ Good MT% (88.0%)
+  ✓ Low class switches (6021 - lowest among high-traffic gates)
+
+WEAKNESSES:
+  ✗ Slowest FPS across all gates (125.56 - rank #5)
+  ✗ Moderate ID switches (1590)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+SUITABLE FOR:
+  → Applications prioritizing tracking accuracy (MOTA)
+  → Offline processing where speed is less critical
+  → High-volume scenes with complex trajectories
+
+================================================================
+COMPARISON WITH BEST GATE IDF1 (Gate 3.5)
+================================================================
+
+IDF1:     0.9193 vs 0.9289 (-0.0096)
+MOTA:     0.9185 vs 0.9177 (+0.0008)
+IDSW:     1590 vs 1796 (-206)
+FPS:      125.56 vs 127.62 (-2.06)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Best tracking accuracy (MOTA)
+Average Rank: #2.4 out of 5
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 2.9 Traffic Monitoring
+Architecture: Vanilla-YOLOv8n
+Total Gates Tested: 5
+================================================================

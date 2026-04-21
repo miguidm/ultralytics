@@ -1,0 +1,52 @@
+DCNv2-Liu - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 14:59:11
+Model: /media/mydrive/GitHub/ultralytics/tracking/dcnv2-yolov8n-liu-best.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 451 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9961
+IDF1:         0.9981
+ID Switches:  1
+FPS:          23.55
+
+TRACKED OBJECTS (11 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          92         92        
+3      motorcycle   1          56         56        
+4      car          1          38         37        
+5      motorcycle   12         85         68        
+6      car          27         27         1         
+7      motorcycle   33         97         63        
+9      motorcycle   108        108        1         
+10     car          376        450        75        
+11     car          383        450        68        
+12     tricycle     409        425        9         
+
+CLASSIFICATION SWITCHES: 2 total
+----------------------------------------
+Frame    ID     From         To          
+68       5      motorcycle   tricycle    
+69       5      tricycle     motorcycle  
+
+SWITCHES PER SECOND:
+  Sec 4: 2 - ID:5 motorcycle->tricycle; ID:5 tricycle->motorcycle
+
+Seconds with switches: 1/31
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:5: motorcycle -> tricycle -> motorcycle
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 1
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 0
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 1

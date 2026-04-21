@@ -1,0 +1,93 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           2.9
+Model:          DCNv2-Pan
+Architecture:   YOLOv8m + DCNv2 Deformable Convolution (PAN Neck)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9607
+  ID Switches (IDSW):              881
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.8911
+  Mostly Tracked (MT):             74.4%
+  Mostly Lost (ML):                13.2%
+
+Computational Performance:
+  FPS (Frames Per Second):         60.50
+  GFLOPs:                          50.67
+  Processing Time:                 2.95h
+
+Counting Results:
+  Total Vehicle Count:             5225
+
+================================================================
+GATE CONTEXT - 2.9
+================================================================
+
+Characteristics:
+  - High IDF1 scores (>0.95 all models)
+  - Average count: ~5,250 vehicles
+  - Higher ID switch rates (771-903)
+  - Variable traffic patterns
+  - Challenging tracking conditions
+
+================================================================
+RANKING (Among 9 models on Gate 2.9)
+================================================================
+
+  IDF1 (Identity):     #6 out of 9 (0.9607)
+  MOTA (Accuracy):     #5 out of 9 (0.8911)
+  IDSW (Lower Better): #6 out of 9 (881 switches)
+  FPS (Speed):         #2 out of 9 (60.50)
+  MT% (Coverage):      74.4%
+  ML% (Loss):          13.2%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Fast inference speed (60.50 FPS - rank #2)
+
+WEAKNESSES:
+  ✗ Higher track loss (ML: 13.2%)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Real-time applications requiring maximum speed
+  → Resource-constrained environments
+  → Live monitoring dashboards
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9607 vs 0.9688 (-0.0081)
+MOTA:     0.8911 vs 0.9072 (-0.0161)
+IDSW:     881 vs 877 (+4)
+FPS:      60.50 vs 56.80 (+3.70)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #4.8 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 2.9 Traffic Monitoring
+Architecture: DCNv2-Pan
+Total Models Tested: 9
+================================================================

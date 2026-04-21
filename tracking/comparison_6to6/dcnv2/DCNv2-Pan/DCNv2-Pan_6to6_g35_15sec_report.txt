@@ -1,0 +1,49 @@
+DCNv2-Pan - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 14:56:55
+Model: /media/mydrive/GitHub/ultralytics/tracking/dcvn2-yolov8-neck-pan-best.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 226 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         1.0000
+IDF1:         1.0000
+ID Switches:  0
+FPS:          18.04
+
+TRACKED OBJECTS (6 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          92         92        
+3      motorcycle   1          57         57        
+4      car          1          32         31        
+5      motorcycle   12         104        89        
+8      motorcycle   32         113        78        
+
+CLASSIFICATION SWITCHES: 2 total
+----------------------------------------
+Frame    ID     From         To          
+34       8      car          motorcycle  
+57       3      motorcycle   car         
+
+SWITCHES PER SECOND:
+  Sec 2: 1 - ID:8 car->motorcycle
+  Sec 3: 1 - ID:3 motorcycle->car
+
+Seconds with switches: 2/16
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:3: motorcycle -> car
+  ID:8: car -> motorcycle
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 0
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 0
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 0

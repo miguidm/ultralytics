@@ -1,0 +1,49 @@
+DCNv3-FPN - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 20:25:32
+Model: /home/migui/YOLO_outputs/100_dcnv3_yolov8m_fpn_second/weights/best.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 226 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9975
+IDF1:         0.9988
+ID Switches:  0
+FPS:          0.76
+
+TRACKED OBJECTS (6 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          93         93        
+3      motorcycle   1          57         57        
+4      car          1          38         38        
+5      motorcycle   10         102        86        
+6      motorcycle   29         109        81        
+
+CLASSIFICATION SWITCHES: 3 total
+----------------------------------------
+Frame    ID     From         To          
+30       6      tricycle     motorcycle  
+31       6      motorcycle   car         
+32       6      car          motorcycle  
+
+SWITCHES PER SECOND:
+  Sec 1: 1 - ID:6 tricycle->motorcycle
+  Sec 2: 2 - ID:6 motorcycle->car; ID:6 car->motorcycle
+
+Seconds with switches: 2/16
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:6: tricycle -> motorcycle -> car -> motorcycle
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 0
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 0
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 0

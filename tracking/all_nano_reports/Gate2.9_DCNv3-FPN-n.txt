@@ -1,0 +1,70 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           2.9
+Model:          DCNv3-FPN
+Architecture:   YOLOv8n + DCNv3 FPN Neck
+Model Family:   DCNv3
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9994
+  ID Switches (IDSW):              1634
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9988
+  Mostly Tracked (MT):             89.1%
+  Mostly Lost (ML):                0.5%
+  Fragmentations:                  5336
+
+Computational Performance:
+  FPS (Frames Per Second):         56.59
+  Processing Time:                 3h11m
+
+Counting Results:
+  Line Crossing Count:             5151
+
+================================================================
+RANKING ON GATE 2.9 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #1 out of 9 (0.9994)
+  MOTA (Accuracy):     #1 out of 9 (0.9988)
+  IDSW (Lower Better): #7 out of 9 (1634 switches)
+  FPS (Speed):         #9 out of 9 (56.59)
+  MT% (Coverage):      89.1%
+  ML% (Loss):          0.5%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #1)
+  ✓ Top tracking accuracy (MOTA rank: #1)
+  ✓ Excellent track coverage (MT: 89.1%)
+  ✓ Minimal track loss (ML: 0.5%)
+
+WEAKNESSES:
+  ✗ Higher ID switches (1634 - rank #7)
+  ✗ Slower inference (rank #9)
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable performance
+Average Rank: #4.5 out of 9
+
+🏆 BEST identity tracking on Gate 2.9
+🏆 BEST tracking accuracy on Gate 2.9
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 2.9 Traffic Monitoring
+Model: DCNv3-FPN (Nano - 6.2M parameters)
+Rank: #4.5 out of 9 models
+================================================================

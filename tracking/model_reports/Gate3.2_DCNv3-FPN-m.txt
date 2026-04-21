@@ -1,0 +1,85 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.2
+Model:          DCNv3-FPN
+Architecture:   YOLOv8m + DCNv3 Deformable Convolution (FPN Neck)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.8792
+  ID Switches (IDSW):              442
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9528
+  Mostly Tracked (MT):             70.5%
+  Mostly Lost (ML):                11.0%
+
+Computational Performance:
+  FPS (Frames Per Second):         57.90
+  GFLOPs:                          54.40
+  Processing Time:                 3h06m
+
+Counting Results:
+  Total Vehicle Count:             2365
+
+================================================================
+GATE CONTEXT - 3.2
+================================================================
+
+Characteristics:
+  - Long monitoring period (2.5-3.5 hours)
+  - Lower volume (~2,400 vehicles)
+  - Good MOTA performance (>0.88 most models)
+  - Lower traffic density
+  - Favorable tracking conditions
+
+================================================================
+RANKING (Among 9 models on Gate 3.2)
+================================================================
+
+  IDF1 (Identity):     #1 out of 9 (0.8792)
+  MOTA (Accuracy):     #5 out of 9 (0.9528)
+  IDSW (Lower Better): #5 out of 9 (442 switches)
+  FPS (Speed):         #8 out of 9 (57.90)
+  MT% (Coverage):      70.5%
+  ML% (Loss):          11.0%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #1)
+
+WEAKNESSES:
+  ✗ Slow inference speed (57.90 FPS - rank #8)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Maximum identity tracking quality
+  → Long-term trajectory analysis
+  → Re-identification applications
+  → Forensic video analysis
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #4.8 out of 9
+
+🏆 BEST identity tracking on Gate 3.2
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.2 Traffic Monitoring
+Architecture: DCNv3-FPN
+Total Models Tested: 9
+================================================================

@@ -1,0 +1,181 @@
+DCNv2-FPN - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 15:14:46
+Model: /media/mydrive/GitHub/ultralytics/tracking/dcnv2-yolov8-neck-fpn.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 4501 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9978
+IDF1:         0.9989
+ID Switches:  6
+FPS:          16.75
+
+TRACKED OBJECTS (79 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          93         93        
+3      motorcycle   1          57         56        
+4      car          1          1          1         
+5      car          11         37         26        
+6      motorcycle   13         85         70        
+8      motorcycle   31         103        70        
+11     car          376        514        139       
+12     car          383        458        76        
+13     tricycle     426        438        6         
+14     car          492        493        2         
+15     car          496        642        147       
+17     car          534        3206       2673      
+18     tricycle     542        596        28        
+19     van          618        703        83        
+21     car          692        694        3         
+22     car          704        793        90        
+23     car          759        3161       2392      
+24     tricycle     787        850        11        
+25     van          871        871        1         
+29     car          885        885        1         
+31     car          909        3268       2360      
+32     tricycle     948        970        9         
+33     car          1102       1213       112       
+34     car          1166       1258       93        
+35     car          1203       3235       1980      
+36     tricycle     1215       1281       39        
+37     car          1233       1311       79        
+39     car          1304       3356       2053      
+40     tricycle     1337       1503       114       
+41     car          1369       1551       183       
+42     car          1569       3366       1776      
+43     tricycle     1629       2212       502       
+44     tricycle     1851       3250       1373      
+45     car          1857       2188       331       
+46     car          1909       3388       1478      
+47     car          2241       3413       1086      
+48     tricycle     2252       3301       950       
+49     motorcycle   2366       2425       60        
+53     tricycle     2478       2513       8         
+54     car          2621       2698       78        
+55     car          2698       2734       37        
+56     car          2742       2837       96        
+57     car          2803       2885       83        
+58     car          3023       3111       89        
+59     tricycle     3051       3053       3         
+60     car          3065       3153       89        
+61     car          3109       3194       86        
+62     motorcycle   3168       3169       2         
+63     tricycle     3168       3266       86        
+64     tricycle     3198       3201       4         
+65     car          3220       3221       2         
+67     tricycle     3235       3258       2         
+69     car          3252       3344       93        
+72     car          3279       3454       176       
+73     van          3281       3373       92        
+74     tricycle     3284       3301       11        
+77     tricycle     3316       3378       6         
+78     car          3321       3438       118       
+79     car          3327       3406       80        
+80     car          3356       3487       132       
+83     car          3366       3443       78        
+84     car          3415       3415       1         
+85     car          3431       3514       84        
+87     car          3458       3548       91        
+92     car          3608       3691       84        
+93     motorcycle   3762       3817       56        
+94     car          3807       3888       82        
+96     car          3866       3952       87        
+97     car          3905       3998       94        
+98     car          3949       4031       83        
+99     car          3954       3954       1         
+100    car          3994       4072       79        
+101    car          4038       4114       77        
+102    car          4075       4155       81        
+105    motorcycle   4235       4281       47        
+106    car          4386       4468       83        
+107    car          4446       4500       55        
+108    car          4499       4500       2         
+
+CLASSIFICATION SWITCHES: 35 total
+----------------------------------------
+Frame    ID     From         To          
+32       8      car          motorcycle  
+56       3      motorcycle   car         
+622      19     car          van         
+640      19     van          car         
+643      19     car          van         
+679      19     van          car         
+681      19     car          van         
+682      19     van          car         
+870      23     car          van         
+871      23     van          car         
+885      23     car          van         
+886      23     van          car         
+887      23     car          van         
+888      23     van          car         
+2696     54     car          van         
+2699     55     car          van         
+2700     55     van          car         
+3205     17     car          tricycle    
+3219     35     car          van         
+3223     35     van          car         
+3285     73     car          van         
+3286     73     van          car         
+3290     73     car          van         
+3301     73     van          car         
+3303     73     car          van         
+3304     73     van          car         
+3307     73     car          van         
+3345     77     tricycle     motorcycle  
+3347     77     motorcycle   tricycle    
+3351     73     van          car         
+3371     73     car          van         
+3372     73     van          car         
+3378     77     tricycle     motorcycle  
+3836     94     car          van         
+3837     94     van          car         
+
+SWITCHES PER SECOND:
+  Sec 2: 1 - ID:8 car->motorcycle
+  Sec 3: 1 - ID:3 motorcycle->car
+  Sec 41: 1 - ID:19 car->van
+  Sec 42: 2 - ID:19 van->car; ID:19 car->van
+  Sec 45: 3 - ID:19 van->car; ID:19 car->van; ID:19 van->car
+  Sec 57: 1 - ID:23 car->van
+  Sec 58: 2 - ID:23 van->car; ID:23 car->van
+  Sec 59: 3 - ID:23 van->car; ID:23 car->van; ID:23 van->car
+  Sec 179: 3 - ID:54 car->van; ID:55 car->van; ID:55 van->car
+  Sec 213: 1 - ID:17 car->tricycle
+  Sec 214: 2 - ID:35 car->van; ID:35 van->car
+  Sec 218: 1 - ID:73 car->van
+  Sec 219: 2 - ID:73 van->car; ID:73 car->van
+  Sec 220: 4 - ID:73 van->car; ID:73 car->van; ID:73 van->car; ID:73 car->van
+  Sec 222: 1 - ID:77 tricycle->motorcycle
+  Sec 223: 2 - ID:77 motorcycle->tricycle; ID:73 van->car
+  Sec 224: 2 - ID:73 car->van; ID:73 van->car
+  Sec 225: 1 - ID:77 tricycle->motorcycle
+  Sec 255: 2 - ID:94 car->van; ID:94 van->car
+
+Seconds with switches: 19/301
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:3: motorcycle -> car
+  ID:8: car -> motorcycle
+  ID:17: car -> tricycle
+  ID:19: car -> van -> car -> van -> car -> van -> car
+  ID:23: car -> van -> car -> van -> car -> van -> car
+  ID:35: car -> van -> car
+  ID:54: car -> van
+  ID:55: car -> van -> car
+  ID:73: car -> van -> car -> van -> car -> van -> car -> van -> car -> van -> car
+  ID:77: tricycle -> motorcycle -> tricycle -> motorcycle
+  ID:94: car -> van -> car
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 25
+  MOTORCYCLE: 3
+  TRICYCLE: 0
+  VAN: 2
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 30

@@ -1,0 +1,112 @@
+================================================================================
+ FINAL STATISTICAL ANALYSIS RESULTS (BOOTSTRAPPED DATA N=5 per model)
+ Dataset: OccludedYOLO (800 sampled images per bootstrap)
+================================================================================
+
+================================================================================
+ METHODOLOGY: HOW SIGNIFICANCE TESTING WAS CONDUCTED
+================================================================================
+1. Bootstrapping (Variance Generation):
+   ANOVA mathematically requires variance (multiple replicates per model) to calculate
+   significance. To avoid the computationally prohibitive cost of retraining all 9 YOLO
+   models 5 separate times from scratch, we employed Bootstrapping on the evaluation set.
+   We randomly sub-sampled 800 images from the 1,624-image OccludedYOLO dataset 5 distinct
+   times (creating 5 Bootstrap IDs). Every model was evaluated on these exact same 5 subsets.
+   This yielded 5 mAP50-95 and 5 Recall scores per model (N=5), establishing the required
+   variance for ANOVA while isolating the architectural performance from dataset bias.
+
+2. Testing Framework:
+   - Part 1 (One-Way ANOVA): Tests if applying ANY modification is generally better than none.
+   - Part 2 (Two-Way ANOVA): A fully-crossed factorial analysis on the 8 DCN variants to
+     isolate the main effects and interaction of DCN Version (v2 vs v3) and Placement 
+     (Backbone, FPN, PAN, Full). Vanilla is excluded to prevent matrix rank deficiency (NaN).
+   - Part 3 (Tukey HSD Post-Hoc): Directly compares every specific modified model against the
+     Vanilla baseline to see exactly WHICH modifications achieved statistical significance.
+
+--------------------------------------------------------------------------------
+ PART 1: VANILLA BASELINE VS. WITH DCN MODIFICATIONS (ONE-WAY ANOVA)
+ Hypothesis: Does applying DCN modifications generally improve performance over the baseline?
+ Explanation: This groups all 40 DCN inference runs against the 5 Vanilla inference runs.
+--------------------------------------------------------------------------------
+
+>>> Dependent Variable: Recall (Model's ability to find hidden objects)
+            sum_sq    df         F    PR(>F)
+C(Type)   0.011051   1.0  4.550974  0.038647
+Residual  0.104412  43.0       NaN       NaN
+Conclusion: p = 0.0386 (Significant)
+
+>>> Dependent Variable: mAP50-95 (Overall bounding box accuracy)
+            sum_sq    df         F    PR(>F)
+C(Type)   0.002977   1.0  1.735139  0.194732
+Residual  0.073773  43.0       NaN       NaN
+Conclusion: p = 0.1947 (Not Significant)
+
+--------------------------------------------------------------------------------
+ PART 2: TWO-WAY ANOVA (DCN VERSION x PLACEMENT)
+ Hypothesis: Among the modified models, how do Version and Placement affect performance?
+ Explanation: This analyzes the 8 Deformable variants to see if DCNv3 is mathematically
+ superior to DCNv2, and if modifying the Neck (FPN/PAN) is mathematically superior to
+ modifying the Backbone. The interaction term tests if putting a specific version in a
+ specific placement creates a unique synergistic effect.
+ Note: Vanilla is excluded here as it lacks Version/Placement variables.
+--------------------------------------------------------------------------------
+
+>>> Dependent Variable: mAP50-95
+                           sum_sq    df          F        PR(>F)
+C(Version)               0.020316   1.0  43.841391  1.819649e-07
+C(Placement)             0.015014   3.0  10.800095  4.651949e-05
+C(Version):C(Placement)  0.022821   3.0  16.415880  1.228240e-06
+Residual                 0.014828  32.0        NaN           NaN
+Version Effect p-value:   0.000000
+Placement Effect p-value: 0.000047
+Interaction p-value:      0.000001
+
+>>> Dependent Variable: Recall
+                           sum_sq    df          F    PR(>F)
+C(Version)               0.024116   1.0  30.093909  0.000005
+C(Placement)             0.021665   3.0   9.011635  0.000179
+C(Version):C(Placement)  0.030739   3.0  12.786160  0.000012
+Residual                 0.025644  32.0        NaN       NaN
+Version Effect p-value:   0.000005
+Placement Effect p-value: 0.000179
+Interaction p-value:      0.000012
+
+===================
+ACADEMIC INTERPRETATION FOR PART 2 (TWO-WAY ANOVA):
+To isolate the architectural mechanisms driving performance under occlusion, a Two-Way ANOVA
+was conducted exclusively on the deformable models, analyzing the main effects of DCN Version
+(v2 vs. v3) and Placement (Backbone, Neck-FPN, Neck-PAN, Neck-Full). The results indicated a
+highly significant main effect for both Version (p < 0.001) and Placement (p < 0.001) on mAP50-95.
+Furthermore, a highly significant interaction effect was observed between the version and its
+placement (p < 0.001), demonstrating that the benefits of DCNv3 are maximized only when integrated
+into specific Neck layers, rather than universally applied across the network.
+===================
+
+--------------------------------------------------------------------------------
+ PART 3: SPECIFIC MODIFICATIONS VS. VANILLA BASELINE (TUKEY HSD POST-HOC)
+ Hypothesis: Which specific modified models significantly outperform the Vanilla baseline?
+ Explanation: The One-Way ANOVA only proves that 'a difference exists'. Tukey's HSD is a
+ strict pairwise comparison that compares the mean of every single modification directly
+ against the Vanilla baseline to see which ones are statistically valid improvements (p < 0.05).
+--------------------------------------------------------------------------------
+
+>>> Dependent Variable: mAP50-95
+Vanilla vs DCNv2n-FPN      | Mean Diff: -0.0000 | p-adj: 1.0000 | Significant: False ns
+Vanilla vs DCNv2n-Full     | Mean Diff:  0.0137 | p-adj: 0.9793 | Significant: False ns
+Vanilla vs DCNv2n-Liu      | Mean Diff:  0.0015 | p-adj: 1.0000 | Significant: False ns
+Vanilla vs DCNv2n-Pan      | Mean Diff: -0.0018 | p-adj: 1.0000 | Significant: False ns
+Vanilla vs DCNv3n-FPN      | Mean Diff:  0.0926 | p-adj: 0.0000 | Significant: True  ***
+Vanilla vs DCNv3n-Full     | Mean Diff:  0.0013 | p-adj: 1.0000 | Significant: False ns
+Vanilla vs DCNv3n-Liu      | Mean Diff:  0.0097 | p-adj: 0.9979 | Significant: False ns
+Vanilla vs DCNv3n-Pan      | Mean Diff:  0.0901 | p-adj: 0.0000 | Significant: True  ***
+
+===================
+ACADEMIC INTERPRETATION FOR PART 3 (POST-HOC):
+To evaluate the overall impact of structural modifications against the baseline, a post-hoc
+analysis using Tukey's Honestly Significant Difference (HSD) test was conducted. The analysis
+demonstrated that modifications applied specifically to the Neck architecture using DCNv3
+(e.g., DCNv3n-FPN, DCNv3n-PAN) provided highly significant gains (p < 0.001) over the Vanilla
+baseline. Conversely, modifications restricted solely to the Backbone (DCNv2n-Liu, DCNv3n-Liu)
+or over-parameterized networks (DCNv3n-Full) did not achieve statistical significance,
+confirming that the spatial location of the deformable convolution is critical for occlusion robustness.
+===================

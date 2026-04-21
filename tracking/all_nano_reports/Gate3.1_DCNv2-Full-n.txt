@@ -1,0 +1,73 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.1
+Model:          DCNv2-Full
+Architecture:   YOLOv8n + DCNv2 Full Integration
+Model Family:   DCNv2
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9988
+  ID Switches (IDSW):              2051
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9977
+  Mostly Tracked (MT):             87.7%
+  Mostly Lost (ML):                0.6%
+  Fragmentations:                  6532
+
+Computational Performance:
+  FPS (Frames Per Second):         98.88
+  Processing Time:                 1h49m
+
+Counting Results:
+  Line Crossing Count:             2295
+
+================================================================
+RANKING ON GATE 3.1 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #6 out of 9 (0.9988)
+  MOTA (Accuracy):     #6 out of 9 (0.9977)
+  IDSW (Lower Better): #5 out of 9 (2051 switches)
+  FPS (Speed):         #5 out of 9 (98.88)
+  MT% (Coverage):      87.7%
+  ML% (Loss):          0.6%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+
+WEAKNESSES:
+  None significant
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9988 vs 0.9991 (-0.0003)
+MOTA:     0.9977 vs 0.9982 (-0.0005)
+IDSW:     2051 vs 1757 (+294)
+FPS:      98.88 vs 56.65 (+42.23)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable performance
+Average Rank: #5.5 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.1 Traffic Monitoring
+Model: DCNv2-Full (Nano - 6.2M parameters)
+Rank: #5.5 out of 9 models
+================================================================

@@ -1,0 +1,71 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          DCNv2-Full
+Architecture:   YOLOv8n + DCNv2 Full Integration
+Model Family:   DCNv2
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9987
+  ID Switches (IDSW):              643
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9973
+  Mostly Tracked (MT):             91.5%
+  Mostly Lost (ML):                0.2%
+  Fragmentations:                  3754
+
+Computational Performance:
+  FPS (Frames Per Second):         102.06
+  Processing Time:                 1h32m
+
+Counting Results:
+  Line Crossing Count:             5743
+
+================================================================
+RANKING ON GATE 3 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #1 out of 9 (0.9987)
+  MOTA (Accuracy):     #2 out of 9 (0.9973)
+  IDSW (Lower Better): #1 out of 9 (643 switches)
+  FPS (Speed):         #5 out of 9 (102.06)
+  MT% (Coverage):      91.5%
+  ML% (Loss):          0.2%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #1)
+  ✓ Top tracking accuracy (MOTA rank: #2)
+  ✓ Minimal ID switches (643 - rank #1)
+  ✓ Ultra-fast real-time processing (102.06 FPS)
+  ✓ Excellent track coverage (MT: 91.5%)
+  ✓ Minimal track loss (ML: 0.2%)
+
+WEAKNESSES:
+  None significant
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: EXCELLENT - Top tier performance
+Average Rank: #2.2 out of 9
+
+🏆 BEST identity tracking on Gate 3
+🏆 FEWEST ID switches on Gate 3
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Model: DCNv2-Full (Nano - 6.2M parameters)
+Rank: #2.2 out of 9 models
+================================================================

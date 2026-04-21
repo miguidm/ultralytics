@@ -1,0 +1,97 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          DCNv2-Full
+Architecture:   YOLOv8m + DCNv2 Deformable Convolution (Full Integration)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9375
+  ID Switches (IDSW):              492
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.7056
+  Mostly Tracked (MT):             83.6%
+  Mostly Lost (ML):                12.1%
+
+Computational Performance:
+  FPS (Frames Per Second):         60.30
+  GFLOPs:                          42.22
+  Processing Time:                 2.96h
+
+Counting Results:
+  Total Vehicle Count:             6396
+
+================================================================
+GATE CONTEXT - 3
+================================================================
+
+Characteristics:
+  - Highest vehicle volume (~6,400 avg)
+  - Challenging MOTA scores (~0.70-0.72)
+  - Difficult tracking environment
+  - Occlusions and complex traffic patterns
+  - Extended processing duration
+
+================================================================
+RANKING (Among 9 models on Gate 3)
+================================================================
+
+  IDF1 (Identity):     #2 out of 9 (0.9375)
+  MOTA (Accuracy):     #6 out of 9 (0.7056)
+  IDSW (Lower Better): #1 out of 9 (492 switches)
+  FPS (Speed):         #7 out of 9 (60.30)
+  MT% (Coverage):      83.6%
+  ML% (Loss):          12.1%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #2)
+  ✓ Minimal ID switches (492 - rank #1)
+  ✓ High track coverage (MT: 83.6%)
+
+WEAKNESSES:
+  ✗ Slow inference speed (60.30 FPS - rank #7)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Maximum identity tracking quality
+  → Long-term trajectory analysis
+  → Re-identification applications
+  → Forensic video analysis
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9375 vs 0.9387 (-0.0012)
+MOTA:     0.7056 vs 0.7063 (-0.0007)
+IDSW:     492 vs 611 (-119)
+FPS:      60.30 vs 58.60 (+1.70)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Strong performance overall
+Average Rank: #4.0 out of 9
+
+🏆 FEWEST ID switches on Gate 3
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Architecture: DCNv2-Full
+Total Models Tested: 9
+================================================================

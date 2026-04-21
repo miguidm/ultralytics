@@ -1,0 +1,63 @@
+================================================================================
+ UNDERSTANDING NaN IN ANOVA RESULTS AND STATISTICAL DESIGN CHOICES
+================================================================================
+
+When analyzing the ANOVA output tables, "NaN" (Not a Number) frequently appears. 
+It appears for two distinct mathematical reasons, one of which is standard, and the 
+other which dictated the experimental design of this ablation study.
+
+--------------------------------------------------------------------------------
+ 1. NaN in the "Residual" Row (Standard Output)
+--------------------------------------------------------------------------------
+Example Output:
+                           sum_sq    df          F        PR(>F)
+C(Version)               0.020316   1.0  43.841391  1.819649e-07
+C(Placement)             0.015014   3.0  10.800095  4.651949e-05
+C(Version):C(Placement)  0.022821   3.0  16.415880  1.228240e-06
+Residual                 0.014828  32.0        NaN           NaN
+
+What it means:
+The "Residual" represents the random noise or error remaining after the ANOVA 
+accounts for your variables (Version and Placement). The F-statistic (F) and the 
+p-value (PR(>F)) for your variables are calculated by dividing their variance by 
+the variance of the Residual. Because a residual cannot be divided by itself to test 
+itself, statistical software outputs NaN for those columns.
+
+How to report this in the paper:
+This is standard mathematical behavior. When formatting the ANOVA tables for the 
+final paper, the NaN values in the Residual row should be left blank or replaced 
+with dashes (-). No explanation of this is required in the methodology or results.
+
+--------------------------------------------------------------------------------
+ 2. NaN in Main Variables (Matrix Rank Deficiency)
+--------------------------------------------------------------------------------
+Example Output (When attempting to include Vanilla in the Two-Way ANOVA):
+                           sum_sq    df          F        PR(>F)
+C(Version)                    NaN   2.0        NaN           NaN
+C(Placement)             0.010679   4.0   6.151921  1.793878e-02
+
+What it means:
+This occurs when the ANOVA attempts to calculate an interaction effect on a dataset 
+that is not "fully crossed". A Two-Way ANOVA requires every category in Variable 1 
+to intersect with every category in Variable 2. 
+
+While the deformable variants possess structural placements (Neck-FPN, Neck-PAN, 
+Backbone), the Vanilla baseline inherently lacks these deformable placement categories. 
+Because a "Vanilla model with a deformable FPN neck" does not exist, the mathematical 
+matrix contains empty cells. When the ANOVA algorithm attempts to calculate the 
+interaction across those empty cells, the calculation fails, resulting in a 
+"Matrix Rank Deficiency" and outputting NaN for the entire variable.
+
+How to explain this to a thesis panel or peer reviewers:
+If asked why the Vanilla baseline was evaluated separately from the main Two-Way ANOVA, 
+the following explanation should be used:
+
+"The Vanilla baseline was excluded from the main Two-Way ANOVA to prevent matrix rank 
+deficiency. A standard Two-Way ANOVA requires a fully-crossed factorial design. Because 
+the standard Vanilla architecture inherently lacks the structural placement categories 
+(e.g., Neck-FPN, Neck-PAN) being evaluated in the deformable variants, its inclusion 
+results in empty interaction cells that crash the mathematical model (outputting NaN). 
+Therefore, the ablation study was separated into two statistically sound phases: first, 
+a Two-Way ANOVA strictly isolating the architectural mechanics of the deformable models; 
+and second, a targeted One-Way ANOVA and Tukey's HSD post-hoc test to compare those 
+optimized configurations against the Vanilla baseline."

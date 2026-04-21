@@ -1,0 +1,68 @@
+================================================================================
+ FINAL OCCLUDED DATASET STATISTICAL ANALYSIS RESULTS (MEDIUM MODELS)
+ Dataset: OccludedYOLO (800 sampled images per bootstrap, N=5)
+================================================================================
+
+--------------------------------------------------------------------------------
+ PART 1: VANILLA BASELINE VS. WITH DCN MODIFICATIONS (ONE-WAY ANOVA)
+ Hypothesis: Does applying DCN modifications generally improve performance under occlusion?
+--------------------------------------------------------------------------------
+
+>>> Dependent Variable: Recall
+            sum_sq    df         F    PR(>F)
+C(Type)   0.000001   1.0  0.001144  0.973173
+Residual  0.037638  43.0       NaN       NaN
+Conclusion: p = 0.9732 (Not Significant)
+
+>>> Dependent Variable: mAP50_95
+            sum_sq    df         F    PR(>F)
+C(Type)   0.001921   1.0  2.560102  0.116914
+Residual  0.032259  43.0       NaN       NaN
+Conclusion: p = 0.1169 (Not Significant)
+
+--------------------------------------------------------------------------------
+ PART 2: TWO-WAY ANOVA (DCN VERSION x PLACEMENT) - Main Effects Only
+ Note: Interaction term excluded to accommodate Vanilla (lacks Neck placements).
+--------------------------------------------------------------------------------
+
+>>> Dependent Variable: Recall
+                sum_sq    df         F    PR(>F)
+C(Version)    0.000393   2.0  0.232980  0.632328
+C(Placement)  0.002179   3.0  0.861578  0.470119
+Residual      0.029506  35.0       NaN       NaN
+Version Effect p-value:   0.632328
+Placement Effect p-value: 0.470119
+
+>>> Dependent Variable: mAP50_95
+                sum_sq    df         F    PR(>F)
+C(Version)    0.000003   2.0  0.001831  0.966112
+C(Placement)  0.003033   3.0  1.378855  0.265323
+Residual      0.025661  35.0       NaN       NaN
+Version Effect p-value:   0.966112
+Placement Effect p-value: 0.265323
+
+--------------------------------------------------------------------------------
+ PART 3: SPECIFIC MODIFICATIONS VS. VANILLA BASELINE (TUKEY HSD POST-HOC)
+ Hypothesis: Which specific modified models significantly outperform the Vanilla baseline?
+--------------------------------------------------------------------------------
+
+>>> Dependent Variable: Recall
+Vanilla vs DCNv2m-FPN      | Mean Diff: -0.0095 | p-adj: 0.9999 | Significant: False ns
+Vanilla vs DCNv2m-Full     | Mean Diff: -0.0041 | p-adj: 1.0000 | Significant: False ns
+Vanilla vs DCNv2m-Liu      | Mean Diff:  0.0045 | p-adj: 1.0000 | Significant: False ns
+Vanilla vs DCNv2m-Pan      | Mean Diff:  0.0021 | p-adj: 1.0000 | Significant: False ns
+Vanilla vs DCNv3m-FPN      | Mean Diff: -0.0102 | p-adj: 0.9998 | Significant: False ns
+Vanilla vs DCNv3m-Full     | Mean Diff:  0.0204 | p-adj: 0.9757 | Significant: False ns
+Vanilla vs DCNv3m-Liu      | Mean Diff: -0.0108 | p-adj: 0.9997 | Significant: False ns
+Vanilla vs DCNv3m-Pan      | Mean Diff:  0.0114 | p-adj: 0.9996 | Significant: False ns
+
+>>> Dependent Variable: mAP50_95
+Vanilla vs DCNv2m-FPN      | Mean Diff: -0.0202 | p-adj: 0.9580 | Significant: False ns
+Vanilla vs DCNv2m-Full     | Mean Diff: -0.0151 | p-adj: 0.9931 | Significant: False ns
+Vanilla vs DCNv2m-Liu      | Mean Diff: -0.0301 | p-adj: 0.7194 | Significant: False ns
+Vanilla vs DCNv2m-Pan      | Mean Diff: -0.0185 | p-adj: 0.9747 | Significant: False ns
+Vanilla vs DCNv3m-FPN      | Mean Diff: -0.0462 | p-adj: 0.1934 | Significant: False ns
+Vanilla vs DCNv3m-Full     | Mean Diff: -0.0086 | p-adj: 0.9999 | Significant: False ns
+Vanilla vs DCNv3m-Liu      | Mean Diff: -0.0193 | p-adj: 0.9676 | Significant: False ns
+Vanilla vs DCNv3m-Pan      | Mean Diff: -0.0083 | p-adj: 0.9999 | Significant: False ns
+

@@ -1,0 +1,400 @@
+DCNv2-Liu - 6to6_g2.mp4 Tracking Report
+============================================================
+Date: 2026-03-07 10:58:53
+Model: /media/mydrive/GitHub/ultralytics/modified_model/DCNv2-LIU.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g2.mp4
+Frames: 4501 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9920
+IDF1:         0.9960
+ID Switches:  21
+FPS:          25.42
+
+Track IDs Assigned: 142
+Unique Vehicles:    108
+Duplicate Tracks:   34
+
+TRACKED OBJECTS (142 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          110        110       
+2      car          1          168        164       
+3      car          65         71         7         
+4      car          75         145        71        
+6      car          122        205        84        
+7      motorcycle   126        147        3         
+8      car          133        351        182       
+11     motorcycle   157        229        67        
+14     motorcycle   187        244        50        
+17     car          207        232        4         
+19     car          246        246        1         
+20     car          297        405        109       
+23     car          359        864        506       
+24     car          373        449        77        
+26     car          407        408        2         
+27     car          419        517        97        
+29     car          451        451        1         
+30     motorcycle   479        886        320       
+31     car          490        492        3         
+32     motorcycle   505        549        45        
+33     motorcycle   515        569        55        
+34     motorcycle   519        572        5         
+35     car          688        1259       532       
+37     car          695        773        79        
+40     car          736        830        81        
+41     car          743        841        71        
+42     car          775        775        1         
+47     car          858        923        66        
+49     car          889        1045       157       
+51     car          975        1117       142       
+52     car          1045       1088       37        
+54     car          1067       1313       247       
+55     car          1119       1119       1         
+57     car          1129       1212       84        
+60     car          1255       1368       82        
+61     car          1262       1433       171       
+64     motorcycle   1324       1329       6         
+65     motorcycle   1357       1548       133       
+66     car          1364       1477       113       
+67     car          1420       1526       106       
+73     car          1500       1588       89        
+79     car          1526       1641       102       
+82     car          1590       1590       1         
+85     car          1697       1775       79        
+86     car          1749       1823       75        
+91     car          1805       1888       84        
+93     motorcycle   1815       1815       1         
+96     motorcycle   1827       1829       3         
+97     motorcycle   1840       1863       22        
+98     car          1854       1941       88        
+100    car          1872       1885       14        
+103    car          1897       2023       115       
+104    car          1940       2127       167       
+106    car          1951       2051       91        
+107    car          1994       2166       159       
+111    car          2029       2191       163       
+112    car          2114       2147       32        
+114    van          2147       2249       103       
+121    car          2229       2313       85        
+122    van          2233       2234       2         
+124    car          2277       2294       18        
+125    car          2309       2421       88        
+127    car          2315       2315       1         
+128    car          2364       2470       107       
+131    car          2386       2411       25        
+133    van          2409       2571       162       
+134    car          2423       2423       1         
+140    car          2449       2628       144       
+141    car          2449       2479       15        
+142    car          2462       2488       27        
+143    motorcycle   2474       2474       1         
+144    motorcycle   2483       2588       104       
+146    car          2498       2669       122       
+147    car          2500       2660       113       
+148    motorcycle   2505       2517       4         
+150    car          2533       2601       69        
+151    motorcycle   2534       2546       13        
+152    van          2575       2575       1         
+155    car          2586       2692       106       
+156    car          2602       2603       2         
+158    car          2643       2736       94        
+161    car          2672       2674       3         
+162    car          2694       2695       2         
+164    car          2703       2792       89        
+167    car          2728       2752       25        
+168    car          2744       2827       84        
+170    motorcycle   2760       2774       15        
+174    motorcycle   2826       3239       308       
+175    car          2829       2913       85        
+177    car          2878       2886       7         
+178    car          2886       2970       83        
+180    car          2912       2930       19        
+182    car          2958       3001       44        
+184    car          2972       3058       87        
+188    van          3020       3103       84        
+192    van          3065       3147       83        
+193    van          3066       3066       1         
+194    van          3093       3093       1         
+195    car          3149       3257       108       
+196    car          3186       3311       103       
+197    car          3216       3346       124       
+201    motorcycle   3253       3271       19        
+203    car          3283       3393       109       
+204    car          3313       3313       1         
+205    car          3326       3339       10        
+207    car          3348       3471       113       
+208    car          3376       3422       47        
+212    car          3410       3415       5         
+213    car          3424       3424       1         
+214    car          3432       3550       89        
+215    car          3441       3522       82        
+218    tricycle     3465       3474       2         
+221    van          3473       3473       1         
+224    car          3496       3589       94        
+225    car          3508       3661       143       
+228    car          3553       3689       130       
+232    car          3663       3756       94        
+235    car          3810       3836       27        
+236    car          3847       3858       12        
+237    car          3853       4017       165       
+238    car          3945       4043       99        
+239    car          3977       4136       145       
+240    car          4019       4047       5         
+242    van          4035       4196       153       
+243    motorcycle   4082       4090       9         
+244    motorcycle   4116       4148       32        
+245    car          4138       4138       1         
+247    motorcycle   4144       4148       2         
+249    motorcycle   4145       4177       30        
+252    car          4152       4398       208       
+253    car          4156       4157       2         
+256    car          4170       4320       133       
+259    motorcycle   4198       4201       4         
+261    motorcycle   4256       4285       13        
+263    car          4312       4416       105       
+264    motorcycle   4322       4324       3         
+265    van          4367       4487       120       
+270    car          4418       4418       1         
+272    van          4464       4464       1         
+273    car          4467       4467       1         
+276    car          4485       4500       16        
+278    car          4489       4489       1         
+
+CLASSIFICATION SWITCHES: 119 total
+----------------------------------------
+Frame    ID     From         To          
+33       2      car          van         
+37       2      van          car         
+147      7      motorcycle   car         
+151      8      motorcycle   car         
+205      8      car          motorcycle  
+206      8      motorcycle   car         
+230      17     car          motorcycle  
+231      17     motorcycle   car         
+232      17     car          motorcycle  
+244      14     motorcycle   car         
+396      24     car          van         
+397      24     van          car         
+570      34     car          motorcycle  
+696      37     van          car         
+747      40     car          van         
+756      40     van          car         
+897      49     tricycle     car         
+980      51     car          van         
+981      51     van          car         
+1828     96     motorcycle   van         
+1829     96     van          motorcycle  
+1841     97     car          motorcycle  
+1898     103    car          van         
+1904     103    van          car         
+1946     103    car          tricycle    
+1954     103    tricycle     car         
+1986     106    car          van         
+1987     106    van          car         
+2006     106    car          van         
+2007     106    van          car         
+2016     106    car          van         
+2017     106    van          car         
+2142     112    car          van         
+2146     112    van          car         
+2147     112    car          van         
+2166     114    car          van         
+2192     114    van          car         
+2201     114    car          van         
+2202     114    van          car         
+2203     114    car          van         
+2223     114    van          car         
+2242     114    car          van         
+2319     125    tricycle     car         
+2341     125    car          tricycle    
+2343     125    tricycle     car         
+2414     133    car          van         
+2504     147    van          car         
+2505     147    car          van         
+2513     148    van          motorcycle  
+2519     147    van          car         
+2520     147    car          van         
+2530     147    van          car         
+2669     146    car          van         
+2752     164    car          van         
+2754     164    van          car         
+2828     174    motorcycle   car         
+2829     174    car          motorcycle  
+3039     188    van          car         
+3040     188    car          van         
+3103     188    van          car         
+3200     196    car          van         
+3201     196    van          car         
+3213     196    car          van         
+3228     196    van          car         
+3228     197    car          tricycle    
+3232     196    car          van         
+3234     196    van          car         
+3238     197    tricycle     car         
+3380     208    car          van         
+3381     208    van          car         
+3388     207    car          van         
+3389     207    van          car         
+3401     207    car          van         
+3412     208    car          van         
+3419     208    van          car         
+3444     207    van          car         
+3466     207    car          van         
+3467     207    van          car         
+3469     214    car          tricycle    
+3470     207    car          van         
+3471     214    tricycle     car         
+3474     214    car          tricycle    
+3482     214    tricycle     car         
+3581     228    car          tricycle    
+3583     228    tricycle     motorcycle  
+3590     228    motorcycle   tricycle    
+3597     228    tricycle     car         
+4010     239    car          tricycle    
+4023     239    tricycle     car         
+4075     242    car          van         
+4083     242    van          car         
+4084     242    car          van         
+4144     242    van          car         
+4146     242    car          van         
+4147     249    car          motorcycle  
+4163     242    van          car         
+4188     242    car          van         
+4191     242    van          car         
+4193     242    car          van         
+4194     242    van          car         
+4324     264    motorcycle   car         
+4403     265    car          van         
+4406     265    van          car         
+4409     265    car          van         
+4417     265    van          car         
+4418     265    car          van         
+4461     265    van          car         
+4462     265    car          van         
+4464     265    van          car         
+4465     265    car          van         
+4468     265    van          car         
+4472     265    car          van         
+4474     265    van          car         
+4475     265    car          van         
+4478     265    van          car         
+4479     265    car          van         
+4483     265    van          car         
+4485     265    car          van         
+4487     265    van          car         
+
+SWITCHES PER SECOND:
+  Sec 2: 2 - ID:2 car->van; ID:2 van->car
+  Sec 9: 1 - ID:7 motorcycle->car
+  Sec 10: 1 - ID:8 motorcycle->car
+  Sec 13: 2 - ID:8 car->motorcycle; ID:8 motorcycle->car
+  Sec 15: 3 - ID:17 car->motorcycle; ID:17 motorcycle->car; ID:17 car->motorcycle
+  Sec 16: 1 - ID:14 motorcycle->car
+  Sec 26: 2 - ID:24 car->van; ID:24 van->car
+  Sec 37: 1 - ID:34 car->motorcycle
+  Sec 46: 1 - ID:37 van->car
+  Sec 49: 1 - ID:40 car->van
+  Sec 50: 1 - ID:40 van->car
+  Sec 59: 1 - ID:49 tricycle->car
+  Sec 65: 2 - ID:51 car->van; ID:51 van->car
+  Sec 121: 2 - ID:96 motorcycle->van; ID:96 van->motorcycle
+  Sec 122: 1 - ID:97 car->motorcycle
+  Sec 126: 2 - ID:103 car->van; ID:103 van->car
+  Sec 129: 1 - ID:103 car->tricycle
+  Sec 130: 1 - ID:103 tricycle->car
+  Sec 132: 2 - ID:106 car->van; ID:106 van->car
+  Sec 133: 2 - ID:106 car->van; ID:106 van->car
+  Sec 134: 2 - ID:106 car->van; ID:106 van->car
+  Sec 142: 1 - ID:112 car->van
+  Sec 143: 2 - ID:112 van->car; ID:112 car->van
+  Sec 144: 1 - ID:114 car->van
+  Sec 146: 4 - ID:114 van->car; ID:114 car->van; ID:114 van->car; ID:114 car->van
+  Sec 148: 1 - ID:114 van->car
+  Sec 149: 1 - ID:114 car->van
+  Sec 154: 1 - ID:125 tricycle->car
+  Sec 156: 2 - ID:125 car->tricycle; ID:125 tricycle->car
+  Sec 160: 1 - ID:133 car->van
+  Sec 166: 2 - ID:147 van->car; ID:147 car->van
+  Sec 167: 3 - ID:148 van->motorcycle; ID:147 van->car; ID:147 car->van
+  Sec 168: 1 - ID:147 van->car
+  Sec 177: 1 - ID:146 car->van
+  Sec 183: 2 - ID:164 car->van; ID:164 van->car
+  Sec 188: 2 - ID:174 motorcycle->car; ID:174 car->motorcycle
+  Sec 202: 2 - ID:188 van->car; ID:188 car->van
+  Sec 206: 1 - ID:188 van->car
+  Sec 213: 2 - ID:196 car->van; ID:196 van->car
+  Sec 214: 1 - ID:196 car->van
+  Sec 215: 5 - ID:196 van->car; ID:197 car->tricycle; ID:196 car->van; ID:196 van->car; ID:197 tricycle->car
+  Sec 225: 4 - ID:208 car->van; ID:208 van->car; ID:207 car->van; ID:207 van->car
+  Sec 226: 1 - ID:207 car->van
+  Sec 227: 2 - ID:208 car->van; ID:208 van->car
+  Sec 229: 1 - ID:207 van->car
+  Sec 231: 6 - ID:207 car->van; ID:207 van->car; ID:214 car->tricycle; ID:207 car->van; ID:214 tricycle->car; ID:214 car->tricycle
+  Sec 232: 1 - ID:214 tricycle->car
+  Sec 238: 2 - ID:228 car->tricycle; ID:228 tricycle->motorcycle
+  Sec 239: 2 - ID:228 motorcycle->tricycle; ID:228 tricycle->car
+  Sec 267: 1 - ID:239 car->tricycle
+  Sec 268: 1 - ID:239 tricycle->car
+  Sec 271: 1 - ID:242 car->van
+  Sec 272: 2 - ID:242 van->car; ID:242 car->van
+  Sec 276: 3 - ID:242 van->car; ID:242 car->van; ID:249 car->motorcycle
+  Sec 277: 1 - ID:242 van->car
+  Sec 279: 4 - ID:242 car->van; ID:242 van->car; ID:242 car->van; ID:242 van->car
+  Sec 288: 1 - ID:264 motorcycle->car
+  Sec 293: 3 - ID:265 car->van; ID:265 van->car; ID:265 car->van
+  Sec 294: 2 - ID:265 van->car; ID:265 car->van
+  Sec 297: 5 - ID:265 van->car; ID:265 car->van; ID:265 van->car; ID:265 car->van; ID:265 van->car
+  Sec 298: 7 - ID:265 car->van; ID:265 van->car; ID:265 car->van; ID:265 van->car; ID:265 car->van; ID:265 van->car; ID:265 car->van
+  Sec 299: 1 - ID:265 van->car
+
+Seconds with switches: 62/301
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:2: car -> van -> car
+  ID:7: motorcycle -> car
+  ID:8: motorcycle -> car -> motorcycle -> car
+  ID:14: motorcycle -> car
+  ID:17: car -> motorcycle -> car -> motorcycle
+  ID:24: car -> van -> car
+  ID:34: car -> motorcycle
+  ID:37: van -> car
+  ID:40: car -> van -> car
+  ID:49: tricycle -> car
+  ID:51: car -> van -> car
+  ID:96: motorcycle -> van -> motorcycle
+  ID:97: car -> motorcycle
+  ID:103: car -> van -> car -> tricycle -> car
+  ID:106: car -> van -> car -> van -> car -> van -> car
+  ID:112: car -> van -> car -> van
+  ID:114: car -> van -> car -> van -> car -> van -> car -> van
+  ID:125: tricycle -> car -> tricycle -> car
+  ID:133: car -> van
+  ID:146: car -> van
+  ID:147: van -> car -> van -> car -> van -> car
+  ID:148: van -> motorcycle
+  ID:164: car -> van -> car
+  ID:174: motorcycle -> car -> motorcycle
+  ID:188: van -> car -> van -> car
+  ID:196: car -> van -> car -> van -> car -> van -> car
+  ID:197: car -> tricycle -> car
+  ID:207: car -> van -> car -> van -> car -> van -> car -> van
+  ID:208: car -> van -> car -> van -> car
+  ID:214: car -> tricycle -> car -> tricycle -> car
+  ID:228: car -> tricycle -> motorcycle -> tricycle -> car
+  ID:239: car -> tricycle -> car
+  ID:242: car -> van -> car -> van -> car -> van -> car -> van -> car -> van -> car
+  ID:249: car -> motorcycle
+  ID:264: motorcycle -> car
+  ID:265: car -> van -> car -> van -> car -> van -> car -> van -> car -> van -> car -> van -> car -> van -> car -> van -> car -> van -> car
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 18
+  MOTORCYCLE: 2
+  TRICYCLE: 0
+  VAN: 0
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 20

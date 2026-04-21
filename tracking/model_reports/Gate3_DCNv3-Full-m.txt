@@ -1,0 +1,100 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          DCNv3-Full
+Architecture:   YOLOv8m + DCNv3 Deformable Convolution (Full Integration)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9355
+  ID Switches (IDSW):              493
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.7055
+  Mostly Tracked (MT):             83.8%
+  Mostly Lost (ML):                11.9%
+
+Computational Performance:
+  FPS (Frames Per Second):         54.80
+  GFLOPs:                          43.47
+  Processing Time:                 3.28h
+
+Counting Results:
+  Total Vehicle Count:             6396
+
+================================================================
+GATE CONTEXT - 3
+================================================================
+
+Characteristics:
+  - Highest vehicle volume (~6,400 avg)
+  - Challenging MOTA scores (~0.70-0.72)
+  - Difficult tracking environment
+  - Occlusions and complex traffic patterns
+  - Extended processing duration
+
+================================================================
+RANKING (Among 9 models on Gate 3)
+================================================================
+
+  IDF1 (Identity):     #3 out of 9 (0.9355)
+  MOTA (Accuracy):     #7 out of 9 (0.7055)
+  IDSW (Lower Better): #2 out of 9 (493 switches)
+  FPS (Speed):         #9 out of 9 (54.80)
+  MT% (Coverage):      83.8%
+  ML% (Loss):          11.9%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #3)
+  ✓ Minimal ID switches (493 - rank #2)
+  ✓ High track coverage (MT: 83.8%)
+
+WEAKNESSES:
+  ✗ Lower tracking accuracy (MOTA rank: #7)
+  ✗ Slow inference speed (54.80 FPS - rank #9)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Applications requiring minimal ID confusion
+  → Long-duration tracking scenarios
+  → Behavior pattern analysis
+
+NOT RECOMMENDED FOR:
+  → High-accuracy detection requirements
+  → Real-time processing needs
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9355 vs 0.9387 (-0.0032)
+MOTA:     0.7055 vs 0.7063 (-0.0008)
+IDSW:     493 vs 611 (-118)
+FPS:      54.80 vs 58.60 (-3.80)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #5.2 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Architecture: DCNv3-Full
+Total Models Tested: 9
+================================================================

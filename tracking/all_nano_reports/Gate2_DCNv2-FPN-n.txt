@@ -1,0 +1,77 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           2
+Model:          DCNv2-FPN
+Architecture:   YOLOv8n + DCNv2 FPN Neck
+Model Family:   DCNv2
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9976
+  ID Switches (IDSW):              1305
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9952
+  Mostly Tracked (MT):             85.0%
+  Mostly Lost (ML):                0.6%
+  Fragmentations:                  4272
+
+Computational Performance:
+  FPS (Frames Per Second):         107.45
+  Processing Time:                 1h40m
+
+Counting Results:
+  Line Crossing Count:             3555
+
+================================================================
+RANKING ON GATE 2 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #3 out of 9 (0.9976)
+  MOTA (Accuracy):     #3 out of 9 (0.9952)
+  IDSW (Lower Better): #3 out of 9 (1305 switches)
+  FPS (Speed):         #4 out of 9 (107.45)
+  MT% (Coverage):      85.0%
+  ML% (Loss):          0.6%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #3)
+  ✓ Top tracking accuracy (MOTA rank: #3)
+  ✓ Minimal ID switches (1305 - rank #3)
+  ✓ Ultra-fast real-time processing (107.45 FPS)
+
+WEAKNESSES:
+  None significant
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9976 vs 0.9981 (-0.0005)
+MOTA:     0.9952 vs 0.9962 (-0.0010)
+IDSW:     1305 vs 1120 (+185)
+FPS:      107.45 vs 58.67 (+48.78)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Strong performance overall
+Average Rank: #3.2 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 2 Traffic Monitoring
+Model: DCNv2-FPN (Nano - 6.2M parameters)
+Rank: #3.2 out of 9 models
+================================================================

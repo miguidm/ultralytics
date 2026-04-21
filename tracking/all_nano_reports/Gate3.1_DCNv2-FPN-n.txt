@@ -1,0 +1,77 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.1
+Model:          DCNv2-FPN
+Architecture:   YOLOv8n + DCNv2 FPN Neck
+Model Family:   DCNv2
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9989
+  ID Switches (IDSW):              1707
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9979
+  Mostly Tracked (MT):             87.7%
+  Mostly Lost (ML):                0.9%
+  Fragmentations:                  6215
+
+Computational Performance:
+  FPS (Frames Per Second):         103.01
+  Processing Time:                 1h45m
+
+Counting Results:
+  Line Crossing Count:             2307
+
+================================================================
+RANKING ON GATE 3.1 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #4 out of 9 (0.9989)
+  MOTA (Accuracy):     #3 out of 9 (0.9979)
+  IDSW (Lower Better): #1 out of 9 (1707 switches)
+  FPS (Speed):         #4 out of 9 (103.01)
+  MT% (Coverage):      87.7%
+  ML% (Loss):          0.9%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Top tracking accuracy (MOTA rank: #3)
+  ✓ Minimal ID switches (1707 - rank #1)
+  ✓ Ultra-fast real-time processing (103.01 FPS)
+
+WEAKNESSES:
+  None significant
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9989 vs 0.9991 (-0.0002)
+MOTA:     0.9979 vs 0.9982 (-0.0003)
+IDSW:     1707 vs 1757 (-50)
+FPS:      103.01 vs 56.65 (+46.36)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Strong performance overall
+Average Rank: #3.0 out of 9
+
+🏆 FEWEST ID switches on Gate 3.1
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.1 Traffic Monitoring
+Model: DCNv2-FPN (Nano - 6.2M parameters)
+Rank: #3.0 out of 9 models
+================================================================

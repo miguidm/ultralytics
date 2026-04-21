@@ -1,0 +1,98 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          Vanilla-YOLOv8n
+Architecture:   Baseline YOLOv8n (Nano - Smallest/Fastest Version)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9184
+  ID Switches (IDSW):              1006
+  Class Switches:                  9768
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9168
+  Mostly Tracked (MT):             90.4%
+  Mostly Lost (ML):                0.2%
+
+Computational Performance:
+  FPS (Frames Per Second):         134.28
+  Processing Time:                 1h10m
+
+Counting Results:
+  Total Vehicle Count:             5723
+
+================================================================
+GATE CONTEXT - 3
+================================================================
+
+Characteristics:
+  - Highest count: ~5,723 vehicles
+  - Processing time: 1h 10m
+  - Best MT% (90.4%) and ML% (0.2%) across all gates
+  - High traffic volume
+  - Fastest processing time
+
+================================================================
+RANKING (Among 5 gates for YOLOv8n)
+================================================================
+
+  IDF1 (Identity):     #5 out of 5 (0.9184)
+  MOTA (Accuracy):     #4 out of 5 (0.9168)
+  IDSW (Lower Better): #1 out of 5 (1006 switches)
+  FPS (Speed):         #2 out of 5 (134.28)
+  MT% (Coverage):      90.4%
+  ML% (Loss):          0.2%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Fewest ID switches across all gates (1006 - rank #1)
+  ✓ Best MT% (90.4%) - highest track coverage
+  ✓ Best ML% (0.2%) - lowest track loss
+  ✓ Second fastest FPS (134.28)
+  ✓ Highest vehicle count processed (5,723)
+
+WEAKNESSES:
+  ✗ Lowest IDF1 across all gates (0.9184 - rank #5)
+  ✗ Second lowest MOTA (0.9168 - rank #4)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+SUITABLE FOR:
+  → High-volume traffic monitoring
+  → Applications prioritizing track coverage over identity precision
+  → Real-time deployments requiring minimal track loss
+
+================================================================
+COMPARISON WITH BEST GATE IDF1 (Gate 3.5)
+================================================================
+
+IDF1:     0.9184 vs 0.9289 (-0.0105)
+MOTA:     0.9168 vs 0.9177 (-0.0009)
+IDSW:     1006 vs 1796 (-790)
+FPS:      134.28 vs 127.62 (+6.66)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Best track coverage and fewest ID switches
+Average Rank: #3.0 out of 5
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Architecture: Vanilla-YOLOv8n
+Total Gates Tested: 5
+================================================================

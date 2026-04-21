@@ -1,0 +1,78 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           2.9
+Model:          DCNv3-Pan
+Architecture:   YOLOv8n + DCNv3 PAN Neck
+Model Family:   DCNv3
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9994
+  ID Switches (IDSW):              1666
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9988
+  Mostly Tracked (MT):             89.0%
+  Mostly Lost (ML):                0.4%
+  Fragmentations:                  5464
+
+Computational Performance:
+  FPS (Frames Per Second):         58.68
+  Processing Time:                 3h04m
+
+Counting Results:
+  Line Crossing Count:             5157
+
+================================================================
+RANKING ON GATE 2.9 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #2 out of 9 (0.9994)
+  MOTA (Accuracy):     #2 out of 9 (0.9988)
+  IDSW (Lower Better): #8 out of 9 (1666 switches)
+  FPS (Speed):         #8 out of 9 (58.68)
+  MT% (Coverage):      89.0%
+  ML% (Loss):          0.4%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #2)
+  ✓ Top tracking accuracy (MOTA rank: #2)
+  ✓ Excellent track coverage (MT: 89.0%)
+  ✓ Minimal track loss (ML: 0.4%)
+
+WEAKNESSES:
+  ✗ Higher ID switches (1666 - rank #8)
+  ✗ Slower inference (rank #8)
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9994 vs 0.9994 (+0.0000)
+MOTA:     0.9988 vs 0.9988 (+0.0000)
+IDSW:     1666 vs 1634 (+32)
+FPS:      58.68 vs 56.59 (+2.09)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable performance
+Average Rank: #5.0 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 2.9 Traffic Monitoring
+Model: DCNv3-Pan (Nano - 6.2M parameters)
+Rank: #5.0 out of 9 models
+================================================================

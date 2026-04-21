@@ -1,0 +1,24 @@
+Occlusion Evaluation Report - DCNv2n-FPN
+============================================================
+Date: 2026-04-06 15:15:24
+Model: /home/migui/Downloads/dcnv2-yolov8-neck-fpn-20260318T004118Z-1-001/dcnv2-yolov8-neck-fpn/weights/best.pt
+Dataset: OccludedYOLO (1624 annotated occluded images)
+Confidence: 0.5 | IoU: 0.5
+
+Overall Metrics
+------------------------------
+mAP@0.5:       0.8128
+mAP@0.5:0.95:  0.6851
+Precision:     0.8844
+Recall:        0.7160
+Runtime:       8.1s
+
+Per-Class Metrics
+--------------------------------------------------
+Class        AP@0.5     Precision    Recall    
+car          0.9368     0.9671       0.8933    
+motorcycle   0.7036     0.9014       0.4923    
+tricycle     0.7632     0.8889       0.6275    
+bus          0.9950     1.0000       1.0000    
+van          0.9116     0.9491       0.8544    
+truck        0.5664     0.6000       0.4286    

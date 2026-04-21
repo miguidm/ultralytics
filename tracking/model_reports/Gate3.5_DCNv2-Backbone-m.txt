@@ -1,0 +1,97 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.5
+Model:          DCNv2-Backbone
+Architecture:   YOLOv8m + DCNv2 Deformable Convolution (Backbone Only)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.8619
+  ID Switches (IDSW):              506
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9800
+  Mostly Tracked (MT):             84.5%
+  Mostly Lost (ML):                11.8%
+
+Computational Performance:
+  FPS (Frames Per Second):         83.52
+  GFLOPs:                          63.92
+  Processing Time:                 2.88h
+
+Counting Results:
+  Total Vehicle Count:             4115
+
+================================================================
+GATE CONTEXT - 3.5
+================================================================
+
+Characteristics:
+  - High-speed processing scenario
+  - Average count: ~4,110 vehicles
+  - Processing time range: 2.48h - 6.48h
+  - Excellent tracking accuracy overall
+  - Moderate traffic density
+
+================================================================
+RANKING (Among 9 models on Gate 3.5)
+================================================================
+
+  IDF1 (Identity):     #5 out of 9 (0.8619)
+  MOTA (Accuracy):     #2 out of 9 (0.9800)
+  IDSW (Lower Better): #2 out of 9 (506 switches)
+  FPS (Speed):         #1 out of 9 (83.52)
+  MT% (Coverage):      84.5%
+  ML% (Loss):          11.8%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ High tracking accuracy (MOTA rank: #2)
+  ✓ Minimal ID switches (506 - rank #2)
+  ✓ Fast inference speed (83.52 FPS - rank #1)
+  ✓ High track coverage (MT: 84.5%)
+
+WEAKNESSES:
+  None significant
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Real-time traffic monitoring (high FPS + good accuracy)
+  → Production deployment requiring speed + quality
+  → Multi-stream processing scenarios
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.8619 vs 0.8793 (-0.0174)
+MOTA:     0.9800 vs 0.9528 (+0.0272)
+IDSW:     506 vs 459 (+47)
+FPS:      83.52 vs 38.90 (+44.62)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: EXCELLENT - Top tier performance across metrics
+Average Rank: #2.5 out of 9
+
+🏆 FASTEST inference on Gate 3.5
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.5 Traffic Monitoring
+Architecture: DCNv2-Backbone
+Total Models Tested: 9
+================================================================

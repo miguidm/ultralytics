@@ -1,0 +1,125 @@
+================================================================
+VANILLA YOLOv8n (NANO) - CROSS-GATE PERFORMANCE SUMMARY
+================================================================
+
+This directory contains performance reports for the Vanilla YOLOv8n
+(Nano) model across 5 traffic monitoring gates.
+
+================================================================
+OVERALL PERFORMANCE STATISTICS
+================================================================
+
+Average Performance Across All Gates:
+  Average IDF1:        0.9226
+  Average MOTA:        0.9171
+  Average ID Switches: 1519
+  Average FPS:         129.87
+  Average MT%:         87.4%
+  Average ML%:         0.6%
+
+Performance Range:
+  IDF1 Range:          0.9184 - 0.9289
+  MOTA Range:          0.9150 - 0.9185
+  IDSW Range:          1006 - 1796
+  FPS Range:           125.56 - 135.01
+
+================================================================
+GATE-BY-GATE RANKINGS
+================================================================
+
+Best IDF1 Performance:
+  1. Gate 3.5: 0.9289
+  2. Gate 2:   0.9275
+  3. Gate 2.9: 0.9193
+  4. Gate 3.1: 0.9189
+  5. Gate 3:   0.9184
+
+Best MOTA Performance:
+  1. Gate 2.9: 0.9185
+  2. Gate 3.5: 0.9177 (tied)
+  2. Gate 3.1: 0.9177 (tied)
+  4. Gate 3:   0.9168
+  5. Gate 2:   0.9150
+
+Fewest ID Switches:
+  1. Gate 3:   1006 switches
+  2. Gate 2:   1406 switches
+  3. Gate 2.9: 1590 switches
+  4. Gate 3.5: 1796 switches (tied)
+  4. Gate 3.1: 1796 switches (tied)
+
+Fastest Processing:
+  1. Gate 2:   135.01 FPS
+  2. Gate 3:   134.28 FPS
+  3. Gate 3.5: 127.62 FPS
+  4. Gate 3.1: 126.90 FPS
+  5. Gate 2.9: 125.56 FPS
+
+Highest MT% (Track Coverage):
+  1. Gate 3:   90.4%
+  2. Gate 2.9: 88.0%
+  3. Gate 3.5: 86.6% (tied)
+  3. Gate 3.1: 86.6% (tied)
+  5. Gate 2:   85.4%
+
+Highest Vehicle Count:
+  1. Gate 3:   5,723
+  2. Gate 2.9: 5,128
+  3. Gate 3.5: 4,090
+  4. Gate 2:   3,586
+  5. Gate 3.1: 2,308 (partial line coverage)
+
+================================================================
+KEY INSIGHTS
+================================================================
+
+1. IDENTITY TRACKING (IDF1):
+   - Gate 3.5 leads with IDF1 of 0.9289
+   - Gate 2 close second at 0.9275
+   - Range is narrow (0.9184 - 0.9289), ~1% spread
+
+2. TRACKING ACCURACY (MOTA):
+   - Gate 2.9 best MOTA (0.9185)
+   - Gate 2 worst MOTA (0.9150)
+   - Very consistent across gates (range: 0.0035)
+
+3. ID SWITCHES:
+   - Gate 3 significantly better (1006 vs 1590+ for others)
+   - High-traffic gates (3.5, 3.1) have most switches (1796)
+   - ID switches inversely correlate with vehicle mix complexity
+
+4. SPEED:
+   - All gates exceed 125 FPS (4-5× real-time for 15fps video)
+   - Gate 2 and Gate 3 fastest (~134-135 FPS)
+   - Gate 2.9 slowest (125.56 FPS) due to complex trajectories
+
+5. CLASS SWITCHES:
+   - Gate 3.5 and 3.1 have highest class switches (11,403)
+   - Gate 2.9 has fewest class switches (6,021)
+   - Reflects vehicle type diversity and occlusion complexity
+
+================================================================
+DEPLOYMENT RECOMMENDATIONS
+================================================================
+
+Best for Identity Tracking (Re-ID):
+  → Gate 3.5 (IDF1: 0.9289)
+
+Best for Tracking Accuracy (MOTA):
+  → Gate 2.9 (MOTA: 0.9185)
+
+Best for Speed:
+  → Gate 2 (135.01 FPS)
+
+Best for Track Coverage:
+  → Gate 3 (MT: 90.4%, ML: 0.2%)
+
+Fewest ID Errors:
+  → Gate 3 (1006 switches)
+
+================================================================
+Files Generated: 5 gate reports
+Total Vehicles Tracked: ~20,835 across all gates
+Average Processing Speed: 129.87 FPS
+Model: Vanilla YOLOv8n (Nano)
+================================================================

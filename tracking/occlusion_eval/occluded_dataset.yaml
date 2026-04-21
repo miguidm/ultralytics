@@ -1,0 +1,11 @@
+path: /home/migui/Downloads/OccludedYOLO/OccludedYOLO/inference
+train: images
+val: images
+
+names:
+  0: car
+  1: motorcycle
+  2: tricycle
+  3: bus
+  4: van
+  5: truck

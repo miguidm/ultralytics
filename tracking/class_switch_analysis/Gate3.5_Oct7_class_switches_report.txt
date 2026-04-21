@@ -1,0 +1,6149 @@
+====================================================================================================
+CLASSIFICATION SWITCH ANALYSIS - Gate3.5_Oct7
+====================================================================================================
+
+Total tracks analyzed: 869
+Tracks with class switches: 372
+Total line crossings detected: 497
+
+====================================================================================================
+TRACKS WITH CLASSIFICATION SWITCHES
+====================================================================================================
+
+
+Track ID: 1711
+  Duration: Frame 40583 → 46577 (5945 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 110
+  Switch points:
+    Frame 40584: car → van
+    Frame 40602: van → car
+    Frame 40608: car → van
+    Frame 40610: van → car
+    Frame 40611: car → van
+    Frame 40612: van → car
+    Frame 40617: car → van
+    Frame 40619: van → car
+    Frame 40632: car → van
+    Frame 40641: van → car
+    Frame 40711: car → van
+    Frame 40714: van → car
+    Frame 40715: car → van
+    Frame 40716: van → car
+    Frame 40756: car → van
+    Frame 40758: van → car
+    Frame 40775: car → van
+    Frame 40801: van → car
+    Frame 40835: car → van
+    Frame 40837: van → car
+    Frame 40849: car → van
+    Frame 40854: van → car
+    Frame 40860: car → van
+    Frame 40861: van → car
+    Frame 40878: car → van
+    Frame 40881: van → car
+    Frame 41113: car → van
+    Frame 41120: van → car
+    Frame 41121: car → van
+    Frame 41123: van → car
+    Frame 41126: car → van
+    Frame 41143: van → car
+    Frame 41147: car → van
+    Frame 41148: van → car
+    Frame 41159: car → van
+    Frame 41166: van → car
+    Frame 41168: car → van
+    Frame 41170: van → car
+    Frame 41171: car → van
+    Frame 41179: van → car
+    Frame 41306: car → van
+    Frame 41311: van → car
+    Frame 41318: car → van
+    Frame 41330: van → car
+    Frame 41470: car → van
+    Frame 41473: van → car
+    Frame 41474: car → van
+    Frame 41475: van → car
+    Frame 42856: car → van
+    Frame 42857: van → car
+    Frame 42860: car → van
+    Frame 42862: van → car
+    Frame 42864: car → van
+    Frame 42869: van → car
+    Frame 42927: car → van
+    Frame 42929: van → car
+    Frame 42933: car → van
+    Frame 42938: van → car
+    Frame 43827: car → van
+    Frame 43831: van → car
+    Frame 43848: car → van
+    Frame 43858: van → car
+    Frame 44741: car → van
+    Frame 44746: van → car
+    Frame 44986: car → van
+    Frame 45017: van → car
+    Frame 45331: car → van
+    Frame 45335: van → car
+    Frame 45361: car → van
+    Frame 45377: van → car
+    Frame 45387: car → van
+    Frame 45421: van → car
+    Frame 45601: car → van
+    Frame 45616: van → car
+    Frame 45781: car → van
+    Frame 45811: van → car
+    Frame 45902: car → van
+    Frame 45922: van → car
+    Frame 45995: car → van
+    Frame 46019: van → car
+    Frame 46021: car → van
+    Frame 46051: van → car
+    Frame 46052: car → van
+    Frame 46067: van → car
+    Frame 46188: car → van
+    Frame 46189: van → car
+    Frame 46191: car → van
+    Frame 46201: van → car
+    Frame 46246: car → van
+    Frame 46262: van → car
+    Frame 46273: car → van
+    Frame 46292: van → car
+    Frame 46321: car → van
+    Frame 46359: van → car
+    Frame 46397: car → van
+    Frame 46419: van → car
+    Frame 46436: car → van
+    Frame 46472: van → car
+    Frame 46524: car → van
+    Frame 46525: van → car
+    Frame 46526: car → van
+    Frame 46527: van → car
+    Frame 46528: car → van
+    Frame 46531: van → car
+    Frame 46532: car → van
+    Frame 46533: van → car
+    Frame 46534: car → van
+    Frame 46569: van → car
+    Frame 46571: car → van
+    Frame 46573: van → car
+
+Track ID: 2138
+  Duration: Frame 46951 → 48326 (1288 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 55
+  Switch points:
+    Frame 46963: van → car
+    Frame 46964: car → van
+    Frame 46974: van → car
+    Frame 46979: car → van
+    Frame 46989: van → car
+    Frame 47018: car → van
+    Frame 47038: van → car
+    Frame 47078: car → van
+    Frame 47141: van → car
+    Frame 47143: car → van
+    Frame 47152: van → car
+    Frame 47183: car → van
+    Frame 47215: van → car
+    Frame 47246: car → van
+    Frame 47260: van → car
+    Frame 47388: car → van
+    Frame 47389: van → car
+    Frame 47391: car → van
+    Frame 47429: van → car
+    Frame 47432: car → van
+    Frame 47450: van → car
+    Frame 47489: car → van
+    Frame 47518: van → car
+    Frame 47519: car → van
+    Frame 47520: van → car
+    Frame 47521: car → van
+    Frame 47526: van → car
+    Frame 47531: car → van
+    Frame 47551: van → car
+    Frame 47555: car → van
+    Frame 47567: van → car
+    Frame 47581: car → van
+    Frame 47770: van → car
+    Frame 47785: car → van
+    Frame 47786: van → car
+    Frame 47794: car → van
+    Frame 47839: van → car
+    Frame 47852: car → van
+    Frame 47997: van → car
+    Frame 48001: car → van
+    Frame 48005: van → car
+    Frame 48008: car → van
+    Frame 48013: van → car
+    Frame 48014: car → van
+    Frame 48024: van → car
+    Frame 48031: car → van
+    Frame 48091: van → car
+    Frame 48122: car → van
+    Frame 48147: van → car
+    Frame 48174: car → van
+    Frame 48185: van → car
+    Frame 48202: car → van
+    Frame 48305: van → car
+    Frame 48310: car → van
+    Frame 48323: van → car
+
+Track ID: 1410
+  Duration: Frame 33997 → 38340 (4226 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 48
+  Switch points:
+    Frame 34017: car → van
+    Frame 34742: van → car
+    Frame 34751: car → van
+    Frame 34774: van → car
+    Frame 34776: car → van
+    Frame 36968: van → car
+    Frame 37027: car → van
+    Frame 37111: van → car
+    Frame 37132: car → van
+    Frame 37171: van → car
+    Frame 37172: car → van
+    Frame 37201: van → car
+    Frame 37216: car → van
+    Frame 37291: van → car
+    Frame 37331: car → van
+    Frame 37336: van → car
+    Frame 37351: car → van
+    Frame 37447: van → car
+    Frame 37471: car → van
+    Frame 37582: van → car
+    Frame 37587: car → van
+    Frame 37590: van → car
+    Frame 37592: car → van
+    Frame 37621: van → car
+    Frame 37666: car → van
+    Frame 37687: van → car
+    Frame 37696: car → van
+    Frame 37711: van → car
+    Frame 37741: car → van
+    Frame 37771: van → car
+    Frame 37812: car → van
+    Frame 37825: van → car
+    Frame 37829: car → van
+    Frame 37831: van → car
+    Frame 37832: car → van
+    Frame 37838: van → car
+    Frame 37921: car → van
+    Frame 38037: van → car
+    Frame 38042: car → van
+    Frame 38161: van → car
+    Frame 38176: car → van
+    Frame 38181: van → car
+    Frame 38184: car → van
+    Frame 38251: van → car
+    Frame 38281: car → van
+    Frame 38296: van → car
+    Frame 38297: car → van
+    Frame 38306: van → car
+
+Track ID: 1579
+  Duration: Frame 38462 → 39967 (1112 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 48
+  Switch points:
+    Frame 38476: van → car
+    Frame 38491: car → van
+    Frame 38493: van → car
+    Frame 38500: car → van
+    Frame 38530: van → car
+    Frame 38581: car → van
+    Frame 38670: van → car
+    Frame 38677: car → van
+    Frame 38791: van → car
+    Frame 38821: car → van
+    Frame 38836: van → car
+    Frame 38845: car → van
+    Frame 38860: van → car
+    Frame 38881: car → van
+    Frame 38896: van → car
+    Frame 38925: car → van
+    Frame 38948: van → car
+    Frame 38949: car → van
+    Frame 38951: van → car
+    Frame 38960: car → van
+    Frame 38971: van → car
+    Frame 38977: car → van
+    Frame 39001: van → car
+    Frame 39031: car → van
+    Frame 39052: van → car
+    Frame 39057: car → van
+    Frame 39060: van → car
+    Frame 39061: car → van
+    Frame 39106: van → car
+    Frame 39181: car → van
+    Frame 39248: van → car
+    Frame 39301: car → van
+    Frame 39332: van → car
+    Frame 39472: car → van
+    Frame 39489: van → car
+    Frame 39511: car → van
+    Frame 39521: van → car
+    Frame 39522: car → van
+    Frame 39551: van → car
+    Frame 39589: car → van
+    Frame 39590: van → car
+    Frame 39644: car → van
+    Frame 39649: van → car
+    Frame 39652: car → van
+    Frame 39663: van → car
+    Frame 39811: car → van
+    Frame 39841: van → car
+    Frame 39871: car → van
+
+Track ID: 2104
+  Duration: Frame 46713 → 49789 (3061 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 39
+  Switch points:
+    Frame 46715: car → van
+    Frame 46716: van → car
+    Frame 46724: car → van
+    Frame 46745: van → car
+    Frame 46746: car → van
+    Frame 46749: van → car
+    Frame 46750: car → van
+    Frame 46751: van → car
+    Frame 46752: car → van
+    Frame 46753: van → car
+    Frame 46754: car → van
+    Frame 46756: van → car
+    Frame 46765: car → van
+    Frame 46766: van → car
+    Frame 46768: car → van
+    Frame 46769: van → car
+    Frame 46771: car → van
+    Frame 46773: van → car
+    Frame 46779: car → van
+    Frame 46784: van → car
+    Frame 46801: car → van
+    Frame 46802: van → car
+    Frame 46803: car → van
+    Frame 46808: van → car
+    Frame 46809: car → van
+    Frame 46810: van → car
+    Frame 46812: car → van
+    Frame 46826: van → car
+    Frame 46828: car → van
+    Frame 46830: van → car
+    Frame 46903: car → van
+    Frame 49589: van → car
+    Frame 49610: car → van
+    Frame 49695: van → car
+    Frame 49706: car → van
+    Frame 49769: van → car
+    Frame 49770: car → van
+    Frame 49772: van → car
+    Frame 49785: car → van
+
+Track ID: 88
+  Duration: Frame 1101 → 3646 (2519 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 36
+  Switch points:
+    Frame 1112: car → van
+    Frame 1115: van → car
+    Frame 1171: car → van
+    Frame 1351: van → car
+    Frame 1383: car → van
+    Frame 1475: van → car
+    Frame 1482: car → van
+    Frame 1488: van → car
+    Frame 1490: car → van
+    Frame 1500: van → car
+    Frame 1501: car → van
+    Frame 1780: van → car
+    Frame 1790: car → van
+    Frame 1822: van → car
+    Frame 1824: car → van
+    Frame 1954: van → car
+    Frame 2081: car → van
+    Frame 2691: van → car
+    Frame 2758: car → van
+    Frame 2761: van → car
+    Frame 2768: car → van
+    Frame 3079: van → car
+    Frame 3131: car → van
+    Frame 3132: van → car
+    Frame 3133: car → van
+    Frame 3138: van → car
+    Frame 3139: car → van
+    Frame 3140: van → car
+    Frame 3177: car → van
+    Frame 3219: van → car
+    Frame 3343: car → van
+    Frame 3359: van → car
+    Frame 3363: car → van
+    Frame 3369: van → car
+    Frame 3442: car → van
+    Frame 3630: van → car
+
+Track ID: 732
+  Duration: Frame 20169 → 20321 (139 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 24
+  Switch points:
+    Frame 20176: motorcycle → van
+    Frame 20178: van → motorcycle
+    Frame 20179: motorcycle → van
+    Frame 20180: van → motorcycle
+    Frame 20184: motorcycle → van
+    Frame 20185: van → motorcycle
+    Frame 20250: motorcycle → bus
+    Frame 20251: bus → motorcycle
+    Frame 20256: motorcycle → bus
+    Frame 20257: bus → motorcycle
+    Frame 20260: motorcycle → bus
+    Frame 20265: bus → motorcycle
+    Frame 20266: motorcycle → bus
+    Frame 20267: bus → motorcycle
+    Frame 20269: motorcycle → bus
+    Frame 20276: bus → car
+    Frame 20284: car → motorcycle
+    Frame 20286: motorcycle → car
+    Frame 20287: car → bus
+    Frame 20288: bus → car
+    Frame 20291: car → motorcycle
+    Frame 20308: motorcycle → bus
+    Frame 20312: bus → motorcycle
+    Frame 20316: motorcycle → car
+
+Track ID: 2394
+  Duration: Frame 50452 → 50647 (167 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 24
+  Switch points:
+    Frame 50453: van → car
+    Frame 50461: car → van
+    Frame 50467: van → car
+    Frame 50470: car → van
+    Frame 50487: van → car
+    Frame 50488: car → van
+    Frame 50489: van → car
+    Frame 50491: car → van
+    Frame 50551: van → car
+    Frame 50552: car → van
+    Frame 50553: van → car
+    Frame 50556: car → van
+    Frame 50557: van → car
+    Frame 50587: car → van
+    Frame 50588: van → car
+    Frame 50590: car → van
+    Frame 50592: van → car
+    Frame 50594: car → van
+    Frame 50596: van → car
+    Frame 50602: car → van
+    Frame 50605: van → car
+    Frame 50606: car → van
+    Frame 50608: van → car
+    Frame 50610: car → van
+
+Track ID: 2384
+  Duration: Frame 50368 → 53115 (2672 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 22
+  Switch points:
+    Frame 50521: car → van
+    Frame 50524: van → car
+    Frame 50526: car → van
+    Frame 50527: van → car
+    Frame 50529: car → van
+    Frame 50531: van → car
+    Frame 50533: car → van
+    Frame 50540: van → car
+    Frame 52321: car → van
+    Frame 52336: van → car
+    Frame 52402: car → van
+    Frame 52412: van → car
+    Frame 52516: car → van
+    Frame 52531: van → car
+    Frame 52577: car → van
+    Frame 52651: van → car
+    Frame 52727: car → van
+    Frame 52918: van → car
+    Frame 53013: car → van
+    Frame 53037: van → car
+    Frame 53071: car → van
+    Frame 53097: van → car
+
+Track ID: 1879
+  Duration: Frame 43350 → 43667 (297 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 20
+  Switch points:
+    Frame 43389: car → van
+    Frame 43392: van → car
+    Frame 43404: car → van
+    Frame 43418: van → car
+    Frame 43430: car → van
+    Frame 43433: van → car
+    Frame 43443: car → van
+    Frame 43447: van → car
+    Frame 43475: car → van
+    Frame 43479: van → car
+    Frame 43502: car → van
+    Frame 43536: van → car
+    Frame 43537: car → van
+    Frame 43559: van → car
+    Frame 43561: car → van
+    Frame 43570: van → car
+    Frame 43573: car → van
+    Frame 43574: van → car
+    Frame 43588: car → van
+    Frame 43664: van → car
+
+Track ID: 407
+  Duration: Frame 7416 → 8158 (552 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 18
+  Switch points:
+    Frame 7527: car → van
+    Frame 7529: van → car
+    Frame 7539: car → van
+    Frame 7543: van → car
+    Frame 7558: car → van
+    Frame 7568: van → car
+    Frame 7751: car → van
+    Frame 7756: van → car
+    Frame 7775: car → van
+    Frame 7801: van → car
+    Frame 7831: car → van
+    Frame 7846: van → car
+    Frame 7861: car → van
+    Frame 7881: van → car
+    Frame 7921: car → van
+    Frame 7925: van → car
+    Frame 7969: car → van
+    Frame 7981: van → car
+
+Track ID: 684
+  Duration: Frame 17987 → 18163 (125 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 18
+  Switch points:
+    Frame 18035: motorcycle → bus
+    Frame 18036: bus → motorcycle
+    Frame 18098: motorcycle → bus
+    Frame 18100: bus → motorcycle
+    Frame 18101: motorcycle → bus
+    Frame 18102: bus → motorcycle
+    Frame 18108: motorcycle → bus
+    Frame 18110: bus → motorcycle
+    Frame 18116: motorcycle → bus
+    Frame 18118: bus → motorcycle
+    Frame 18119: motorcycle → bus
+    Frame 18122: bus → motorcycle
+    Frame 18125: motorcycle → bus
+    Frame 18126: bus → motorcycle
+    Frame 18128: motorcycle → bus
+    Frame 18129: bus → motorcycle
+    Frame 18131: motorcycle → bus
+    Frame 18135: bus → motorcycle
+
+Track ID: 1184
+  Duration: Frame 28849 → 33453 (4602 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 17
+  Switch points:
+    Frame 33324: car → van
+    Frame 33330: van → car
+    Frame 33362: car → van
+    Frame 33363: van → car
+    Frame 33364: car → van
+    Frame 33365: van → car
+    Frame 33395: car → van
+    Frame 33397: van → car
+    Frame 33400: car → van
+    Frame 33401: van → car
+    Frame 33402: car → van
+    Frame 33403: van → car
+    Frame 33406: car → van
+    Frame 33407: van → car
+    Frame 33409: car → van
+    Frame 33412: van → car
+    Frame 33416: car → van
+
+Track ID: 64
+  Duration: Frame 818 → 2207 (1389 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 14
+  Switch points:
+    Frame 1023: car → van
+    Frame 1027: van → car
+    Frame 1029: car → van
+    Frame 1030: van → car
+    Frame 1035: car → van
+    Frame 1037: van → car
+    Frame 2072: car → van
+    Frame 2073: van → car
+    Frame 2082: car → van
+    Frame 2083: van → car
+    Frame 2098: car → van
+    Frame 2106: van → car
+    Frame 2109: car → van
+    Frame 2110: van → car
+
+Track ID: 1213
+  Duration: Frame 29566 → 29764 (194 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 14
+  Switch points:
+    Frame 29611: car → van
+    Frame 29612: van → car
+    Frame 29655: car → van
+    Frame 29656: van → car
+    Frame 29657: car → van
+    Frame 29659: van → car
+    Frame 29673: car → van
+    Frame 29674: van → car
+    Frame 29675: car → van
+    Frame 29678: van → car
+    Frame 29686: car → van
+    Frame 29690: van → car
+    Frame 29691: car → van
+    Frame 29693: van → car
+
+Track ID: 1078
+  Duration: Frame 26934 → 27097 (162 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 12
+  Switch points:
+    Frame 27005: car → van
+    Frame 27006: van → car
+    Frame 27008: car → van
+    Frame 27009: van → car
+    Frame 27028: car → bus
+    Frame 27031: bus → car
+    Frame 27063: car → van
+    Frame 27066: van → car
+    Frame 27082: car → van
+    Frame 27083: van → car
+    Frame 27096: car → van
+    Frame 27097: van → car
+
+Track ID: 1124
+  Duration: Frame 27409 → 33360 (5922 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 12
+  Switch points:
+    Frame 32875: car → van
+    Frame 32877: van → car
+    Frame 32993: car → van
+    Frame 32995: van → car
+    Frame 33313: car → van
+    Frame 33328: van → car
+    Frame 33329: car → van
+    Frame 33330: van → car
+    Frame 33333: car → van
+    Frame 33334: van → car
+    Frame 33340: car → van
+    Frame 33352: van → car
+
+Track ID: 2136
+  Duration: Frame 46942 → 47877 (871 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 12
+  Switch points:
+    Frame 46981: car → van
+    Frame 47085: van → car
+    Frame 47296: car → van
+    Frame 47316: van → car
+    Frame 47703: car → van
+    Frame 47708: van → car
+    Frame 47735: car → van
+    Frame 47746: van → car
+    Frame 47802: car → van
+    Frame 47807: van → car
+    Frame 47809: car → van
+    Frame 47815: van → car
+
+Track ID: 447
+  Duration: Frame 9632 → 10140 (377 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 11
+  Switch points:
+    Frame 9691: van → car
+    Frame 9725: car → van
+    Frame 9751: van → car
+    Frame 9811: car → van
+    Frame 9833: van → car
+    Frame 9849: car → van
+    Frame 9871: van → car
+    Frame 9932: car → van
+    Frame 9952: van → car
+    Frame 9973: car → van
+    Frame 9991: van → car
+
+Track ID: 1146
+  Duration: Frame 28198 → 28871 (654 frames)
+  Initial Class: car
+  Final Class: tricycle
+  Number of switches: 11
+  Switch points:
+    Frame 28211: car → motorcycle
+    Frame 28215: motorcycle → car
+    Frame 28478: car → tricycle
+    Frame 28720: tricycle → van
+    Frame 28721: van → tricycle
+    Frame 28735: tricycle → van
+    Frame 28774: van → tricycle
+    Frame 28798: tricycle → van
+    Frame 28799: van → tricycle
+    Frame 28803: tricycle → van
+    Frame 28850: van → tricycle
+
+Track ID: 2362
+  Duration: Frame 50080 → 50881 (682 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 11
+  Switch points:
+    Frame 50331: bus → motorcycle
+    Frame 50334: motorcycle → bus
+    Frame 50465: bus → motorcycle
+    Frame 50467: motorcycle → bus
+    Frame 50502: bus → motorcycle
+    Frame 50515: motorcycle → bus
+    Frame 50578: bus → motorcycle
+    Frame 50600: motorcycle → bus
+    Frame 50751: bus → motorcycle
+    Frame 50761: motorcycle → bus
+    Frame 50878: bus → car
+
+Track ID: 276
+  Duration: Frame 3889 → 3999 (110 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 10
+  Switch points:
+    Frame 3916: van → car
+    Frame 3917: car → van
+    Frame 3918: van → car
+    Frame 3921: car → van
+    Frame 3922: van → car
+    Frame 3923: car → van
+    Frame 3964: van → car
+    Frame 3965: car → van
+    Frame 3966: van → car
+    Frame 3971: car → van
+
+Track ID: 459
+  Duration: Frame 10487 → 10874 (289 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 10
+  Switch points:
+    Frame 10591: car → van
+    Frame 10606: van → car
+    Frame 10675: car → van
+    Frame 10696: van → car
+    Frame 10701: car → van
+    Frame 10703: van → car
+    Frame 10725: car → van
+    Frame 10756: van → car
+    Frame 10801: car → van
+    Frame 10816: van → car
+
+Track ID: 1385
+  Duration: Frame 33864 → 33997 (134 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 10
+  Switch points:
+    Frame 33868: car → van
+    Frame 33869: van → car
+    Frame 33871: car → van
+    Frame 33891: van → car
+    Frame 33892: car → van
+    Frame 33907: van → car
+    Frame 33908: car → van
+    Frame 33933: van → car
+    Frame 33934: car → van
+    Frame 33986: van → car
+
+Track ID: 1451
+  Duration: Frame 35213 → 35410 (190 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 10
+  Switch points:
+    Frame 35292: car → van
+    Frame 35295: van → car
+    Frame 35312: car → van
+    Frame 35313: van → car
+    Frame 35324: car → van
+    Frame 35331: van → car
+    Frame 35369: car → van
+    Frame 35396: van → car
+    Frame 35400: car → van
+    Frame 35408: van → car
+
+Track ID: 2297
+  Duration: Frame 49357 → 49457 (101 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 10
+  Switch points:
+    Frame 49361: car → van
+    Frame 49367: van → car
+    Frame 49382: car → van
+    Frame 49383: van → car
+    Frame 49385: car → van
+    Frame 49420: van → car
+    Frame 49421: car → van
+    Frame 49427: van → car
+    Frame 49445: car → van
+    Frame 49455: van → car
+
+Track ID: 2455
+  Duration: Frame 51638 → 51911 (273 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 10
+  Switch points:
+    Frame 51681: car → van
+    Frame 51682: van → car
+    Frame 51685: car → van
+    Frame 51687: van → car
+    Frame 51688: car → van
+    Frame 51689: van → car
+    Frame 51690: car → van
+    Frame 51695: van → car
+    Frame 51905: car → van
+    Frame 51909: van → car
+
+Track ID: 2532
+  Duration: Frame 53063 → 53211 (122 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 10
+  Switch points:
+    Frame 53148: motorcycle → bus
+    Frame 53156: bus → motorcycle
+    Frame 53168: motorcycle → bus
+    Frame 53173: bus → motorcycle
+    Frame 53178: motorcycle → bus
+    Frame 53179: bus → motorcycle
+    Frame 53180: motorcycle → bus
+    Frame 53191: bus → car
+    Frame 53193: car → motorcycle
+    Frame 53206: motorcycle → car
+
+Track ID: 351
+  Duration: Frame 5390 → 5801 (410 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 9
+  Switch points:
+    Frame 5391: van → car
+    Frame 5611: car → van
+    Frame 5614: van → car
+    Frame 5615: car → van
+    Frame 5627: van → car
+    Frame 5657: car → van
+    Frame 5763: van → car
+    Frame 5794: car → van
+    Frame 5798: van → car
+
+Track ID: 431
+  Duration: Frame 8308 → 8947 (528 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 9
+  Switch points:
+    Frame 8371: car → van
+    Frame 8386: van → car
+    Frame 8642: car → van
+    Frame 8643: van → car
+    Frame 8645: car → van
+    Frame 8647: van → car
+    Frame 8788: car → van
+    Frame 8798: van → car
+    Frame 8941: car → van
+
+Track ID: 528
+  Duration: Frame 12902 → 13312 (234 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 9
+  Switch points:
+    Frame 13028: car → van
+    Frame 13039: van → car
+    Frame 13126: car → van
+    Frame 13141: van → car
+    Frame 13201: car → van
+    Frame 13221: van → car
+    Frame 13269: car → van
+    Frame 13274: van → car
+    Frame 13309: car → van
+
+Track ID: 53
+  Duration: Frame 642 → 3517 (2876 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 8
+  Switch points:
+    Frame 646: car → van
+    Frame 652: van → car
+    Frame 655: car → van
+    Frame 656: van → car
+    Frame 657: car → van
+    Frame 658: van → car
+    Frame 1426: car → van
+    Frame 1427: van → car
+
+Track ID: 241
+  Duration: Frame 3607 → 3767 (155 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 8
+  Switch points:
+    Frame 3622: car → van
+    Frame 3624: van → car
+    Frame 3649: car → van
+    Frame 3650: van → car
+    Frame 3653: car → van
+    Frame 3654: van → car
+    Frame 3657: car → van
+    Frame 3660: van → car
+
+Track ID: 346
+  Duration: Frame 5276 → 5382 (106 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 8
+  Switch points:
+    Frame 5277: car → van
+    Frame 5310: van → car
+    Frame 5312: car → van
+    Frame 5356: van → car
+    Frame 5365: car → van
+    Frame 5379: van → car
+    Frame 5381: car → van
+    Frame 5382: van → car
+
+Track ID: 596
+  Duration: Frame 14070 → 20173 (6103 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 8
+  Switch points:
+    Frame 14580: car → van
+    Frame 14581: van → car
+    Frame 14584: car → van
+    Frame 14589: van → car
+    Frame 20113: car → van
+    Frame 20128: van → car
+    Frame 20132: car → van
+    Frame 20172: van → car
+
+Track ID: 1251
+  Duration: Frame 30632 → 30759 (128 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 8
+  Switch points:
+    Frame 30633: car → van
+    Frame 30728: van → car
+    Frame 30729: car → van
+    Frame 30731: van → car
+    Frame 30732: car → van
+    Frame 30733: van → car
+    Frame 30740: car → van
+    Frame 30759: van → car
+
+Track ID: 2139
+  Duration: Frame 46963 → 47038 (76 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 8
+  Switch points:
+    Frame 46964: van → car
+    Frame 46968: car → van
+    Frame 46975: van → car
+    Frame 46977: car → van
+    Frame 46979: van → car
+    Frame 46980: car → van
+    Frame 46990: van → car
+    Frame 47038: car → van
+
+Track ID: 2470
+  Duration: Frame 52040 → 52217 (163 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 8
+  Switch points:
+    Frame 52153: car → van
+    Frame 52155: van → car
+    Frame 52172: car → van
+    Frame 52173: van → car
+    Frame 52175: car → van
+    Frame 52190: van → car
+    Frame 52203: car → van
+    Frame 52209: van → car
+
+Track ID: 2612
+  Duration: Frame 53725 → 54146 (421 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 8
+  Switch points:
+    Frame 53731: car → van
+    Frame 53735: van → car
+    Frame 53739: car → van
+    Frame 53740: van → car
+    Frame 53752: car → van
+    Frame 53755: van → car
+    Frame 53756: car → van
+    Frame 53757: van → car
+
+Track ID: 342
+  Duration: Frame 5249 → 5276 (27 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 7
+  Switch points:
+    Frame 5257: car → van
+    Frame 5258: van → car
+    Frame 5259: car → van
+    Frame 5261: van → car
+    Frame 5262: car → van
+    Frame 5275: van → car
+    Frame 5276: car → van
+
+Track ID: 436
+  Duration: Frame 8987 → 9405 (329 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 7
+  Switch points:
+    Frame 9001: van → car
+    Frame 9218: car → van
+    Frame 9241: van → car
+    Frame 9331: car → van
+    Frame 9353: van → car
+    Frame 9360: car → van
+    Frame 9383: van → car
+
+Track ID: 441
+  Duration: Frame 9412 → 9551 (139 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 7
+  Switch points:
+    Frame 9418: car → van
+    Frame 9420: van → car
+    Frame 9422: car → van
+    Frame 9458: van → car
+    Frame 9462: car → van
+    Frame 9521: van → car
+    Frame 9541: car → van
+
+Track ID: 983
+  Duration: Frame 25614 → 26248 (609 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 7
+  Switch points:
+    Frame 26057: bus → motorcycle
+    Frame 26095: motorcycle → bus
+    Frame 26120: bus → motorcycle
+    Frame 26121: motorcycle → bus
+    Frame 26122: bus → motorcycle
+    Frame 26123: motorcycle → bus
+    Frame 26248: bus → car
+
+Track ID: 1534
+  Duration: Frame 37647 → 37775 (129 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 7
+  Switch points:
+    Frame 37680: van → car
+    Frame 37681: car → van
+    Frame 37732: van → car
+    Frame 37745: car → van
+    Frame 37762: van → car
+    Frame 37764: car → van
+    Frame 37766: van → car
+
+Track ID: 1865
+  Duration: Frame 43046 → 43435 (342 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 7
+  Switch points:
+    Frame 43308: car → van
+    Frame 43311: van → tricycle
+    Frame 43375: tricycle → van
+    Frame 43376: van → tricycle
+    Frame 43384: tricycle → van
+    Frame 43388: van → tricycle
+    Frame 43427: tricycle → van
+
+Track ID: 2209
+  Duration: Frame 47912 → 49880 (1914 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 7
+  Switch points:
+    Frame 49560: car → van
+    Frame 49571: van → car
+    Frame 49583: car → van
+    Frame 49841: van → car
+    Frame 49851: car → van
+    Frame 49853: van → car
+    Frame 49854: car → van
+
+Track ID: 2419
+  Duration: Frame 50690 → 51019 (330 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 7
+  Switch points:
+    Frame 50699: car → van
+    Frame 50702: van → car
+    Frame 50703: car → van
+    Frame 50973: van → car
+    Frame 51001: car → van
+    Frame 51006: van → car
+    Frame 51013: car → van
+
+Track ID: 8
+  Duration: Frame 1 → 210 (208 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 6
+  Switch points:
+    Frame 101: van → car
+    Frame 103: car → van
+    Frame 157: van → car
+    Frame 159: car → van
+    Frame 208: van → car
+    Frame 209: car → van
+
+Track ID: 1398
+  Duration: Frame 33923 → 34831 (906 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 34024: car → van
+    Frame 34027: van → car
+    Frame 34028: car → van
+    Frame 34030: van → car
+    Frame 34062: car → van
+    Frame 34069: van → car
+
+Track ID: 1447
+  Duration: Frame 35159 → 35314 (155 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 35293: car → van
+    Frame 35294: van → car
+    Frame 35295: car → van
+    Frame 35298: van → car
+    Frame 35299: car → van
+    Frame 35306: van → car
+
+Track ID: 1578
+  Duration: Frame 38457 → 38513 (36 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 38461: car → van
+    Frame 38463: van → car
+    Frame 38465: car → van
+    Frame 38488: van → car
+    Frame 38489: car → van
+    Frame 38490: van → car
+
+Track ID: 1966
+  Duration: Frame 44719 → 44856 (137 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 44725: car → van
+    Frame 44825: van → car
+    Frame 44831: car → van
+    Frame 44852: van → car
+    Frame 44854: car → van
+    Frame 44856: van → car
+
+Track ID: 2258
+  Duration: Frame 48839 → 49323 (480 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 49226: car → van
+    Frame 49228: van → car
+    Frame 49262: car → van
+    Frame 49280: van → car
+    Frame 49285: car → van
+    Frame 49287: van → car
+
+Track ID: 2408
+  Duration: Frame 50515 → 53300 (2785 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 50521: car → van
+    Frame 50525: van → car
+    Frame 50526: car → van
+    Frame 50527: van → car
+    Frame 51862: car → van
+    Frame 51865: van → car
+
+Track ID: 2412
+  Duration: Frame 50557 → 50600 (44 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 6
+  Switch points:
+    Frame 50558: van → car
+    Frame 50588: car → van
+    Frame 50590: van → car
+    Frame 50592: car → van
+    Frame 50594: van → car
+    Frame 50596: car → van
+
+Track ID: 2427
+  Duration: Frame 50980 → 51130 (151 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 50986: car → van
+    Frame 51098: van → car
+    Frame 51102: car → van
+    Frame 51126: van → car
+    Frame 51128: car → van
+    Frame 51130: van → car
+
+Track ID: 2590
+  Duration: Frame 53506 → 54644 (1136 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 6
+  Switch points:
+    Frame 53684: car → van
+    Frame 53686: van → car
+    Frame 53701: car → van
+    Frame 53762: van → car
+    Frame 54068: car → van
+    Frame 54075: van → car
+
+Track ID: 106
+  Duration: Frame 1261 → 3590 (2320 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 5
+  Switch points:
+    Frame 1363: bus → motorcycle
+    Frame 1367: motorcycle → bus
+    Frame 3570: bus → car
+    Frame 3575: car → bus
+    Frame 3583: bus → car
+
+Track ID: 494
+  Duration: Frame 11608 → 11763 (154 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 5
+  Switch points:
+    Frame 11669: car → van
+    Frame 11738: van → car
+    Frame 11748: car → van
+    Frame 11755: van → car
+    Frame 11759: car → van
+
+Track ID: 756
+  Duration: Frame 20401 → 24395 (3994 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 5
+  Switch points:
+    Frame 20406: car → van
+    Frame 20407: van → car
+    Frame 20433: car → van
+    Frame 20434: van → car
+    Frame 24395: car → motorcycle
+
+Track ID: 803
+  Duration: Frame 21381 → 21474 (92 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 5
+  Switch points:
+    Frame 21382: bus → motorcycle
+    Frame 21384: motorcycle → bus
+    Frame 21385: bus → motorcycle
+    Frame 21395: motorcycle → bus
+    Frame 21474: bus → car
+
+Track ID: 916
+  Duration: Frame 24373 → 26716 (2344 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 5
+  Switch points:
+    Frame 26696: car → van
+    Frame 26697: van → car
+    Frame 26701: car → van
+    Frame 26711: van → car
+    Frame 26716: car → motorcycle
+
+Track ID: 933
+  Duration: Frame 24777 → 26849 (2018 frames)
+  Initial Class: tricycle
+  Final Class: car
+  Number of switches: 5
+  Switch points:
+    Frame 26783: tricycle → car
+    Frame 26805: car → tricycle
+    Frame 26826: tricycle → van
+    Frame 26831: van → tricycle
+    Frame 26842: tricycle → car
+
+Track ID: 1036
+  Duration: Frame 26732 → 26796 (23 frames)
+  Initial Class: car
+  Final Class: tricycle
+  Number of switches: 5
+  Switch points:
+    Frame 26768: car → tricycle
+    Frame 26780: tricycle → car
+    Frame 26782: car → tricycle
+    Frame 26783: tricycle → van
+    Frame 26787: van → tricycle
+
+Track ID: 1037
+  Duration: Frame 26733 → 26815 (76 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 5
+  Switch points:
+    Frame 26738: motorcycle → bus
+    Frame 26755: bus → motorcycle
+    Frame 26756: motorcycle → bus
+    Frame 26775: bus → motorcycle
+    Frame 26776: motorcycle → bus
+
+Track ID: 1064
+  Duration: Frame 26859 → 26960 (92 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 5
+  Switch points:
+    Frame 26945: motorcycle → bus
+    Frame 26947: bus → motorcycle
+    Frame 26951: motorcycle → bus
+    Frame 26952: bus → motorcycle
+    Frame 26955: motorcycle → bus
+
+Track ID: 1119
+  Duration: Frame 27251 → 33310 (6042 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 5
+  Switch points:
+    Frame 27252: van → car
+    Frame 27563: car → van
+    Frame 27564: van → car
+    Frame 28312: car → van
+    Frame 28313: van → car
+
+Track ID: 1198
+  Duration: Frame 29002 → 30092 (1079 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 5
+  Switch points:
+    Frame 29972: car → van
+    Frame 29975: van → car
+    Frame 29976: car → van
+    Frame 30067: van → car
+    Frame 30070: car → van
+
+Track ID: 1399
+  Duration: Frame 33927 → 34112 (184 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 5
+  Switch points:
+    Frame 33931: motorcycle → bus
+    Frame 33946: bus → motorcycle
+    Frame 33947: motorcycle → bus
+    Frame 33962: bus → motorcycle
+    Frame 33982: motorcycle → bus
+
+Track ID: 1442
+  Duration: Frame 34954 → 35194 (228 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 5
+  Switch points:
+    Frame 35033: bus → motorcycle
+    Frame 35049: motorcycle → bus
+    Frame 35051: bus → motorcycle
+    Frame 35053: motorcycle → bus
+    Frame 35188: bus → car
+
+Track ID: 1493
+  Duration: Frame 36992 → 37108 (117 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 5
+  Switch points:
+    Frame 36993: car → van
+    Frame 36996: van → car
+    Frame 36998: car → van
+    Frame 37093: van → car
+    Frame 37108: car → van
+
+Track ID: 1582
+  Duration: Frame 38490 → 38587 (98 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 5
+  Switch points:
+    Frame 38496: van → car
+    Frame 38498: car → van
+    Frame 38561: van → car
+    Frame 38581: car → van
+    Frame 38586: van → car
+
+Track ID: 1640
+  Duration: Frame 39913 → 40148 (235 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 5
+  Switch points:
+    Frame 40121: car → van
+    Frame 40122: van → car
+    Frame 40136: car → van
+    Frame 40137: van → car
+    Frame 40138: car → van
+
+Track ID: 1693
+  Duration: Frame 40358 → 40459 (102 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 5
+  Switch points:
+    Frame 40363: car → van
+    Frame 40402: van → car
+    Frame 40407: car → van
+    Frame 40452: van → car
+    Frame 40455: car → van
+
+Track ID: 2295
+  Duration: Frame 49346 → 49384 (18 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 5
+  Switch points:
+    Frame 49357: car → van
+    Frame 49366: van → car
+    Frame 49367: car → van
+    Frame 49382: van → car
+    Frame 49384: car → van
+
+Track ID: 194
+  Duration: Frame 2804 → 3698 (894 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 3196: car → van
+    Frame 3197: van → car
+    Frame 3229: car → van
+    Frame 3231: van → car
+
+Track ID: 238
+  Duration: Frame 3571 → 3741 (171 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 3725: car → van
+    Frame 3727: van → car
+    Frame 3729: car → van
+    Frame 3734: van → car
+
+Track ID: 393
+  Duration: Frame 7071 → 7142 (72 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 7128: car → van
+    Frame 7130: van → car
+    Frame 7132: car → van
+    Frame 7137: van → car
+
+Track ID: 417
+  Duration: Frame 7710 → 7946 (229 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 4
+  Switch points:
+    Frame 7713: van → car
+    Frame 7719: car → van
+    Frame 7726: van → car
+    Frame 7727: car → van
+
+Track ID: 442
+  Duration: Frame 9459 → 9592 (127 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 9474: car → van
+    Frame 9481: van → car
+    Frame 9571: car → van
+    Frame 9587: van → car
+
+Track ID: 543
+  Duration: Frame 13378 → 13734 (316 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 13569: car → motorcycle
+    Frame 13570: motorcycle → car
+    Frame 13596: car → van
+    Frame 13597: van → car
+
+Track ID: 552
+  Duration: Frame 13575 → 13658 (83 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 4
+  Switch points:
+    Frame 13576: van → car
+    Frame 13579: car → van
+    Frame 13639: van → car
+    Frame 13644: car → van
+
+Track ID: 576
+  Duration: Frame 13850 → 13885 (21 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 4
+  Switch points:
+    Frame 13853: van → tricycle
+    Frame 13861: tricycle → car
+    Frame 13867: car → tricycle
+    Frame 13876: tricycle → van
+
+Track ID: 640
+  Duration: Frame 15917 → 16219 (301 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 16067: car → van
+    Frame 16077: van → car
+    Frame 16086: car → van
+    Frame 16088: van → car
+
+Track ID: 644
+  Duration: Frame 16168 → 16320 (152 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 16171: car → van
+    Frame 16282: van → car
+    Frame 16292: car → van
+    Frame 16319: van → car
+
+Track ID: 658
+  Duration: Frame 17283 → 17518 (236 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 17287: car → van
+    Frame 17487: van → car
+    Frame 17501: car → van
+    Frame 17511: van → car
+
+Track ID: 749
+  Duration: Frame 20305 → 20327 (17 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 20309: motorcycle → car
+    Frame 20312: car → bus
+    Frame 20319: bus → motorcycle
+    Frame 20322: motorcycle → car
+
+Track ID: 1072
+  Duration: Frame 26902 → 26975 (74 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 26926: car → van
+    Frame 26927: van → car
+    Frame 26929: car → van
+    Frame 26933: van → car
+
+Track ID: 1110
+  Duration: Frame 27097 → 27110 (13 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 4
+  Switch points:
+    Frame 27098: van → car
+    Frame 27104: car → van
+    Frame 27107: van → car
+    Frame 27109: car → van
+
+Track ID: 1138
+  Duration: Frame 27740 → 27760 (20 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 27741: car → van
+    Frame 27746: van → car
+    Frame 27758: car → van
+    Frame 27760: van → car
+
+Track ID: 1189
+  Duration: Frame 28869 → 29323 (454 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 29287: car → van
+    Frame 29294: van → car
+    Frame 29295: car → van
+    Frame 29297: van → car
+
+Track ID: 1346
+  Duration: Frame 33443 → 33628 (185 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 33606: car → van
+    Frame 33613: van → car
+    Frame 33614: car → van
+    Frame 33615: van → car
+
+Track ID: 1375
+  Duration: Frame 33759 → 39936 (6138 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 34306: car → van
+    Frame 34307: van → car
+    Frame 39715: car → van
+    Frame 39717: van → car
+
+Track ID: 1533
+  Duration: Frame 37637 → 37647 (11 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 37641: car → van
+    Frame 37642: van → car
+    Frame 37644: car → van
+    Frame 37647: van → car
+
+Track ID: 1597
+  Duration: Frame 38640 → 39949 (1305 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 4
+  Switch points:
+    Frame 39826: motorcycle → car
+    Frame 39841: car → motorcycle
+    Frame 39925: motorcycle → car
+    Frame 39934: car → motorcycle
+
+Track ID: 1695
+  Duration: Frame 40379 → 40808 (367 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 4
+  Switch points:
+    Frame 40511: bus → motorcycle
+    Frame 40512: motorcycle → bus
+    Frame 40537: bus → motorcycle
+    Frame 40538: motorcycle → bus
+
+Track ID: 2087
+  Duration: Frame 46593 → 46728 (133 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 46658: car → van
+    Frame 46660: van → car
+    Frame 46662: car → van
+    Frame 46663: van → car
+
+Track ID: 2125
+  Duration: Frame 46814 → 46958 (144 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 46837: van → car
+    Frame 46838: car → van
+    Frame 46943: van → tricycle
+    Frame 46944: tricycle → car
+
+Track ID: 2244
+  Duration: Frame 48538 → 48653 (115 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 4
+  Switch points:
+    Frame 48586: car → van
+    Frame 48587: van → car
+    Frame 48588: car → van
+    Frame 48590: van → car
+
+Track ID: 23
+  Duration: Frame 285 → 438 (153 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 301: car → van
+    Frame 411: van → car
+    Frame 438: car → van
+
+Track ID: 74
+  Duration: Frame 966 → 1234 (261 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 3
+  Switch points:
+    Frame 1224: bus → motorcycle
+    Frame 1226: motorcycle → bus
+    Frame 1231: bus → motorcycle
+
+Track ID: 267
+  Duration: Frame 3823 → 3957 (132 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 3825: car → van
+    Frame 3829: van → car
+    Frame 3831: car → van
+
+Track ID: 295
+  Duration: Frame 4143 → 4264 (122 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 3
+  Switch points:
+    Frame 4261: bus → motorcycle
+    Frame 4262: motorcycle → bus
+    Frame 4263: bus → motorcycle
+
+Track ID: 322
+  Duration: Frame 4893 → 5116 (221 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 5107: car → van
+    Frame 5109: van → car
+    Frame 5115: car → van
+
+Track ID: 333
+  Duration: Frame 5110 → 5125 (16 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 5112: van → car
+    Frame 5123: car → van
+    Frame 5124: van → car
+
+Track ID: 514
+  Duration: Frame 12377 → 12396 (17 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 12391: car → van
+    Frame 12392: van → car
+    Frame 12396: car → van
+
+Track ID: 587
+  Duration: Frame 13916 → 13938 (9 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 13917: van → car
+    Frame 13918: car → van
+    Frame 13919: van → car
+
+Track ID: 614
+  Duration: Frame 14579 → 14584 (6 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 14580: van → car
+    Frame 14581: car → van
+    Frame 14584: van → car
+
+Track ID: 689
+  Duration: Frame 18064 → 18149 (70 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 3
+  Switch points:
+    Frame 18068: bus → motorcycle
+    Frame 18119: motorcycle → bus
+    Frame 18138: bus → motorcycle
+
+Track ID: 694
+  Duration: Frame 18145 → 20129 (1982 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 20121: car → van
+    Frame 20123: van → car
+    Frame 20126: car → van
+
+Track ID: 775
+  Duration: Frame 20718 → 26842 (6125 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 3
+  Switch points:
+    Frame 20720: car → motorcycle
+    Frame 20721: motorcycle → car
+    Frame 26842: car → motorcycle
+
+Track ID: 789
+  Duration: Frame 21028 → 21138 (111 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 21131: car → van
+    Frame 21134: van → car
+    Frame 21135: car → van
+
+Track ID: 1005
+  Duration: Frame 26087 → 26790 (657 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 3
+  Switch points:
+    Frame 26520: bus → motorcycle
+    Frame 26521: motorcycle → bus
+    Frame 26790: bus → motorcycle
+
+Track ID: 1106
+  Duration: Frame 27073 → 27113 (10 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 27092: motorcycle → car
+    Frame 27111: car → van
+    Frame 27113: van → car
+
+Track ID: 1126
+  Duration: Frame 27441 → 27566 (89 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 27501: motorcycle → bus
+    Frame 27529: bus → motorcycle
+    Frame 27563: motorcycle → car
+
+Track ID: 1217
+  Duration: Frame 29650 → 29657 (8 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 29655: van → car
+    Frame 29656: car → van
+    Frame 29657: van → car
+
+Track ID: 1228
+  Duration: Frame 30009 → 30525 (517 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 30010: motorcycle → car
+    Frame 30048: car → motorcycle
+    Frame 30049: motorcycle → car
+
+Track ID: 1255
+  Duration: Frame 30716 → 30749 (34 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 3
+  Switch points:
+    Frame 30747: bus → motorcycle
+    Frame 30748: motorcycle → bus
+    Frame 30749: bus → motorcycle
+
+Track ID: 1268
+  Duration: Frame 30999 → 31608 (537 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 31000: motorcycle → car
+    Frame 31501: car → van
+    Frame 31608: van → car
+
+Track ID: 1283
+  Duration: Frame 31801 → 31939 (139 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 31803: van → car
+    Frame 31933: car → van
+    Frame 31936: van → car
+
+Track ID: 1422
+  Duration: Frame 34184 → 35188 (1004 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 35176: motorcycle → car
+    Frame 35183: car → motorcycle
+    Frame 35184: motorcycle → car
+
+Track ID: 1492
+  Duration: Frame 36986 → 36997 (12 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 36992: car → van
+    Frame 36993: van → car
+    Frame 36996: car → van
+
+Track ID: 1953
+  Duration: Frame 44591 → 44770 (170 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 3
+  Switch points:
+    Frame 44756: motorcycle → bus
+    Frame 44757: bus → motorcycle
+    Frame 44770: motorcycle → bus
+
+Track ID: 1954
+  Duration: Frame 44602 → 44730 (129 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 44603: car → van
+    Frame 44604: van → car
+    Frame 44605: car → van
+
+Track ID: 2123
+  Duration: Frame 46808 → 46812 (5 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 46809: van → car
+    Frame 46810: car → van
+    Frame 46812: van → car
+
+Track ID: 2133
+  Duration: Frame 46899 → 49950 (3023 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 49936: car → van
+    Frame 49943: van → car
+    Frame 49950: car → van
+
+Track ID: 2259
+  Duration: Frame 48861 → 49902 (1039 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 3
+  Switch points:
+    Frame 49089: bus → motorcycle
+    Frame 49101: motorcycle → bus
+    Frame 49900: bus → motorcycle
+
+Track ID: 2328
+  Duration: Frame 49834 → 49841 (6 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 49835: car → van
+    Frame 49837: van → car
+    Frame 49841: car → van
+
+Track ID: 2399
+  Duration: Frame 50479 → 50486 (8 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 3
+  Switch points:
+    Frame 50480: van → car
+    Frame 50484: car → van
+    Frame 50486: van → car
+
+Track ID: 2467
+  Duration: Frame 51898 → 52215 (206 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 52141: car → van
+    Frame 52156: van → car
+    Frame 52186: car → van
+
+Track ID: 2474
+  Duration: Frame 52154 → 52173 (20 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 3
+  Switch points:
+    Frame 52155: car → van
+    Frame 52172: van → car
+    Frame 52173: car → van
+
+Track ID: 3
+  Duration: Frame 1 → 384 (384 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 379: car → van
+    Frame 381: van → car
+
+Track ID: 4
+  Duration: Frame 1 → 296 (296 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 295: van → car
+    Frame 296: car → van
+
+Track ID: 19
+  Duration: Frame 209 → 217 (9 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 211: car → van
+    Frame 215: van → car
+
+Track ID: 24
+  Duration: Frame 296 → 309 (14 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 297: car → van
+    Frame 308: van → car
+
+Track ID: 29
+  Duration: Frame 381 → 504 (124 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 497: car → van
+    Frame 500: van → car
+
+Track ID: 33
+  Duration: Frame 394 → 403 (7 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 401: motorcycle → van
+    Frame 402: van → car
+
+Track ID: 63
+  Duration: Frame 791 → 915 (125 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 911: car → van
+    Frame 914: van → car
+
+Track ID: 71
+  Duration: Frame 950 → 1081 (121 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 1077: motorcycle → car
+    Frame 1079: car → motorcycle
+
+Track ID: 87
+  Duration: Frame 1087 → 1347 (245 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 1231: bus → motorcycle
+    Frame 1232: motorcycle → bus
+
+Track ID: 136
+  Duration: Frame 1631 → 1638 (8 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 1634: van → car
+    Frame 1635: car → van
+
+Track ID: 137
+  Duration: Frame 1635 → 1725 (91 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 1714: car → van
+    Frame 1715: van → car
+
+Track ID: 179
+  Duration: Frame 2331 → 2428 (98 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 2418: car → van
+    Frame 2419: van → car
+
+Track ID: 251
+  Duration: Frame 3676 → 3799 (123 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 3795: motorcycle → car
+    Frame 3796: car → motorcycle
+
+Track ID: 256
+  Duration: Frame 3717 → 3751 (8 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 3748: motorcycle → car
+    Frame 3750: car → motorcycle
+
+Track ID: 259
+  Duration: Frame 3738 → 3894 (157 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 3883: car → van
+    Frame 3886: van → car
+
+Track ID: 297
+  Duration: Frame 4187 → 4908 (722 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 4901: car → van
+    Frame 4902: van → car
+
+Track ID: 302
+  Duration: Frame 4293 → 6802 (2510 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 6794: car → van
+    Frame 6795: van → car
+
+Track ID: 323
+  Duration: Frame 4899 → 5057 (154 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 5055: bus → car
+    Frame 5057: car → bus
+
+Track ID: 329
+  Duration: Frame 5031 → 6878 (1848 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 6868: car → van
+    Frame 6869: van → car
+
+Track ID: 330
+  Duration: Frame 5077 → 5202 (122 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 5195: van → car
+    Frame 5201: car → van
+
+Track ID: 340
+  Duration: Frame 5202 → 5215 (13 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 5203: car → van
+    Frame 5215: van → car
+
+Track ID: 357
+  Duration: Frame 5613 → 5625 (13 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 5614: car → van
+    Frame 5615: van → car
+
+Track ID: 380
+  Duration: Frame 6876 → 6980 (105 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 6979: car → van
+    Frame 6980: van → car
+
+Track ID: 449
+  Duration: Frame 9659 → 10589 (921 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 10579: car → van
+    Frame 10580: van → motorcycle
+
+Track ID: 455
+  Duration: Frame 10175 → 10305 (88 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 10233: car → van
+    Frame 10247: van → car
+
+Track ID: 481
+  Duration: Frame 11222 → 11240 (11 frames)
+  Initial Class: car
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 11235: car → motorcycle
+    Frame 11239: motorcycle → bus
+
+Track ID: 483
+  Duration: Frame 11240 → 11320 (79 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 11241: motorcycle → bus
+    Frame 11315: bus → car
+
+Track ID: 493
+  Duration: Frame 11577 → 11670 (53 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 11581: car → van
+    Frame 11611: van → car
+
+Track ID: 505
+  Duration: Frame 11942 → 12003 (47 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 11972: car → van
+    Frame 11998: van → car
+
+Track ID: 550
+  Duration: Frame 13567 → 13573 (7 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 13571: car → van
+    Frame 13573: van → car
+
+Track ID: 551
+  Duration: Frame 13573 → 13578 (5 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 13574: van → car
+    Frame 13576: car → van
+
+Track ID: 579
+  Duration: Frame 13859 → 13947 (89 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 13860: car → tricycle
+    Frame 13862: tricycle → car
+
+Track ID: 592
+  Duration: Frame 13944 → 18145 (4202 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 14150: car → van
+    Frame 14156: van → car
+
+Track ID: 657
+  Duration: Frame 17143 → 17241 (98 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 17236: car → van
+    Frame 17238: van → car
+
+Track ID: 680
+  Duration: Frame 17946 → 18093 (119 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 17973: motorcycle → bus
+    Frame 17975: bus → motorcycle
+
+Track ID: 703
+  Duration: Frame 18833 → 18838 (6 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 18835: motorcycle → bus
+    Frame 18836: bus → motorcycle
+
+Track ID: 715
+  Duration: Frame 19264 → 19376 (63 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 19269: car → motorcycle
+    Frame 19275: motorcycle → car
+
+Track ID: 769
+  Duration: Frame 20615 → 24779 (4165 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 20618: van → tricycle
+    Frame 24773: tricycle → car
+
+Track ID: 812
+  Duration: Frame 21588 → 21672 (85 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 21669: car → van
+    Frame 21670: van → car
+
+Track ID: 840
+  Duration: Frame 22581 → 22676 (96 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 22669: car → van
+    Frame 22670: van → car
+
+Track ID: 1000
+  Duration: Frame 26018 → 26099 (63 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 26075: bus → motorcycle
+    Frame 26086: motorcycle → bus
+
+Track ID: 1001
+  Duration: Frame 26021 → 26146 (126 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 26138: car → van
+    Frame 26142: van → car
+
+Track ID: 1011
+  Duration: Frame 26135 → 26795 (634 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 26779: bus → car
+    Frame 26784: car → bus
+
+Track ID: 1044
+  Duration: Frame 26758 → 26763 (6 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 26759: car → van
+    Frame 26760: van → car
+
+Track ID: 1066
+  Duration: Frame 26870 → 27060 (191 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 26871: car → van
+    Frame 26872: van → car
+
+Track ID: 1068
+  Duration: Frame 26876 → 27042 (145 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 27020: motorcycle → bus
+    Frame 27021: bus → motorcycle
+
+Track ID: 1114
+  Duration: Frame 27156 → 27251 (96 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 27243: car → van
+    Frame 27250: van → car
+
+Track ID: 1123
+  Duration: Frame 27379 → 27555 (177 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 27544: car → van
+    Frame 27550: van → car
+
+Track ID: 1134
+  Duration: Frame 27673 → 33436 (5753 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 33374: car → van
+    Frame 33376: van → car
+
+Track ID: 1139
+  Duration: Frame 27758 → 28590 (813 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 27759: car → van
+    Frame 27761: van → car
+
+Track ID: 1141
+  Duration: Frame 27849 → 28286 (419 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 28231: car → van
+    Frame 28233: van → car
+
+Track ID: 1145
+  Duration: Frame 28186 → 28316 (129 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 28312: motorcycle → car
+    Frame 28314: car → motorcycle
+
+Track ID: 1164
+  Duration: Frame 28700 → 28798 (82 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 28718: motorcycle → van
+    Frame 28719: van → car
+
+Track ID: 1195
+  Duration: Frame 28936 → 29565 (629 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 29538: car → van
+    Frame 29547: van → car
+
+Track ID: 1248
+  Duration: Frame 30591 → 30890 (268 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 30593: car → motorcycle
+    Frame 30594: motorcycle → car
+
+Track ID: 1250
+  Duration: Frame 30621 → 30633 (13 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 30631: car → van
+    Frame 30633: van → car
+
+Track ID: 1260
+  Duration: Frame 30761 → 31049 (258 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 30909: car → motorcycle
+    Frame 30910: motorcycle → van
+
+Track ID: 1265
+  Duration: Frame 30948 → 30999 (51 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 30998: car → motorcycle
+    Frame 30999: motorcycle → car
+
+Track ID: 1277
+  Duration: Frame 31507 → 31710 (138 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 31526: car → motorcycle
+    Frame 31527: motorcycle → car
+
+Track ID: 1289
+  Duration: Frame 32034 → 32152 (119 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 32141: car → van
+    Frame 32142: van → car
+
+Track ID: 1293
+  Duration: Frame 32139 → 32491 (353 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 32140: car → van
+    Frame 32141: van → car
+
+Track ID: 1295
+  Duration: Frame 32412 → 32539 (128 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 32413: car → van
+    Frame 32414: van → car
+
+Track ID: 1303
+  Duration: Frame 32564 → 32705 (142 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 32612: car → van
+    Frame 32705: van → car
+
+Track ID: 1331
+  Duration: Frame 33387 → 33556 (150 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 33454: car → van
+    Frame 33455: van → car
+
+Track ID: 1370
+  Duration: Frame 33730 → 33833 (104 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 33731: car → van
+    Frame 33833: van → car
+
+Track ID: 1371
+  Duration: Frame 33732 → 33752 (6 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 33735: motorcycle → car
+    Frame 33752: car → motorcycle
+
+Track ID: 1380
+  Duration: Frame 33821 → 34006 (181 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 33997: car → van
+    Frame 33999: van → car
+
+Track ID: 1414
+  Duration: Frame 34025 → 34028 (4 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 34027: car → van
+    Frame 34028: van → car
+
+Track ID: 1434
+  Duration: Frame 34619 → 34799 (178 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 34623: car → motorcycle
+    Frame 34796: motorcycle → car
+
+Track ID: 1484
+  Duration: Frame 36897 → 37013 (116 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 36951: car → van
+    Frame 36953: van → car
+
+Track ID: 1500
+  Duration: Frame 37108 → 37140 (33 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 37109: car → van
+    Frame 37137: van → car
+
+Track ID: 1528
+  Duration: Frame 37548 → 37677 (130 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 37667: car → van
+    Frame 37672: van → car
+
+Track ID: 1574
+  Duration: Frame 38360 → 38462 (98 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 38446: motorcycle → bus
+    Frame 38456: bus → motorcycle
+
+Track ID: 1584
+  Duration: Frame 38510 → 38621 (112 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 38616: car → van
+    Frame 38620: van → car
+
+Track ID: 1630
+  Duration: Frame 39518 → 39650 (133 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 39648: car → van
+    Frame 39650: van → car
+
+Track ID: 1669
+  Duration: Frame 40167 → 40169 (3 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 40168: van → car
+    Frame 40169: car → van
+
+Track ID: 1692
+  Duration: Frame 40344 → 40826 (409 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 40519: bus → motorcycle
+    Frame 40530: motorcycle → bus
+
+Track ID: 1702
+  Duration: Frame 40449 → 40471 (7 frames)
+  Initial Class: motorcycle
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 40460: motorcycle → car
+    Frame 40462: car → van
+
+Track ID: 1753
+  Duration: Frame 41133 → 41209 (28 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 41183: bus → motorcycle
+    Frame 41199: motorcycle → bus
+
+Track ID: 1768
+  Duration: Frame 41192 → 42422 (1224 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 41212: car → van
+    Frame 41213: van → car
+
+Track ID: 1810
+  Duration: Frame 42466 → 42607 (141 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 42469: car → van
+    Frame 42607: van → car
+
+Track ID: 1825
+  Duration: Frame 42714 → 43027 (300 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 43024: motorcycle → car
+    Frame 43025: car → motorcycle
+
+Track ID: 1869
+  Duration: Frame 43167 → 43269 (101 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 43171: car → van
+    Frame 43173: van → car
+
+Track ID: 1871
+  Duration: Frame 43207 → 43322 (116 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 43316: car → van
+    Frame 43319: van → car
+
+Track ID: 1912
+  Duration: Frame 43585 → 43706 (121 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 43656: car → van
+    Frame 43658: van → car
+
+Track ID: 1933
+  Duration: Frame 44153 → 44286 (134 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 44222: car → van
+    Frame 44224: van → car
+
+Track ID: 1937
+  Duration: Frame 44252 → 44404 (152 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 44313: car → van
+    Frame 44314: van → car
+
+Track ID: 1971
+  Duration: Frame 44782 → 45121 (340 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 45117: car → van
+    Frame 45118: van → car
+
+Track ID: 2016
+  Duration: Frame 45478 → 45492 (13 frames)
+  Initial Class: motorcycle
+  Final Class: motorcycle
+  Number of switches: 2
+  Switch points:
+    Frame 45486: motorcycle → bus
+    Frame 45487: bus → motorcycle
+
+Track ID: 2066
+  Duration: Frame 46300 → 46608 (307 frames)
+  Initial Class: bus
+  Final Class: bus
+  Number of switches: 2
+  Switch points:
+    Frame 46445: bus → motorcycle
+    Frame 46446: motorcycle → bus
+
+Track ID: 2076
+  Duration: Frame 46466 → 46545 (45 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 46514: car → bus
+    Frame 46543: bus → car
+
+Track ID: 2129
+  Duration: Frame 46860 → 49977 (3104 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 46862: car → van
+    Frame 46867: van → car
+
+Track ID: 2238
+  Duration: Frame 48432 → 48537 (106 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 48533: car → van
+    Frame 48536: van → car
+
+Track ID: 2385
+  Duration: Frame 50372 → 50479 (108 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 50469: car → van
+    Frame 50478: van → car
+
+Track ID: 2406
+  Duration: Frame 50511 → 50524 (9 frames)
+  Initial Class: motorcycle
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 50519: motorcycle → car
+    Frame 50524: car → van
+
+Track ID: 2409
+  Duration: Frame 50527 → 50531 (5 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 50528: van → car
+    Frame 50531: car → van
+
+Track ID: 2426
+  Duration: Frame 50931 → 51074 (144 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 50934: car → van
+    Frame 50935: van → car
+
+Track ID: 2429
+  Duration: Frame 51003 → 53335 (2323 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 53271: car → motorcycle
+    Frame 53273: motorcycle → car
+
+Track ID: 2438
+  Duration: Frame 51218 → 51394 (177 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 51221: car → van
+    Frame 51222: van → car
+
+Track ID: 2472
+  Duration: Frame 52104 → 52296 (193 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 52105: car → van
+    Frame 52296: van → car
+
+Track ID: 2481
+  Duration: Frame 52211 → 52410 (184 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 52231: car → van
+    Frame 52261: van → car
+
+Track ID: 2534
+  Duration: Frame 53079 → 53372 (294 frames)
+  Initial Class: van
+  Final Class: van
+  Number of switches: 2
+  Switch points:
+    Frame 53351: van → car
+    Frame 53357: car → van
+
+Track ID: 2586
+  Duration: Frame 53469 → 53685 (216 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 53471: car → van
+    Frame 53685: van → car
+
+Track ID: 2594
+  Duration: Frame 53518 → 53748 (231 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 53736: car → van
+    Frame 53740: van → car
+
+Track ID: 2666
+  Duration: Frame 54483 → 54644 (141 frames)
+  Initial Class: car
+  Final Class: car
+  Number of switches: 2
+  Switch points:
+    Frame 54496: car → van
+    Frame 54509: van → car
+
+Track ID: 49
+  Duration: Frame 603 → 1066 (443 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 1066: car → motorcycle
+
+Track ID: 62
+  Duration: Frame 764 → 3586 (2821 frames)
+  Initial Class: car
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 3586: car → bus
+
+Track ID: 98
+  Duration: Frame 1199 → 1406 (190 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 1406: bus → car
+
+Track ID: 150
+  Duration: Frame 1822 → 1827 (6 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 1824: van → car
+
+Track ID: 192
+  Duration: Frame 2761 → 3005 (233 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 3005: bus → car
+
+Track ID: 220
+  Duration: Frame 3287 → 3439 (153 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 3439: van → car
+
+Track ID: 248
+  Duration: Frame 3643 → 3649 (4 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 3647: motorcycle → car
+
+Track ID: 250
+  Duration: Frame 3670 → 3674 (5 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 3674: motorcycle → car
+
+Track ID: 258
+  Duration: Frame 3734 → 3743 (4 frames)
+  Initial Class: motorcycle
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 3741: motorcycle → van
+
+Track ID: 285
+  Duration: Frame 3968 → 4002 (4 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 4000: car → van
+
+Track ID: 300
+  Duration: Frame 4253 → 4323 (64 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 4320: bus → motorcycle
+
+Track ID: 308
+  Duration: Frame 4363 → 4461 (97 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 4461: bus → car
+
+Track ID: 338
+  Duration: Frame 5190 → 5195 (6 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 5195: car → van
+
+Track ID: 353
+  Duration: Frame 5495 → 5920 (426 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 5496: van → car
+
+Track ID: 359
+  Duration: Frame 5658 → 5771 (114 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 5763: car → van
+
+Track ID: 381
+  Duration: Frame 6883 → 6889 (4 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 6887: motorcycle → car
+
+Track ID: 424
+  Duration: Frame 7937 → 7975 (39 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 7953: car → van
+
+Track ID: 433
+  Duration: Frame 8483 → 8521 (39 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 8521: motorcycle → bus
+
+Track ID: 435
+  Duration: Frame 8972 → 9205 (161 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 9190: car → motorcycle
+
+Track ID: 438
+  Duration: Frame 9230 → 9315 (85 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 9315: motorcycle → bus
+
+Track ID: 445
+  Duration: Frame 9547 → 9877 (295 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 9656: car → motorcycle
+
+Track ID: 457
+  Duration: Frame 10378 → 10447 (70 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 10441: car → van
+
+Track ID: 464
+  Duration: Frame 10610 → 10673 (64 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 10673: motorcycle → car
+
+Track ID: 478
+  Duration: Frame 11132 → 11220 (41 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 11176: van → car
+
+Track ID: 489
+  Duration: Frame 11472 → 11505 (27 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 11505: car → van
+
+Track ID: 499
+  Duration: Frame 11734 → 11759 (16 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 11747: car → van
+
+Track ID: 518
+  Duration: Frame 12572 → 12750 (97 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 12616: van → car
+
+Track ID: 524
+  Duration: Frame 12799 → 12841 (20 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 12809: van → car
+
+Track ID: 527
+  Duration: Frame 12871 → 12962 (91 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 12959: motorcycle → bus
+
+Track ID: 537
+  Duration: Frame 13344 → 13630 (286 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 13347: car → motorcycle
+
+Track ID: 555
+  Duration: Frame 13592 → 13614 (3 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 13613: car → motorcycle
+
+Track ID: 561
+  Duration: Frame 13620 → 13631 (2 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 13631: car → motorcycle
+
+Track ID: 591
+  Duration: Frame 13941 → 13954 (12 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 13946: motorcycle → car
+
+Track ID: 654
+  Duration: Frame 17104 → 17128 (8 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 17128: motorcycle → bus
+
+Track ID: 655
+  Duration: Frame 17112 → 17161 (31 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 17126: bus → motorcycle
+
+Track ID: 671
+  Duration: Frame 17814 → 18081 (243 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 18055: motorcycle → bus
+
+Track ID: 700
+  Duration: Frame 18770 → 18814 (41 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 18814: motorcycle → bus
+
+Track ID: 704
+  Duration: Frame 18835 → 18837 (2 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 18837: car → motorcycle
+
+Track ID: 758
+  Duration: Frame 20448 → 26758 (6311 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 20449: car → van
+
+Track ID: 768
+  Duration: Frame 20615 → 20655 (24 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 20628: motorcycle → bus
+
+Track ID: 773
+  Duration: Frame 20654 → 20898 (245 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 20808: car → motorcycle
+
+Track ID: 802
+  Duration: Frame 21337 → 21560 (193 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 21558: bus → car
+
+Track ID: 807
+  Duration: Frame 21412 → 21423 (7 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 21418: bus → motorcycle
+
+Track ID: 830
+  Duration: Frame 22317 → 22425 (109 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 22318: motorcycle → car
+
+Track ID: 841
+  Duration: Frame 22582 → 23443 (824 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 23442: bus → car
+
+Track ID: 877
+  Duration: Frame 23301 → 23430 (130 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 23302: van → car
+
+Track ID: 910
+  Duration: Frame 24294 → 24908 (443 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 24762: motorcycle → bus
+
+Track ID: 953
+  Duration: Frame 25029 → 25030 (2 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 25030: car → motorcycle
+
+Track ID: 985
+  Duration: Frame 25667 → 25691 (6 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 25691: bus → motorcycle
+
+Track ID: 1018
+  Duration: Frame 26300 → 26323 (14 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 26319: bus → motorcycle
+
+Track ID: 1034
+  Duration: Frame 26728 → 26915 (169 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 26914: car → motorcycle
+
+Track ID: 1060
+  Duration: Frame 26853 → 26993 (141 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 26993: motorcycle → bus
+
+Track ID: 1065
+  Duration: Frame 26867 → 26887 (14 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 26887: car → motorcycle
+
+Track ID: 1073
+  Duration: Frame 26903 → 27043 (135 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 27041: motorcycle → car
+
+Track ID: 1088
+  Duration: Frame 26967 → 27064 (20 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 27030: motorcycle → car
+
+Track ID: 1122
+  Duration: Frame 27358 → 27482 (125 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 27480: bus → car
+
+Track ID: 1140
+  Duration: Frame 27787 → 28489 (702 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 28488: car → motorcycle
+
+Track ID: 1151
+  Duration: Frame 28291 → 28312 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 28312: van → car
+
+Track ID: 1169
+  Duration: Frame 28721 → 28740 (20 frames)
+  Initial Class: van
+  Final Class: tricycle
+  Number of switches: 1
+  Switch points:
+    Frame 28735: van → tricycle
+
+Track ID: 1174
+  Duration: Frame 28756 → 28776 (21 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 28763: car → van
+
+Track ID: 1176
+  Duration: Frame 28772 → 28774 (3 frames)
+  Initial Class: tricycle
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 28774: tricycle → van
+
+Track ID: 1180
+  Duration: Frame 28798 → 28802 (5 frames)
+  Initial Class: tricycle
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 28799: tricycle → van
+
+Track ID: 1191
+  Duration: Frame 28872 → 28923 (42 frames)
+  Initial Class: motorcycle
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 28919: motorcycle → van
+
+Track ID: 1197
+  Duration: Frame 28948 → 30020 (1060 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 30008: motorcycle → car
+
+Track ID: 1200
+  Duration: Frame 29033 → 29198 (156 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 29107: car → motorcycle
+
+Track ID: 1209
+  Duration: Frame 29294 → 29295 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 29295: van → car
+
+Track ID: 1219
+  Duration: Frame 29674 → 29676 (3 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 29675: van → car
+
+Track ID: 1221
+  Duration: Frame 29690 → 29691 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 29691: van → car
+
+Track ID: 1259
+  Duration: Frame 30745 → 30831 (84 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 30831: bus → car
+
+Track ID: 1273
+  Duration: Frame 31388 → 31516 (106 frames)
+  Initial Class: motorcycle
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 31412: motorcycle → van
+
+Track ID: 1291
+  Duration: Frame 32085 → 32521 (394 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 32457: car → motorcycle
+
+Track ID: 1297
+  Duration: Frame 32465 → 32594 (130 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 32478: car → van
+
+Track ID: 1298
+  Duration: Frame 32472 → 32477 (5 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 32474: car → van
+
+Track ID: 1299
+  Duration: Frame 32516 → 32640 (125 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 32518: motorcycle → car
+
+Track ID: 1320
+  Duration: Frame 33266 → 33366 (101 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 33267: van → car
+
+Track ID: 1352
+  Duration: Frame 33519 → 33601 (83 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 33523: car → van
+
+Track ID: 1392
+  Duration: Frame 33891 → 33907 (6 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 33907: car → van
+
+Track ID: 1411
+  Duration: Frame 33998 → 34001 (4 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 33999: car → van
+
+Track ID: 1437
+  Duration: Frame 34758 → 35037 (251 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 35026: bus → motorcycle
+
+Track ID: 1450
+  Duration: Frame 35200 → 35222 (5 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 35221: motorcycle → car
+
+Track ID: 1457
+  Duration: Frame 35294 → 35296 (3 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 35295: van → car
+
+Track ID: 1488
+  Duration: Frame 36950 → 36951 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 36951: van → car
+
+Track ID: 1495
+  Duration: Frame 37036 → 37111 (76 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 37111: motorcycle → car
+
+Track ID: 1595
+  Duration: Frame 38600 → 38702 (103 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 38702: van → car
+
+Track ID: 1635
+  Duration: Frame 39766 → 39876 (111 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 39876: van → car
+
+Track ID: 1639
+  Duration: Frame 39881 → 39982 (102 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 39982: van → car
+
+Track ID: 1670
+  Duration: Frame 40169 → 40260 (92 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 40172: car → van
+
+Track ID: 1680
+  Duration: Frame 40275 → 40382 (106 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 40277: car → van
+
+Track ID: 1709
+  Duration: Frame 40569 → 40591 (20 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 40585: van → car
+
+Track ID: 1727
+  Duration: Frame 40874 → 40928 (52 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 40922: bus → motorcycle
+
+Track ID: 1769
+  Duration: Frame 41234 → 43320 (2085 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 41237: motorcycle → car
+
+Track ID: 1789
+  Duration: Frame 41523 → 41555 (2 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 41555: car → van
+
+Track ID: 1795
+  Duration: Frame 41890 → 42883 (904 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 42883: motorcycle → bus
+
+Track ID: 1854
+  Duration: Frame 42892 → 42895 (4 frames)
+  Initial Class: bus
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 42893: bus → motorcycle
+
+Track ID: 1888
+  Duration: Frame 43375 → 43379 (5 frames)
+  Initial Class: tricycle
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 43376: tricycle → van
+
+Track ID: 1889
+  Duration: Frame 43376 → 43394 (18 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 43392: car → van
+
+Track ID: 1890
+  Duration: Frame 43382 → 43386 (5 frames)
+  Initial Class: van
+  Final Class: tricycle
+  Number of switches: 1
+  Switch points:
+    Frame 43384: van → tricycle
+
+Track ID: 1909
+  Duration: Frame 43569 → 43571 (3 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 43570: car → van
+
+Track ID: 1910
+  Duration: Frame 43573 → 43715 (114 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 43715: car → motorcycle
+
+Track ID: 1914
+  Duration: Frame 43591 → 43635 (45 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 43635: motorcycle → bus
+
+Track ID: 2003
+  Duration: Frame 45332 → 45338 (7 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 45335: car → van
+
+Track ID: 2032
+  Duration: Frame 45856 → 46057 (187 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 46057: bus → car
+
+Track ID: 2057
+  Duration: Frame 46188 → 46189 (2 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 46189: car → van
+
+Track ID: 2097
+  Duration: Frame 46675 → 46685 (3 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 46685: motorcycle → bus
+
+Track ID: 2101
+  Duration: Frame 46686 → 46801 (116 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 46801: motorcycle → car
+
+Track ID: 2107
+  Duration: Frame 46740 → 46777 (17 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 46768: motorcycle → car
+
+Track ID: 2115
+  Duration: Frame 46767 → 46768 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 46768: van → car
+
+Track ID: 2126
+  Duration: Frame 46827 → 46828 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 46828: van → car
+
+Track ID: 2141
+  Duration: Frame 47024 → 49814 (2753 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 47068: car → van
+
+Track ID: 2155
+  Duration: Frame 47388 → 47389 (2 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 47389: car → van
+
+Track ID: 2165
+  Duration: Frame 47488 → 47489 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 47489: van → car
+
+Track ID: 2175
+  Duration: Frame 47552 → 47565 (14 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 47555: van → car
+
+Track ID: 2192
+  Duration: Frame 47767 → 48019 (227 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 48015: bus → car
+
+Track ID: 2218
+  Duration: Frame 48013 → 48022 (10 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 48014: van → car
+
+Track ID: 2227
+  Duration: Frame 48182 → 48186 (5 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 48185: car → van
+
+Track ID: 2249
+  Duration: Frame 48587 → 48588 (2 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 48588: van → car
+
+Track ID: 2250
+  Duration: Frame 48623 → 48739 (117 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 48739: van → car
+
+Track ID: 2263
+  Duration: Frame 49093 → 49099 (7 frames)
+  Initial Class: motorcycle
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 49099: motorcycle → bus
+
+Track ID: 2289
+  Duration: Frame 49281 → 49285 (5 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 49285: van → car
+
+Track ID: 2306
+  Duration: Frame 49538 → 49878 (331 frames)
+  Initial Class: motorcycle
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 49876: motorcycle → car
+
+Track ID: 2343
+  Duration: Frame 49943 → 49958 (15 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 49949: van → car
+
+Track ID: 2390
+  Duration: Frame 50413 → 51855 (1443 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 51841: car → van
+
+Track ID: 2393
+  Duration: Frame 50452 → 53172 (2721 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 53172: car → motorcycle
+
+Track ID: 2410
+  Duration: Frame 50537 → 50542 (6 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 50538: car → van
+
+Track ID: 2421
+  Duration: Frame 50784 → 50922 (126 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 50922: bus → car
+
+Track ID: 2425
+  Duration: Frame 50899 → 52213 (1290 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 52204: car → motorcycle
+
+Track ID: 2436
+  Duration: Frame 51183 → 51507 (256 frames)
+  Initial Class: bus
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 51504: bus → car
+
+Track ID: 2462
+  Duration: Frame 51823 → 53326 (1485 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 51826: van → car
+
+Track ID: 2471
+  Duration: Frame 52103 → 52104 (2 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 52104: car → van
+
+Track ID: 2494
+  Duration: Frame 52442 → 52485 (44 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 52471: car → van
+
+Track ID: 2495
+  Duration: Frame 52502 → 52515 (13 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 52515: car → van
+
+Track ID: 2542
+  Duration: Frame 53172 → 53176 (4 frames)
+  Initial Class: car
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 53174: car → bus
+
+Track ID: 2582
+  Duration: Frame 53442 → 53456 (2 frames)
+  Initial Class: car
+  Final Class: motorcycle
+  Number of switches: 1
+  Switch points:
+    Frame 53456: car → motorcycle
+
+Track ID: 2599
+  Duration: Frame 53556 → 54644 (1064 frames)
+  Initial Class: car
+  Final Class: van
+  Number of switches: 1
+  Switch points:
+    Frame 53584: car → van
+
+Track ID: 2656
+  Duration: Frame 54404 → 54422 (19 frames)
+  Initial Class: van
+  Final Class: car
+  Number of switches: 1
+  Switch points:
+    Frame 54405: van → car
+
+Track ID: 2662
+  Duration: Frame 54459 → 54503 (13 frames)
+  Initial Class: car
+  Final Class: bus
+  Number of switches: 1
+  Switch points:
+    Frame 54500: car → bus
+
+====================================================================================================
+LINE CROSSING CLASSIFICATIONS
+====================================================================================================
+
+Total crossings: 497
+
+Classification at line crossing:
+  car: 340 (68.4%)
+  motorcycle: 60 (12.1%)
+  van: 49 (9.9%)
+  bus: 43 (8.7%)
+  tricycle: 5 (1.0%)
+
+----------------------------------------------------------------------------------------------------
+Detailed crossing information:
+Track ID     Frame    Class           Confidence   Direction           
+----------------------------------------------------------------------------------------------------
+1            2        car             0.9554       above_to_below      
+2            44       car             0.9543       above_to_below      
+11           86       motorcycle      0.8898       above_to_below      
+12           161      motorcycle      0.8873       above_to_below      
+10           333      car             0.9508       above_to_below      
+23           410      van             0.7039       above_to_below      
+29           470      car             0.9551       above_to_below      
+38           534      car             0.9543       above_to_below      
+42           594      car             0.9509       above_to_below      
+48           651      car             0.9562       above_to_below      
+51           690      car             0.9474       above_to_below      
+55           740      car             0.9655       above_to_below      
+58           798      car             0.9647       above_to_below      
+63           864      car             0.9576       above_to_below      
+87           1326     bus             0.9673       above_to_below      
+98           1388     bus             0.9682       above_to_below      
+117          1414     motorcycle      0.8983       above_to_below      
+101          1444     car             0.9564       above_to_below      
+120          1498     car             0.9530       above_to_below      
+124          1535     car             0.9554       above_to_below      
+131          1639     car             0.9534       above_to_below      
+137          1687     car             0.9498       above_to_below      
+143          1845     car             0.9684       above_to_below      
+156          2139     car             0.9569       above_to_below      
+64           2181     car             0.9443       above_to_below      
+175          2261     car             0.9536       above_to_below      
+177          2339     car             0.9519       above_to_below      
+179          2394     car             0.9535       above_to_below      
+180          2437     car             0.9532       above_to_below      
+182          2670     bus             0.9657       above_to_below      
+190          2845     car             0.9554       above_to_below      
+192          2990     bus             0.9627       above_to_below      
+206          3252     car             0.9578       above_to_below      
+216          3359     car             0.9513       above_to_below      
+220          3399     van             0.9630       above_to_below      
+224          3539     car             0.9547       above_to_below      
+232          3557     motorcycle      0.8953       above_to_below      
+231          3593     car             0.9548       above_to_below      
+236          3655     car             0.9602       above_to_below      
+244          3703     van             0.9562       above_to_below      
+255          3777     car             0.9579       above_to_below      
+288          4106     car             0.9591       above_to_below      
+308          4447     bus             0.9721       above_to_below      
+297          4875     car             0.9524       above_to_below      
+318          4922     car             0.9573       above_to_below      
+323          5044     bus             0.9684       above_to_below      
+322          5076     car             0.9514       above_to_below      
+328          5121     car             0.9493       above_to_below      
+330          5178     van             0.9607       above_to_below      
+334          5294     car             0.9549       above_to_below      
+346          5347     van             0.9638       above_to_below      
+348          5393     car             0.9555       above_to_below      
+351          5547     car             0.9640       above_to_below      
+353          5632     car             0.9450       above_to_below      
+355          5941     car             0.9561       above_to_below      
+361          6031     car             0.9532       above_to_below      
+364          6134     car             0.9542       above_to_below      
+368          6180     car             0.9342       above_to_below      
+327          6229     bus             0.9632       above_to_below      
+372          6376     car             0.9552       above_to_below      
+369          6495     bus             0.9711       above_to_below      
+396          7172     car             0.9510       above_to_below      
+401          7219     car             0.9532       above_to_below      
+403          7272     car             0.9567       above_to_below      
+413          7575     car             0.9528       above_to_below      
+414          7719     bus             0.9671       above_to_below      
+417          7937     van             0.6189       above_to_below      
+421          7981     car             0.9619       above_to_below      
+427          8240     car             0.9541       above_to_below      
+433          8505     motorcycle      0.8980       above_to_below      
+432          8552     car             0.9696       above_to_below      
+441          9514     van             0.9625       above_to_below      
+439          9703     car             0.9500       above_to_below      
+445          9863     motorcycle      0.9166       above_to_below      
+464          10660    motorcycle      0.9084       above_to_below      
+460          10989    car             0.9461       above_to_below      
+469          11052    car             0.9564       above_to_below      
+471          11146    car             0.9559       above_to_below      
+476          11200    car             0.9523       above_to_below      
+480          11256    car             0.9646       above_to_below      
+483          11290    bus             0.9569       above_to_below      
+484          11353    car             0.9521       above_to_below      
+490          11645    car             0.9604       above_to_below      
+488          11691    car             0.9546       above_to_below      
+494          11730    van             0.9602       above_to_below      
+500          11819    car             0.9577       above_to_below      
+496          12174    car             0.9552       above_to_below      
+507          12214    car             0.9556       above_to_below      
+509          12262    car             0.9555       above_to_below      
+501          12329    car             0.9521       above_to_below      
+515          12552    car             0.9585       above_to_below      
+516          12589    car             0.9563       above_to_below      
+519          12684    car             0.9534       above_to_below      
+513          12810    car             0.9517       above_to_below      
+523          12864    car             0.9521       above_to_below      
+526          12905    car             0.9512       above_to_below      
+527          12927    motorcycle      0.8904       above_to_below      
+531          13178    van             0.9643       above_to_below      
+525          13336    car             0.9530       above_to_below      
+535          13389    car             0.9569       above_to_below      
+532          13498    car             0.9580       above_to_below      
+552          13632    van             0.9606       above_to_below      
+581          13913    motorcycle      0.8994       above_to_below      
+593          14069    car             0.9604       above_to_below      
+595          14140    car             0.9541       above_to_below      
+599          14372    bus             0.9701       above_to_below      
+606          14402    bus             0.9645       above_to_below      
+607          14455    bus             0.9698       above_to_below      
+608          14459    motorcycle      0.9019       above_to_below      
+602          14496    car             0.9687       above_to_below      
+609          14535    car             0.9551       above_to_below      
+611          14589    car             0.9472       above_to_below      
+613          14633    car             0.9566       above_to_below      
+620          14707    car             0.9532       above_to_below      
+623          14781    car             0.9553       above_to_below      
+626          15082    car             0.9512       above_to_below      
+627          15139    car             0.9625       above_to_below      
+628          15199    car             0.9520       above_to_below      
+629          15275    car             0.9532       above_to_below      
+631          15344    car             0.9604       above_to_below      
+630          15345    bus             0.9696       above_to_below      
+632          15496    car             0.9575       above_to_below      
+639          15761    car             0.9688       above_to_below      
+640          16164    car             0.9548       above_to_below      
+644          16264    van             0.9628       above_to_below      
+647          16767    car             0.9698       above_to_below      
+648          16807    car             0.9576       above_to_below      
+657          17210    car             0.9630       above_to_below      
+658          17479    van             0.9561       above_to_below      
+661          17531    car             0.9596       above_to_below      
+662          17575    car             0.9624       above_to_below      
+663          17623    car             0.9582       above_to_below      
+668          17751    car             0.9559       above_to_below      
+696          18797    car             0.9565       above_to_below      
+720          19520    motorcycle      0.9096       above_to_below      
+737          20274    car             0.9530       above_to_below      
+740          20310    car             0.9555       above_to_below      
+746          20358    car             0.9525       above_to_below      
+752          20416    car             0.9532       above_to_below      
+755          20419    motorcycle      0.9036       above_to_below      
+762          20569    car             0.9527       above_to_below      
+766          20607    car             0.9538       above_to_below      
+773          20879    motorcycle      0.9024       above_to_below      
+780          20930    car             0.9544       above_to_below      
+784          21015    car             0.9661       above_to_below      
+786          21063    car             0.9560       above_to_below      
+789          21110    car             0.9529       above_to_below      
+803          21462    bus             0.9623       above_to_below      
+802          21541    bus             0.9622       above_to_below      
+812          21641    car             0.9563       above_to_below      
+824          22015    car             0.9531       above_to_below      
+827          22334    car             0.9551       above_to_below      
+829          22354    motorcycle      0.8821       above_to_below      
+830          22396    car             0.9549       above_to_below      
+832          22570    car             0.9518       above_to_below      
+840          22639    car             0.9567       above_to_below      
+858          22924    car             0.9557       above_to_below      
+860          22962    car             0.9522       above_to_below      
+863          23002    car             0.9526       above_to_below      
+835          23106    bus             0.9636       above_to_below      
+866          23174    motorcycle      0.8823       above_to_below      
+877          23374    car             0.9643       above_to_below      
+841          23385    bus             0.9642       above_to_below      
+880          23547    motorcycle      0.9076       above_to_below      
+891          24237    motorcycle      0.8958       above_to_below      
+900          24321    car             0.9529       above_to_below      
+893          24392    car             0.9492       above_to_below      
+906          24402    car             0.9510       above_to_below      
+919          24502    motorcycle      0.5629       above_to_below      
+914          24571    car             0.9711       above_to_below      
+922          24611    car             0.9602       above_to_below      
+926          24663    car             0.9542       above_to_below      
+928          24776    car             0.9528       above_to_below      
+929          24818    car             0.9579       above_to_below      
+935          24840    motorcycle      0.8891       above_to_below      
+936          24856    motorcycle      0.6937       above_to_below      
+910          24888    bus             0.9652       above_to_below      
+943          24935    motorcycle      0.8179       above_to_below      
+939          24949    car             0.9544       above_to_below      
+950          25010    motorcycle      0.8611       above_to_below      
+952          25046    car             0.9627       above_to_below      
+958          25299    car             0.9576       above_to_below      
+961          25323    motorcycle      0.8938       above_to_below      
+975          25673    car             0.9572       above_to_below      
+984          25722    car             0.9548       above_to_below      
+990          25944    car             0.9536       above_to_below      
+995          26012    car             0.9567       above_to_below      
+997          26052    car             0.9681       above_to_below      
+1001         26102    car             0.9648       above_to_below      
+1003         26153    car             0.9506       above_to_below      
+1006         26189    car             0.9524       above_to_below      
+983          26221    bus             0.9656       above_to_below      
+1014         26313    car             0.9518       above_to_below      
+1017         26354    car             0.9564       above_to_below      
+1020         26419    car             0.9537       above_to_below      
+1027         26708    car             0.9562       above_to_below      
+1037         26798    bus             0.9638       above_to_below      
+1052         26903    car             0.9537       above_to_below      
+1060         26980    motorcycle      0.8852       above_to_below      
+1094         27028    motorcycle      0.9086       above_to_below      
+1122         27469    bus             0.9650       above_to_below      
+1123         27507    car             0.9643       above_to_below      
+1127         27562    car             0.9536       above_to_below      
+1142         27990    car             0.9560       above_to_below      
+1141         28252    car             0.9569       above_to_below      
+1148         28290    car             0.9542       above_to_below      
+1146         28763    van             0.9042       above_to_below      
+1146         28764    van             0.9000       below_to_above      
+1146         28765    van             0.8650       above_to_below      
+1146         28770    van             0.8505       below_to_above      
+1146         28829    van             0.8392       above_to_below      
+1177         28864    bus             0.9726       above_to_below      
+1191         28891    motorcycle      0.9000       above_to_below      
+1189         28979    car             0.9574       above_to_below      
+1201         29140    motorcycle      0.8716       above_to_below      
+1200         29164    motorcycle      0.8967       above_to_below      
+1207         29200    motorcycle      0.8991       above_to_below      
+1195         29349    car             0.9572       above_to_below      
+1182         29427    bus             0.9703       above_to_below      
+1205         29606    car             0.9524       above_to_below      
+1213         29712    car             0.9545       above_to_below      
+1216         29991    car             0.9496       above_to_below      
+1198         30052    van             0.9545       above_to_below      
+1229         30089    car             0.9551       above_to_below      
+1234         30147    car             0.9590       above_to_below      
+1236         30171    motorcycle      0.8851       above_to_below      
+1235         30194    car             0.9535       above_to_below      
+1238         30228    car             0.9520       above_to_below      
+1241         30320    motorcycle      0.8995       above_to_below      
+1228         30499    car             0.9492       above_to_below      
+1242         30527    car             0.9590       above_to_below      
+1243         30600    car             0.9589       above_to_below      
+1246         30650    car             0.9526       above_to_below      
+1251         30718    van             0.9446       above_to_below      
+1252         30763    car             0.9547       above_to_below      
+1259         30817    bus             0.9649       above_to_below      
+1248         30843    car             0.9586       above_to_below      
+1261         30904    car             0.9586       above_to_below      
+1263         30959    car             0.9483       above_to_below      
+1260         30995    van             0.9524       above_to_below      
+1267         31040    car             0.9530       above_to_below      
+1270         31070    motorcycle      0.8904       above_to_below      
+1269         31319    car             0.9532       above_to_below      
+1271         31381    car             0.9547       above_to_below      
+1272         31435    car             0.9500       above_to_below      
+1273         31482    van             0.9603       above_to_below      
+1275         31522    car             0.9552       above_to_below      
+1268         31567    van             0.9675       above_to_below      
+1279         31623    car             0.9541       above_to_below      
+1280         31825    car             0.9576       above_to_below      
+1283         31901    car             0.9596       above_to_below      
+1285         31964    car             0.9506       above_to_below      
+1286         32014    car             0.9529       above_to_below      
+1287         32058    car             0.9590       above_to_below      
+1289         32106    car             0.9536       above_to_below      
+1281         32152    car             0.9549       above_to_below      
+1293         32457    car             0.9530       above_to_below      
+1295         32502    car             0.9675       above_to_below      
+1297         32562    van             0.9664       above_to_below      
+1299         32610    car             0.9561       above_to_below      
+1303         32666    van             0.9628       above_to_below      
+1307         32736    car             0.9539       above_to_below      
+1308         32796    car             0.9577       above_to_below      
+1312         33108    motorcycle      0.8953       above_to_below      
+1309         33117    car             0.9533       above_to_below      
+1313         33152    car             0.9592       above_to_below      
+1317         33221    motorcycle      0.8963       above_to_below      
+1311         33225    car             0.9508       above_to_below      
+1318         33275    van             0.9564       above_to_below      
+1320         33327    car             0.9536       above_to_below      
+1322         33385    car             0.9546       above_to_below      
+1329         33454    car             0.9528       above_to_below      
+1352         33568    van             0.9662       above_to_below      
+1369         33753    car             0.9545       above_to_below      
+1372         33799    car             0.9492       above_to_below      
+1377         33851    car             0.9517       above_to_below      
+1380         33907    car             0.9539       above_to_below      
+1384         33982    car             0.9569       above_to_below      
+1399         34087    bus             0.9676       above_to_below      
+1425         34466    bus             0.9619       above_to_below      
+1398         34737    car             0.9528       above_to_below      
+1406         35111    car             0.9544       above_to_below      
+1442         35161    bus             0.9665       above_to_below      
+1449         35243    motorcycle      0.9063       above_to_below      
+1447         35265    car             0.9492       above_to_below      
+1451         35313    car             0.9362       above_to_below      
+1455         35465    car             0.9550       above_to_below      
+1446         35489    bus             0.9669       above_to_below      
+1461         35554    car             0.9495       above_to_below      
+1462         35669    car             0.9556       above_to_below      
+1464         36072    car             0.9575       above_to_below      
+1467         36105    car             0.9489       above_to_below      
+1468         36160    car             0.9544       above_to_below      
+1469         36204    car             0.9507       above_to_below      
+1470         36246    car             0.9538       above_to_below      
+1471         36330    car             0.9512       above_to_below      
+1472         36782    car             0.9561       above_to_below      
+1477         36820    car             0.9558       above_to_below      
+1479         36870    car             0.9524       above_to_below      
+1480         36885    motorcycle      0.8875       above_to_below      
+1481         36921    car             0.9548       above_to_below      
+1484         36970    car             0.9528       above_to_below      
+1487         37022    car             0.9552       above_to_below      
+1493         37077    van             0.9608       above_to_below      
+1496         37139    car             0.9547       above_to_below      
+1501         37473    car             0.9506       above_to_below      
+1524         37538    car             0.9670       above_to_below      
+1527         37587    car             0.9574       above_to_below      
+1528         37631    car             0.9537       above_to_below      
+1530         37675    car             0.9477       above_to_below      
+1534         37722    van             0.9630       above_to_below      
+1537         37864    car             0.9583       above_to_below      
+1545         37889    motorcycle      0.8889       above_to_below      
+1546         37917    motorcycle      0.8969       above_to_below      
+1544         37920    car             0.9540       above_to_below      
+1547         37989    car             0.9671       above_to_below      
+1549         38038    car             0.9536       above_to_below      
+1550         38090    car             0.9664       above_to_below      
+1553         38143    car             0.9528       above_to_below      
+1555         38198    car             0.9503       above_to_below      
+1557         38253    car             0.9662       above_to_below      
+1563         38373    car             0.9514       above_to_below      
+1571         38420    car             0.9560       above_to_below      
+1576         38471    motorcycle      0.8906       above_to_below      
+1575         38472    car             0.9533       above_to_below      
+1580         38513    motorcycle      0.9002       above_to_below      
+1582         38552    van             0.9607       above_to_below      
+1584         38585    car             0.9533       above_to_below      
+1588         38600    motorcycle      0.8749       above_to_below      
+1586         38615    car             0.9491       above_to_below      
+1595         38664    van             0.9600       above_to_below      
+1598         38712    car             0.9670       above_to_below      
+1602         39089    car             0.9483       above_to_below      
+1612         39125    car             0.9564       above_to_below      
+1615         39167    car             0.9524       above_to_below      
+1618         39214    car             0.9539       above_to_below      
+1619         39246    car             0.9563       above_to_below      
+1627         39442    car             0.9479       above_to_below      
+1628         39498    car             0.9628       above_to_below      
+1629         39557    car             0.9548       above_to_below      
+1630         39606    car             0.9499       above_to_below      
+1632         39804    car             0.9534       above_to_below      
+1635         39843    van             0.9638       above_to_below      
+1637         39907    van             0.9560       above_to_below      
+1639         39946    van             0.9614       above_to_below      
+1641         40015    car             0.9525       above_to_below      
+1647         40059    car             0.9555       above_to_below      
+1651         40122    car             0.9514       above_to_below      
+1657         40328    car             0.9613       above_to_below      
+1667         40468    car             0.9472       above_to_below      
+1687         40673    car             0.9526       above_to_below      
+1695         40788    bus             0.9621       above_to_below      
+1692         40802    bus             0.9263       above_to_below      
+1764         41330    bus             0.9629       above_to_below      
+1744         41365    bus             0.9730       above_to_below      
+1701         41373    car             0.9455       above_to_below      
+1790         41783    motorcycle      0.8907       above_to_below      
+1768         42373    car             0.9591       above_to_below      
+1807         42433    car             0.9570       above_to_below      
+1809         42502    car             0.9526       above_to_below      
+1810         42562    van             0.9661       above_to_below      
+1813         42618    car             0.9525       above_to_below      
+1819         42664    car             0.9573       above_to_below      
+1805         42882    bus             0.9632       above_to_below      
+1823         43097    car             0.9565       above_to_below      
+1867         43145    car             0.9548       above_to_below      
+1868         43195    car             0.9570       above_to_below      
+1869         43237    car             0.9500       above_to_below      
+1871         43286    car             0.9570       above_to_below      
+1872         43329    car             0.9565       above_to_below      
+1865         43393    tricycle        0.9108       above_to_below      
+1865         43395    tricycle        0.9411       below_to_above      
+1865         43405    tricycle        0.9008       above_to_below      
+1865         43406    tricycle        0.9031       below_to_above      
+1865         43410    tricycle        0.9424       above_to_below      
+1906         43593    motorcycle      0.9029       above_to_below      
+1914         43617    motorcycle      0.8944       above_to_below      
+1879         43632    van             0.9605       above_to_below      
+1912         43674    car             0.9536       above_to_below      
+1919         43733    car             0.9716       above_to_below      
+1921         43792    van             0.9664       above_to_below      
+1924         43832    car             0.9522       above_to_below      
+1925         43879    car             0.9580       above_to_below      
+1932         44175    car             0.9555       above_to_below      
+1933         44246    car             0.9642       above_to_below      
+1936         44283    car             0.9538       above_to_below      
+1937         44349    car             0.9381       above_to_below      
+1946         44426    car             0.9584       above_to_below      
+1949         44566    motorcycle      0.8987       above_to_below      
+1948         44627    car             0.9571       above_to_below      
+1954         44688    van             0.9603       above_to_below      
+1958         44749    car             0.9561       above_to_below      
+1966         44807    van             0.9659       above_to_below      
+1971         45090    car             0.9555       above_to_below      
+1990         45115    motorcycle      0.8849       above_to_below      
+1991         45153    car             0.9516       above_to_below      
+1993         45202    car             0.9569       above_to_below      
+1996         45235    car             0.9500       above_to_below      
+1998         45285    car             0.9552       above_to_below      
+2000         45320    motorcycle      0.9155       above_to_below      
+1999         45336    car             0.9492       above_to_below      
+2002         45383    car             0.9584       above_to_below      
+2006         45421    car             0.9572       above_to_below      
+2012         45453    motorcycle      0.9010       above_to_below      
+2013         45458    motorcycle      0.8855       above_to_below      
+2015         45931    car             0.9552       above_to_below      
+1988         45976    car             0.9542       above_to_below      
+2032         46038    bus             0.9662       above_to_below      
+2042         46061    car             0.9532       above_to_below      
+2046         46115    car             0.9539       above_to_below      
+2078         46547    car             0.9543       above_to_below      
+2087         46688    car             0.9609       above_to_below      
+2090         46740    car             0.9656       above_to_below      
+2103         46799    car             0.9542       above_to_below      
+2111         46857    car             0.9509       above_to_below      
+2124         46895    car             0.9534       above_to_below      
+2130         46966    car             0.9524       above_to_below      
+2198         47856    motorcycle      0.8949       above_to_below      
+2186         47956    bus             0.9649       above_to_below      
+2192         47982    bus             0.9589       above_to_below      
+2138         48288    van             0.9629       above_to_below      
+2231         48334    car             0.9540       above_to_below      
+2235         48389    car             0.9591       above_to_below      
+2237         48439    car             0.9536       above_to_below      
+2238         48505    car             0.9496       above_to_below      
+2240         48563    car             0.9553       above_to_below      
+2244         48612    car             0.9570       above_to_below      
+2248         48660    car             0.9566       above_to_below      
+2250         48707    van             0.9532       above_to_below      
+2252         48751    car             0.9513       above_to_below      
+2254         48790    car             0.9513       above_to_below      
+2256         48869    van             0.9651       above_to_below      
+2257         48876    motorcycle      0.8716       above_to_below      
+2258         49293    car             0.9578       above_to_below      
+2284         49352    van             0.9658       above_to_below      
+2297         49419    van             0.8345       above_to_below      
+2312         49674    car             0.9544       above_to_below      
+2313         49730    car             0.9551       above_to_below      
+2318         49755    motorcycle      0.8935       above_to_below      
+2320         49785    car             0.9512       above_to_below      
+2359         50114    motorcycle      0.9120       above_to_below      
+2368         50228    car             0.9558       above_to_below      
+2372         50293    car             0.9501       above_to_below      
+2377         50351    car             0.9549       above_to_below      
+2381         50389    car             0.9572       above_to_below      
+2385         50443    car             0.9232       above_to_below      
+2388         50482    car             0.9510       above_to_below      
+2394         50556    van             0.5418       above_to_below      
+2413         50715    car             0.9537       above_to_below      
+2362         50861    bus             0.9617       above_to_below      
+2421         50909    bus             0.9600       above_to_below      
+2422         50958    bus             0.9771       above_to_below      
+2419         50974    car             0.9090       above_to_below      
+2426         51028    car             0.9496       above_to_below      
+2427         51080    van             0.9604       above_to_below      
+2433         51271    car             0.9510       above_to_below      
+2438         51354    car             0.9596       above_to_below      
+2442         51419    motorcycle      0.9087       above_to_below      
+2441         51427    car             0.9500       above_to_below      
+2436         51484    bus             0.9639       above_to_below      
+2440         51514    bus             0.9662       above_to_below      
+2443         51538    car             0.9660       above_to_below      
+2446         51543    motorcycle      0.9097       above_to_below      
+2447         51591    car             0.9568       above_to_below      
+2453         51608    motorcycle      0.8927       above_to_below      
+2449         51646    car             0.9539       above_to_below      
+2454         51696    car             0.9549       above_to_below      
+2458         51852    motorcycle      0.8858       above_to_below      
+2455         51886    car             0.9551       above_to_below      
+2459         51940    bus             0.9605       above_to_below      
+2463         51951    car             0.9524       above_to_below      
+2468         52023    car             0.9524       above_to_below      
+2469         52073    car             0.9624       above_to_below      
+2470         52127    car             0.9533       above_to_below      
+2472         52172    van             0.9573       above_to_below      
+2478         52218    motorcycle      0.9073       above_to_below      
+2475         52521    car             0.9504       above_to_below      
+2482         52577    car             0.9559       above_to_below      
+2498         52640    car             0.9535       above_to_below      
+2504         52698    car             0.9575       above_to_below      
+2506         52941    car             0.9576       above_to_below      
+2517         52986    car             0.9515       above_to_below      
+2526         53035    car             0.9670       above_to_below      
+2534         53338    van             0.9564       above_to_below      
+2557         53396    van             0.9670       above_to_below      
+2568         53454    car             0.9530       above_to_below      
+2579         53503    car             0.9511       above_to_below      
+2586         53599    van             0.9666       above_to_below      
+2594         53694    car             0.9523       above_to_below      
+2605         53758    car             0.9528       above_to_below      
+2612         54112    car             0.9549       above_to_below      
+2632         54153    car             0.9541       above_to_below      
+2634         54196    car             0.9568       above_to_below      
+2639         54235    car             0.9547       above_to_below      
+2642         54323    car             0.9500       above_to_below      
+2660         54602    motorcycle      0.9102       above_to_below      
+2673         54612    motorcycle      0.8620       above_to_below      
+
+====================================================================================================
+TRACKS WITH SWITCHES THAT CROSSED THE LINE
+====================================================================================================
+
+Found 127 tracks that had class switches AND crossed the line:
+
+
+Track ID 23:
+  Class switches: 3
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 410 as van
+  Switch timeline:
+    Frame 301: car → van
+    Frame 411: van → car
+    Frame 438: car → van
+
+Track ID 29:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 470 as car
+  Switch timeline:
+    Frame 497: car → van
+    Frame 500: van → car
+
+Track ID 63:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 864 as car
+  Switch timeline:
+    Frame 911: car → van
+    Frame 914: van → car
+
+Track ID 64:
+  Class switches: 14
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 2181 as car
+  Switch timeline:
+    Frame 1023: car → van
+    Frame 1027: van → car
+    Frame 1029: car → van
+    Frame 1030: van → car
+    Frame 1035: car → van
+    Frame 1037: van → car
+    Frame 2072: car → van
+    Frame 2073: van → car
+    Frame 2082: car → van
+    Frame 2083: van → car
+    Frame 2098: car → van
+    Frame 2106: van → car
+    Frame 2109: car → van
+    Frame 2110: van → car
+
+Track ID 87:
+  Class switches: 2
+  Initial class: bus
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 1326 as bus
+  Switch timeline:
+    Frame 1231: bus → motorcycle
+    Frame 1232: motorcycle → bus
+
+Track ID 98:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 1388 as bus
+  Switch timeline:
+    Frame 1406: bus → car
+
+Track ID 137:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 1687 as car
+  Switch timeline:
+    Frame 1714: car → van
+    Frame 1715: van → car
+
+Track ID 179:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 2394 as car
+  Switch timeline:
+    Frame 2418: car → van
+    Frame 2419: van → car
+
+Track ID 192:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 2990 as bus
+  Switch timeline:
+    Frame 3005: bus → car
+
+Track ID 220:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 3399 as van
+  Switch timeline:
+    Frame 3439: van → car
+
+Track ID 297:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 4875 as car
+  Switch timeline:
+    Frame 4901: car → van
+    Frame 4902: van → car
+
+Track ID 308:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 4447 as bus
+  Switch timeline:
+    Frame 4461: bus → car
+
+Track ID 322:
+  Class switches: 3
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 5076 as car
+  Switch timeline:
+    Frame 5107: car → van
+    Frame 5109: van → car
+    Frame 5115: car → van
+
+Track ID 323:
+  Class switches: 2
+  Initial class: bus
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 5044 as bus
+  Switch timeline:
+    Frame 5055: bus → car
+    Frame 5057: car → bus
+
+Track ID 330:
+  Class switches: 2
+  Initial class: van
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 5178 as van
+  Switch timeline:
+    Frame 5195: van → car
+    Frame 5201: car → van
+
+Track ID 346:
+  Class switches: 8
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 5347 as van
+  Switch timeline:
+    Frame 5277: car → van
+    Frame 5310: van → car
+    Frame 5312: car → van
+    Frame 5356: van → car
+    Frame 5365: car → van
+    Frame 5379: van → car
+    Frame 5381: car → van
+    Frame 5382: van → car
+
+Track ID 351:
+  Class switches: 9
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 5547 as car
+  Switch timeline:
+    Frame 5391: van → car
+    Frame 5611: car → van
+    Frame 5614: van → car
+    Frame 5615: car → van
+    Frame 5627: van → car
+    Frame 5657: car → van
+    Frame 5763: van → car
+    Frame 5794: car → van
+    Frame 5798: van → car
+
+Track ID 353:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 5632 as car
+  Switch timeline:
+    Frame 5496: van → car
+
+Track ID 417:
+  Class switches: 4
+  Initial class: van
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 7937 as van
+  Switch timeline:
+    Frame 7713: van → car
+    Frame 7719: car → van
+    Frame 7726: van → car
+    Frame 7727: car → van
+
+Track ID 433:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 8505 as motorcycle
+  Switch timeline:
+    Frame 8521: motorcycle → bus
+
+Track ID 441:
+  Class switches: 7
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 9514 as van
+  Switch timeline:
+    Frame 9418: car → van
+    Frame 9420: van → car
+    Frame 9422: car → van
+    Frame 9458: van → car
+    Frame 9462: car → van
+    Frame 9521: van → car
+    Frame 9541: car → van
+
+Track ID 445:
+  Class switches: 1
+  Initial class: car
+  Final class: motorcycle
+  Line crossings: 1
+    Crossed at frame 9863 as motorcycle
+  Switch timeline:
+    Frame 9656: car → motorcycle
+
+Track ID 464:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 10660 as motorcycle
+  Switch timeline:
+    Frame 10673: motorcycle → car
+
+Track ID 483:
+  Class switches: 2
+  Initial class: motorcycle
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 11290 as bus
+  Switch timeline:
+    Frame 11241: motorcycle → bus
+    Frame 11315: bus → car
+
+Track ID 494:
+  Class switches: 5
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 11730 as van
+  Switch timeline:
+    Frame 11669: car → van
+    Frame 11738: van → car
+    Frame 11748: car → van
+    Frame 11755: van → car
+    Frame 11759: car → van
+
+Track ID 527:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 12927 as motorcycle
+  Switch timeline:
+    Frame 12959: motorcycle → bus
+
+Track ID 552:
+  Class switches: 4
+  Initial class: van
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 13632 as van
+  Switch timeline:
+    Frame 13576: van → car
+    Frame 13579: car → van
+    Frame 13639: van → car
+    Frame 13644: car → van
+
+Track ID 640:
+  Class switches: 4
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 16164 as car
+  Switch timeline:
+    Frame 16067: car → van
+    Frame 16077: van → car
+    Frame 16086: car → van
+    Frame 16088: van → car
+
+Track ID 644:
+  Class switches: 4
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 16264 as van
+  Switch timeline:
+    Frame 16171: car → van
+    Frame 16282: van → car
+    Frame 16292: car → van
+    Frame 16319: van → car
+
+Track ID 657:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 17210 as car
+  Switch timeline:
+    Frame 17236: car → van
+    Frame 17238: van → car
+
+Track ID 658:
+  Class switches: 4
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 17479 as van
+  Switch timeline:
+    Frame 17287: car → van
+    Frame 17487: van → car
+    Frame 17501: car → van
+    Frame 17511: van → car
+
+Track ID 773:
+  Class switches: 1
+  Initial class: car
+  Final class: motorcycle
+  Line crossings: 1
+    Crossed at frame 20879 as motorcycle
+  Switch timeline:
+    Frame 20808: car → motorcycle
+
+Track ID 789:
+  Class switches: 3
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 21110 as car
+  Switch timeline:
+    Frame 21131: car → van
+    Frame 21134: van → car
+    Frame 21135: car → van
+
+Track ID 802:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 21541 as bus
+  Switch timeline:
+    Frame 21558: bus → car
+
+Track ID 803:
+  Class switches: 5
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 21462 as bus
+  Switch timeline:
+    Frame 21382: bus → motorcycle
+    Frame 21384: motorcycle → bus
+    Frame 21385: bus → motorcycle
+    Frame 21395: motorcycle → bus
+    Frame 21474: bus → car
+
+Track ID 812:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 21641 as car
+  Switch timeline:
+    Frame 21669: car → van
+    Frame 21670: van → car
+
+Track ID 830:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 22396 as car
+  Switch timeline:
+    Frame 22318: motorcycle → car
+
+Track ID 840:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 22639 as car
+  Switch timeline:
+    Frame 22669: car → van
+    Frame 22670: van → car
+
+Track ID 841:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 23385 as bus
+  Switch timeline:
+    Frame 23442: bus → car
+
+Track ID 877:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 23374 as car
+  Switch timeline:
+    Frame 23302: van → car
+
+Track ID 910:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 24888 as bus
+  Switch timeline:
+    Frame 24762: motorcycle → bus
+
+Track ID 983:
+  Class switches: 7
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 26221 as bus
+  Switch timeline:
+    Frame 26057: bus → motorcycle
+    Frame 26095: motorcycle → bus
+    Frame 26120: bus → motorcycle
+    Frame 26121: motorcycle → bus
+    Frame 26122: bus → motorcycle
+    Frame 26123: motorcycle → bus
+    Frame 26248: bus → car
+
+Track ID 1001:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 26102 as car
+  Switch timeline:
+    Frame 26138: car → van
+    Frame 26142: van → car
+
+Track ID 1037:
+  Class switches: 5
+  Initial class: motorcycle
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 26798 as bus
+  Switch timeline:
+    Frame 26738: motorcycle → bus
+    Frame 26755: bus → motorcycle
+    Frame 26756: motorcycle → bus
+    Frame 26775: bus → motorcycle
+    Frame 26776: motorcycle → bus
+
+Track ID 1060:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 26980 as motorcycle
+  Switch timeline:
+    Frame 26993: motorcycle → bus
+
+Track ID 1122:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 27469 as bus
+  Switch timeline:
+    Frame 27480: bus → car
+
+Track ID 1123:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 27507 as car
+  Switch timeline:
+    Frame 27544: car → van
+    Frame 27550: van → car
+
+Track ID 1141:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 28252 as car
+  Switch timeline:
+    Frame 28231: car → van
+    Frame 28233: van → car
+
+Track ID 1146:
+  Class switches: 11
+  Initial class: car
+  Final class: tricycle
+  Line crossings: 5
+    Crossed at frame 28763 as van
+    Crossed at frame 28764 as van
+    Crossed at frame 28765 as van
+    Crossed at frame 28770 as van
+    Crossed at frame 28829 as van
+  Switch timeline:
+    Frame 28211: car → motorcycle
+    Frame 28215: motorcycle → car
+    Frame 28478: car → tricycle
+    Frame 28720: tricycle → van
+    Frame 28721: van → tricycle
+    Frame 28735: tricycle → van
+    Frame 28774: van → tricycle
+    Frame 28798: tricycle → van
+    Frame 28799: van → tricycle
+    Frame 28803: tricycle → van
+    Frame 28850: van → tricycle
+
+Track ID 1189:
+  Class switches: 4
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 28979 as car
+  Switch timeline:
+    Frame 29287: car → van
+    Frame 29294: van → car
+    Frame 29295: car → van
+    Frame 29297: van → car
+
+Track ID 1191:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 28891 as motorcycle
+  Switch timeline:
+    Frame 28919: motorcycle → van
+
+Track ID 1195:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 29349 as car
+  Switch timeline:
+    Frame 29538: car → van
+    Frame 29547: van → car
+
+Track ID 1198:
+  Class switches: 5
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 30052 as van
+  Switch timeline:
+    Frame 29972: car → van
+    Frame 29975: van → car
+    Frame 29976: car → van
+    Frame 30067: van → car
+    Frame 30070: car → van
+
+Track ID 1200:
+  Class switches: 1
+  Initial class: car
+  Final class: motorcycle
+  Line crossings: 1
+    Crossed at frame 29164 as motorcycle
+  Switch timeline:
+    Frame 29107: car → motorcycle
+
+Track ID 1213:
+  Class switches: 14
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 29712 as car
+  Switch timeline:
+    Frame 29611: car → van
+    Frame 29612: van → car
+    Frame 29655: car → van
+    Frame 29656: van → car
+    Frame 29657: car → van
+    Frame 29659: van → car
+    Frame 29673: car → van
+    Frame 29674: van → car
+    Frame 29675: car → van
+    Frame 29678: van → car
+    Frame 29686: car → van
+    Frame 29690: van → car
+    Frame 29691: car → van
+    Frame 29693: van → car
+
+Track ID 1228:
+  Class switches: 3
+  Initial class: motorcycle
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 30499 as car
+  Switch timeline:
+    Frame 30010: motorcycle → car
+    Frame 30048: car → motorcycle
+    Frame 30049: motorcycle → car
+
+Track ID 1248:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 30843 as car
+  Switch timeline:
+    Frame 30593: car → motorcycle
+    Frame 30594: motorcycle → car
+
+Track ID 1251:
+  Class switches: 8
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 30718 as van
+  Switch timeline:
+    Frame 30633: car → van
+    Frame 30728: van → car
+    Frame 30729: car → van
+    Frame 30731: van → car
+    Frame 30732: car → van
+    Frame 30733: van → car
+    Frame 30740: car → van
+    Frame 30759: van → car
+
+Track ID 1259:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 30817 as bus
+  Switch timeline:
+    Frame 30831: bus → car
+
+Track ID 1260:
+  Class switches: 2
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 30995 as van
+  Switch timeline:
+    Frame 30909: car → motorcycle
+    Frame 30910: motorcycle → van
+
+Track ID 1268:
+  Class switches: 3
+  Initial class: motorcycle
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 31567 as van
+  Switch timeline:
+    Frame 31000: motorcycle → car
+    Frame 31501: car → van
+    Frame 31608: van → car
+
+Track ID 1273:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 31482 as van
+  Switch timeline:
+    Frame 31412: motorcycle → van
+
+Track ID 1283:
+  Class switches: 3
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 31901 as car
+  Switch timeline:
+    Frame 31803: van → car
+    Frame 31933: car → van
+    Frame 31936: van → car
+
+Track ID 1289:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 32106 as car
+  Switch timeline:
+    Frame 32141: car → van
+    Frame 32142: van → car
+
+Track ID 1293:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 32457 as car
+  Switch timeline:
+    Frame 32140: car → van
+    Frame 32141: van → car
+
+Track ID 1295:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 32502 as car
+  Switch timeline:
+    Frame 32413: car → van
+    Frame 32414: van → car
+
+Track ID 1297:
+  Class switches: 1
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 32562 as van
+  Switch timeline:
+    Frame 32478: car → van
+
+Track ID 1299:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 32610 as car
+  Switch timeline:
+    Frame 32518: motorcycle → car
+
+Track ID 1303:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 32666 as van
+  Switch timeline:
+    Frame 32612: car → van
+    Frame 32705: van → car
+
+Track ID 1320:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 33327 as car
+  Switch timeline:
+    Frame 33267: van → car
+
+Track ID 1352:
+  Class switches: 1
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 33568 as van
+  Switch timeline:
+    Frame 33523: car → van
+
+Track ID 1380:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 33907 as car
+  Switch timeline:
+    Frame 33997: car → van
+    Frame 33999: van → car
+
+Track ID 1398:
+  Class switches: 6
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 34737 as car
+  Switch timeline:
+    Frame 34024: car → van
+    Frame 34027: van → car
+    Frame 34028: car → van
+    Frame 34030: van → car
+    Frame 34062: car → van
+    Frame 34069: van → car
+
+Track ID 1399:
+  Class switches: 5
+  Initial class: motorcycle
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 34087 as bus
+  Switch timeline:
+    Frame 33931: motorcycle → bus
+    Frame 33946: bus → motorcycle
+    Frame 33947: motorcycle → bus
+    Frame 33962: bus → motorcycle
+    Frame 33982: motorcycle → bus
+
+Track ID 1442:
+  Class switches: 5
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 35161 as bus
+  Switch timeline:
+    Frame 35033: bus → motorcycle
+    Frame 35049: motorcycle → bus
+    Frame 35051: bus → motorcycle
+    Frame 35053: motorcycle → bus
+    Frame 35188: bus → car
+
+Track ID 1447:
+  Class switches: 6
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 35265 as car
+  Switch timeline:
+    Frame 35293: car → van
+    Frame 35294: van → car
+    Frame 35295: car → van
+    Frame 35298: van → car
+    Frame 35299: car → van
+    Frame 35306: van → car
+
+Track ID 1451:
+  Class switches: 10
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 35313 as car
+  Switch timeline:
+    Frame 35292: car → van
+    Frame 35295: van → car
+    Frame 35312: car → van
+    Frame 35313: van → car
+    Frame 35324: car → van
+    Frame 35331: van → car
+    Frame 35369: car → van
+    Frame 35396: van → car
+    Frame 35400: car → van
+    Frame 35408: van → car
+
+Track ID 1484:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 36970 as car
+  Switch timeline:
+    Frame 36951: car → van
+    Frame 36953: van → car
+
+Track ID 1493:
+  Class switches: 5
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 37077 as van
+  Switch timeline:
+    Frame 36993: car → van
+    Frame 36996: van → car
+    Frame 36998: car → van
+    Frame 37093: van → car
+    Frame 37108: car → van
+
+Track ID 1528:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 37631 as car
+  Switch timeline:
+    Frame 37667: car → van
+    Frame 37672: van → car
+
+Track ID 1534:
+  Class switches: 7
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 37722 as van
+  Switch timeline:
+    Frame 37680: van → car
+    Frame 37681: car → van
+    Frame 37732: van → car
+    Frame 37745: car → van
+    Frame 37762: van → car
+    Frame 37764: car → van
+    Frame 37766: van → car
+
+Track ID 1582:
+  Class switches: 5
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 38552 as van
+  Switch timeline:
+    Frame 38496: van → car
+    Frame 38498: car → van
+    Frame 38561: van → car
+    Frame 38581: car → van
+    Frame 38586: van → car
+
+Track ID 1584:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 38585 as car
+  Switch timeline:
+    Frame 38616: car → van
+    Frame 38620: van → car
+
+Track ID 1595:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 38664 as van
+  Switch timeline:
+    Frame 38702: van → car
+
+Track ID 1630:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 39606 as car
+  Switch timeline:
+    Frame 39648: car → van
+    Frame 39650: van → car
+
+Track ID 1635:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 39843 as van
+  Switch timeline:
+    Frame 39876: van → car
+
+Track ID 1639:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 39946 as van
+  Switch timeline:
+    Frame 39982: van → car
+
+Track ID 1692:
+  Class switches: 2
+  Initial class: bus
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 40802 as bus
+  Switch timeline:
+    Frame 40519: bus → motorcycle
+    Frame 40530: motorcycle → bus
+
+Track ID 1695:
+  Class switches: 4
+  Initial class: bus
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 40788 as bus
+  Switch timeline:
+    Frame 40511: bus → motorcycle
+    Frame 40512: motorcycle → bus
+    Frame 40537: bus → motorcycle
+    Frame 40538: motorcycle → bus
+
+Track ID 1768:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 42373 as car
+  Switch timeline:
+    Frame 41212: car → van
+    Frame 41213: van → car
+
+Track ID 1810:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 42562 as van
+  Switch timeline:
+    Frame 42469: car → van
+    Frame 42607: van → car
+
+Track ID 1865:
+  Class switches: 7
+  Initial class: car
+  Final class: van
+  Line crossings: 5
+    Crossed at frame 43393 as tricycle
+    Crossed at frame 43395 as tricycle
+    Crossed at frame 43405 as tricycle
+    Crossed at frame 43406 as tricycle
+    Crossed at frame 43410 as tricycle
+  Switch timeline:
+    Frame 43308: car → van
+    Frame 43311: van → tricycle
+    Frame 43375: tricycle → van
+    Frame 43376: van → tricycle
+    Frame 43384: tricycle → van
+    Frame 43388: van → tricycle
+    Frame 43427: tricycle → van
+
+Track ID 1869:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 43237 as car
+  Switch timeline:
+    Frame 43171: car → van
+    Frame 43173: van → car
+
+Track ID 1871:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 43286 as car
+  Switch timeline:
+    Frame 43316: car → van
+    Frame 43319: van → car
+
+Track ID 1879:
+  Class switches: 20
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 43632 as van
+  Switch timeline:
+    Frame 43389: car → van
+    Frame 43392: van → car
+    Frame 43404: car → van
+    Frame 43418: van → car
+    Frame 43430: car → van
+    Frame 43433: van → car
+    Frame 43443: car → van
+    Frame 43447: van → car
+    Frame 43475: car → van
+    Frame 43479: van → car
+    Frame 43502: car → van
+    Frame 43536: van → car
+    Frame 43537: car → van
+    Frame 43559: van → car
+    Frame 43561: car → van
+    Frame 43570: van → car
+    Frame 43573: car → van
+    Frame 43574: van → car
+    Frame 43588: car → van
+    Frame 43664: van → car
+
+Track ID 1912:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 43674 as car
+  Switch timeline:
+    Frame 43656: car → van
+    Frame 43658: van → car
+
+Track ID 1914:
+  Class switches: 1
+  Initial class: motorcycle
+  Final class: bus
+  Line crossings: 1
+    Crossed at frame 43617 as motorcycle
+  Switch timeline:
+    Frame 43635: motorcycle → bus
+
+Track ID 1933:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 44246 as car
+  Switch timeline:
+    Frame 44222: car → van
+    Frame 44224: van → car
+
+Track ID 1937:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 44349 as car
+  Switch timeline:
+    Frame 44313: car → van
+    Frame 44314: van → car
+
+Track ID 1954:
+  Class switches: 3
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 44688 as van
+  Switch timeline:
+    Frame 44603: car → van
+    Frame 44604: van → car
+    Frame 44605: car → van
+
+Track ID 1966:
+  Class switches: 6
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 44807 as van
+  Switch timeline:
+    Frame 44725: car → van
+    Frame 44825: van → car
+    Frame 44831: car → van
+    Frame 44852: van → car
+    Frame 44854: car → van
+    Frame 44856: van → car
+
+Track ID 1971:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 45090 as car
+  Switch timeline:
+    Frame 45117: car → van
+    Frame 45118: van → car
+
+Track ID 2032:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 46038 as bus
+  Switch timeline:
+    Frame 46057: bus → car
+
+Track ID 2087:
+  Class switches: 4
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 46688 as car
+  Switch timeline:
+    Frame 46658: car → van
+    Frame 46660: van → car
+    Frame 46662: car → van
+    Frame 46663: van → car
+
+Track ID 2138:
+  Class switches: 55
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 48288 as van
+  Switch timeline:
+    Frame 46963: van → car
+    Frame 46964: car → van
+    Frame 46974: van → car
+    Frame 46979: car → van
+    Frame 46989: van → car
+    Frame 47018: car → van
+    Frame 47038: van → car
+    Frame 47078: car → van
+    Frame 47141: van → car
+    Frame 47143: car → van
+    Frame 47152: van → car
+    Frame 47183: car → van
+    Frame 47215: van → car
+    Frame 47246: car → van
+    Frame 47260: van → car
+    Frame 47388: car → van
+    Frame 47389: van → car
+    Frame 47391: car → van
+    Frame 47429: van → car
+    Frame 47432: car → van
+    Frame 47450: van → car
+    Frame 47489: car → van
+    Frame 47518: van → car
+    Frame 47519: car → van
+    Frame 47520: van → car
+    Frame 47521: car → van
+    Frame 47526: van → car
+    Frame 47531: car → van
+    Frame 47551: van → car
+    Frame 47555: car → van
+    Frame 47567: van → car
+    Frame 47581: car → van
+    Frame 47770: van → car
+    Frame 47785: car → van
+    Frame 47786: van → car
+    Frame 47794: car → van
+    Frame 47839: van → car
+    Frame 47852: car → van
+    Frame 47997: van → car
+    Frame 48001: car → van
+    Frame 48005: van → car
+    Frame 48008: car → van
+    Frame 48013: van → car
+    Frame 48014: car → van
+    Frame 48024: van → car
+    Frame 48031: car → van
+    Frame 48091: van → car
+    Frame 48122: car → van
+    Frame 48147: van → car
+    Frame 48174: car → van
+    Frame 48185: van → car
+    Frame 48202: car → van
+    Frame 48305: van → car
+    Frame 48310: car → van
+    Frame 48323: van → car
+
+Track ID 2192:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 47982 as bus
+  Switch timeline:
+    Frame 48015: bus → car
+
+Track ID 2238:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 48505 as car
+  Switch timeline:
+    Frame 48533: car → van
+    Frame 48536: van → car
+
+Track ID 2244:
+  Class switches: 4
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 48612 as car
+  Switch timeline:
+    Frame 48586: car → van
+    Frame 48587: van → car
+    Frame 48588: car → van
+    Frame 48590: van → car
+
+Track ID 2250:
+  Class switches: 1
+  Initial class: van
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 48707 as van
+  Switch timeline:
+    Frame 48739: van → car
+
+Track ID 2258:
+  Class switches: 6
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 49293 as car
+  Switch timeline:
+    Frame 49226: car → van
+    Frame 49228: van → car
+    Frame 49262: car → van
+    Frame 49280: van → car
+    Frame 49285: car → van
+    Frame 49287: van → car
+
+Track ID 2297:
+  Class switches: 10
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 49419 as van
+  Switch timeline:
+    Frame 49361: car → van
+    Frame 49367: van → car
+    Frame 49382: car → van
+    Frame 49383: van → car
+    Frame 49385: car → van
+    Frame 49420: van → car
+    Frame 49421: car → van
+    Frame 49427: van → car
+    Frame 49445: car → van
+    Frame 49455: van → car
+
+Track ID 2362:
+  Class switches: 11
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 50861 as bus
+  Switch timeline:
+    Frame 50331: bus → motorcycle
+    Frame 50334: motorcycle → bus
+    Frame 50465: bus → motorcycle
+    Frame 50467: motorcycle → bus
+    Frame 50502: bus → motorcycle
+    Frame 50515: motorcycle → bus
+    Frame 50578: bus → motorcycle
+    Frame 50600: motorcycle → bus
+    Frame 50751: bus → motorcycle
+    Frame 50761: motorcycle → bus
+    Frame 50878: bus → car
+
+Track ID 2385:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 50443 as car
+  Switch timeline:
+    Frame 50469: car → van
+    Frame 50478: van → car
+
+Track ID 2394:
+  Class switches: 24
+  Initial class: van
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 50556 as van
+  Switch timeline:
+    Frame 50453: van → car
+    Frame 50461: car → van
+    Frame 50467: van → car
+    Frame 50470: car → van
+    Frame 50487: van → car
+    Frame 50488: car → van
+    Frame 50489: van → car
+    Frame 50491: car → van
+    Frame 50551: van → car
+    Frame 50552: car → van
+    Frame 50553: van → car
+    Frame 50556: car → van
+    Frame 50557: van → car
+    Frame 50587: car → van
+    Frame 50588: van → car
+    Frame 50590: car → van
+    Frame 50592: van → car
+    Frame 50594: car → van
+    Frame 50596: van → car
+    Frame 50602: car → van
+    Frame 50605: van → car
+    Frame 50606: car → van
+    Frame 50608: van → car
+    Frame 50610: car → van
+
+Track ID 2419:
+  Class switches: 7
+  Initial class: car
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 50974 as car
+  Switch timeline:
+    Frame 50699: car → van
+    Frame 50702: van → car
+    Frame 50703: car → van
+    Frame 50973: van → car
+    Frame 51001: car → van
+    Frame 51006: van → car
+    Frame 51013: car → van
+
+Track ID 2421:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 50909 as bus
+  Switch timeline:
+    Frame 50922: bus → car
+
+Track ID 2426:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 51028 as car
+  Switch timeline:
+    Frame 50934: car → van
+    Frame 50935: van → car
+
+Track ID 2427:
+  Class switches: 6
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 51080 as van
+  Switch timeline:
+    Frame 50986: car → van
+    Frame 51098: van → car
+    Frame 51102: car → van
+    Frame 51126: van → car
+    Frame 51128: car → van
+    Frame 51130: van → car
+
+Track ID 2436:
+  Class switches: 1
+  Initial class: bus
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 51484 as bus
+  Switch timeline:
+    Frame 51504: bus → car
+
+Track ID 2438:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 51354 as car
+  Switch timeline:
+    Frame 51221: car → van
+    Frame 51222: van → car
+
+Track ID 2455:
+  Class switches: 10
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 51886 as car
+  Switch timeline:
+    Frame 51681: car → van
+    Frame 51682: van → car
+    Frame 51685: car → van
+    Frame 51687: van → car
+    Frame 51688: car → van
+    Frame 51689: van → car
+    Frame 51690: car → van
+    Frame 51695: van → car
+    Frame 51905: car → van
+    Frame 51909: van → car
+
+Track ID 2470:
+  Class switches: 8
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 52127 as car
+  Switch timeline:
+    Frame 52153: car → van
+    Frame 52155: van → car
+    Frame 52172: car → van
+    Frame 52173: van → car
+    Frame 52175: car → van
+    Frame 52190: van → car
+    Frame 52203: car → van
+    Frame 52209: van → car
+
+Track ID 2472:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 52172 as van
+  Switch timeline:
+    Frame 52105: car → van
+    Frame 52296: van → car
+
+Track ID 2534:
+  Class switches: 2
+  Initial class: van
+  Final class: van
+  Line crossings: 1
+    Crossed at frame 53338 as van
+  Switch timeline:
+    Frame 53351: van → car
+    Frame 53357: car → van
+
+Track ID 2586:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 53599 as van
+  Switch timeline:
+    Frame 53471: car → van
+    Frame 53685: van → car
+
+Track ID 2594:
+  Class switches: 2
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 53694 as car
+  Switch timeline:
+    Frame 53736: car → van
+    Frame 53740: van → car
+
+Track ID 2612:
+  Class switches: 8
+  Initial class: car
+  Final class: car
+  Line crossings: 1
+    Crossed at frame 54112 as car
+  Switch timeline:
+    Frame 53731: car → van
+    Frame 53735: van → car
+    Frame 53739: car → van
+    Frame 53740: van → car
+    Frame 53752: car → van
+    Frame 53755: van → car
+    Frame 53756: car → van
+    Frame 53757: van → car
+
+====================================================================================================

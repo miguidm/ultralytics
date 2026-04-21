@@ -1,0 +1,75 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          DCNv3-Liu
+Architecture:   YOLOv8n + DCNv3 Liu Architecture
+Model Family:   DCNv3
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9982
+  ID Switches (IDSW):              863
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9965
+  Mostly Tracked (MT):             88.7%
+  Mostly Lost (ML):                0.2%
+  Fragmentations:                  4862
+
+Computational Performance:
+  FPS (Frames Per Second):         99.42
+  Processing Time:                 1h34m
+
+Counting Results:
+  Line Crossing Count:             5781
+
+================================================================
+RANKING ON GATE 3 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #7 out of 9 (0.9982)
+  MOTA (Accuracy):     #7 out of 9 (0.9965)
+  IDSW (Lower Better): #4 out of 9 (863 switches)
+  FPS (Speed):         #6 out of 9 (99.42)
+  MT% (Coverage):      88.7%
+  ML% (Loss):          0.2%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent track coverage (MT: 88.7%)
+  ✓ Minimal track loss (ML: 0.2%)
+
+WEAKNESSES:
+  ✗ Lower identity tracking (IDF1 rank: #7)
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv2-Full)
+================================================================
+
+IDF1:     0.9982 vs 0.9987 (-0.0005)
+MOTA:     0.9965 vs 0.9973 (-0.0008)
+IDSW:     863 vs 643 (+220)
+FPS:      99.42 vs 102.06 (-2.64)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable performance
+Average Rank: #6.0 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Model: DCNv3-Liu (Nano - 6.2M parameters)
+Rank: #6.0 out of 9 models
+================================================================

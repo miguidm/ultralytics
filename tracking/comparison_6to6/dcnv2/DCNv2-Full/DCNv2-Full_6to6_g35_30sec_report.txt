@@ -1,0 +1,53 @@
+DCNv2-Full - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 14:58:05
+Model: /media/mydrive/GitHub/ultralytics/modified_model/DCNv2-Full.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 451 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9985
+IDF1:         0.9993
+ID Switches:  0
+FPS:          13.04
+
+TRACKED OBJECTS (9 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          50         50        
+2      car          1          92         92        
+3      motorcycle   1          58         58        
+4      car          1          38         34        
+5      motorcycle   11         102        90        
+6      motorcycle   29         120        83        
+8      tricycle     318        450        133       
+9      car          376        450        75        
+10     car          382        450        69        
+
+CLASSIFICATION SWITCHES: 4 total
+----------------------------------------
+Frame    ID     From         To          
+31       6      motorcycle   car         
+33       6      car          motorcycle  
+106      6      motorcycle   tricycle    
+108      6      tricycle     motorcycle  
+
+SWITCHES PER SECOND:
+  Sec 2: 2 - ID:6 motorcycle->car; ID:6 car->motorcycle
+  Sec 7: 2 - ID:6 motorcycle->tricycle; ID:6 tricycle->motorcycle
+
+Seconds with switches: 2/31
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:6: motorcycle -> car -> motorcycle -> tricycle -> motorcycle
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 1
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 0
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 1

@@ -1,0 +1,64 @@
+========================================================
+VANILLA YOLOv8m MODEL - COMPLETE TRACKING ANALYSIS
+========================================================
+
+COVERAGE: 6 out of 7 gates
+✓ Gate2_Oct7
+✓ Gate2.9_Oct7  
+✓ Gate3.5_Oct7
+✓ Gate3_Oct7
+✓ Gate3_Apr3
+✓ Gate3_Feb20
+✗ Gate3.1_Oct7 (MISSING)
+
+========================================================
+OVERALL PERFORMANCE (6 gates average)
+========================================================
+Average IDF1:      0.7973 (4th best overall)
+Average MOTA:      0.5817
+Average FPS:       51.63
+Total IDSW:        0 (perfect - no identity switches!)
+Total Detections:  2,107,444
+Total Tracks:      3,642
+Total Count:       1,267
+
+========================================================
+PER-GATE PERFORMANCE
+========================================================
+Gate          IDF1    MOTA    IDSW  FPS    Count  Detections  Tracks
+----------------------------------------------------------------------
+Gate2.9_Oct7  0.9014  0.6962   0    42.76   312    439,261     595
+Gate2_Oct7    0.6825  0.9625   0    49.58   466    156,747    1338
+Gate3.5_Oct7  0.7545  0.8689   0    42.94   489    483,113    1709
+Gate3_Oct7    0.7867  0.2896   0    40.70     0    364,497    2215
+Gate3_Apr3    0.8152  0.2578   0    60.59     0    409,501    1999
+Gate3_Feb20   0.8435  0.4151   0    73.20     0    254,325    1794
+
+========================================================
+KEY HIGHLIGHTS
+========================================================
+✓ Best IDF1: Gate2.9_Oct7 (0.9014) - Excellent tracking!
+✓ Best MOTA: Gate2_Oct7 (0.9625) - Outstanding accuracy!
+✓ Best FPS:  Gate3_Feb20 (73.20) - Fastest processing!
+✓ Zero identity switches across ALL gates
+✓ Competitive with DCNv2/DCNv3 models
+
+========================================================
+RANKING vs ALL MODELS (Overall IDF1)
+========================================================
+1. DCNv3-FPN:        0.8094
+2. DCNv3-Full:       0.7993
+3. DCNv2-Full:       0.7986
+4. Vanilla-YOLOv8m:  0.7973  ← HERE
+5. DCNv3-Liu:        0.7955
+6. DCNv3-Pan:        0.7895
+7. DCNv2-Pan:        0.7783
+8. DCNv2-Liu:        0.7778
+9. DCNv2-FPN:        0.7745
+
+DETECTION PERFORMANCE:
+mAP50-95: 0.7530 (competitive with DCN models)
+Precision: 0.9031
+Recall: 0.8156
+
+========================================================

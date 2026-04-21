@@ -1,0 +1,69 @@
+DCNv3-Full - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 15:01:01
+Model: /home/migui/YOLO_outputs/100_dcnv3_yolov8m_full_second/weights/best.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 901 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9939
+IDF1:         0.9969
+ID Switches:  2
+FPS:          12.64
+
+TRACKED OBJECTS (21 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          93         93        
+3      motorcycle   1          56         56        
+4      car          1          39         39        
+5      motorcycle   10         97         81        
+7      motorcycle   32         113        79        
+8      car          51         57         2         
+11     tricycle     363        363        1         
+12     car          376        514        139       
+13     car          382        458        77        
+16     tricycle     408        514        32        
+17     car          496        644        149       
+18     car          516        516        1         
+19     car          534        900        367       
+21     tricycle     553        615        45        
+22     car          617        623        7         
+23     van          623        703        81        
+24     tricycle     667        694        4         
+26     car          703        793        91        
+27     tricycle     744        873        96        
+28     car          759        900        142       
+
+CLASSIFICATION SWITCHES: 6 total
+----------------------------------------
+Frame    ID     From         To          
+622      22     car          van         
+624      23     car          van         
+680      23     van          car         
+698      23     car          van         
+699      23     van          car         
+702      23     car          van         
+
+SWITCHES PER SECOND:
+  Sec 41: 2 - ID:22 car->van; ID:23 car->van
+  Sec 45: 1 - ID:23 van->car
+  Sec 46: 3 - ID:23 car->van; ID:23 van->car; ID:23 car->van
+
+Seconds with switches: 3/61
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:22: car -> van
+  ID:23: car -> van -> car -> van -> car -> van
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 2
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 1
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 3

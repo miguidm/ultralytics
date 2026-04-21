@@ -1,0 +1,95 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           2
+Model:          Vanilla-YOLOv8n
+Architecture:   Baseline YOLOv8n (Nano - Smallest/Fastest Version)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9275
+  ID Switches (IDSW):              1406
+  Class Switches:                  6766
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9150
+  Mostly Tracked (MT):             85.4%
+  Mostly Lost (ML):                0.6%
+
+Computational Performance:
+  FPS (Frames Per Second):         135.01
+  Processing Time:                 1h20m
+
+Counting Results:
+  Total Vehicle Count:             3586
+
+================================================================
+GATE CONTEXT - 2
+================================================================
+
+Characteristics:
+  - Average count: ~3,586 vehicles
+  - Processing time: 1h 20m
+  - Good tracking coverage (MT: 85.4%)
+  - Moderate traffic density
+
+================================================================
+RANKING (Among 5 gates for YOLOv8n)
+================================================================
+
+  IDF1 (Identity):     #2 out of 5 (0.9275)
+  MOTA (Accuracy):     #5 out of 5 (0.9150)
+  IDSW (Lower Better): #2 out of 5 (1406 switches)
+  FPS (Speed):         #1 out of 5 (135.01)
+  MT% (Coverage):      85.4%
+  ML% (Loss):          0.6%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Second highest IDF1 across all gates (0.9275)
+  ✓ Fastest inference speed (135.01 FPS - rank #1)
+  ✓ Low ID switches (1406 - rank #2)
+
+WEAKNESSES:
+  ✗ Lowest MOTA across all gates (0.9150 - rank #5)
+  ✗ Lowest MT% (85.4%)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+SUITABLE FOR:
+  → Real-time multi-stream deployments
+  → Speed-critical applications
+  → Edge devices and embedded systems
+
+================================================================
+COMPARISON WITH BEST GATE IDF1 (Gate 3.5)
+================================================================
+
+IDF1:     0.9275 vs 0.9289 (-0.0014)
+MOTA:     0.9150 vs 0.9177 (-0.0027)
+IDSW:     1406 vs 1796 (-390)
+FPS:      135.01 vs 127.62 (+7.39)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Fastest gate with strong identity tracking
+Average Rank: #2.5 out of 5
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 2 Traffic Monitoring
+Architecture: Vanilla-YOLOv8n
+Total Gates Tested: 5
+================================================================

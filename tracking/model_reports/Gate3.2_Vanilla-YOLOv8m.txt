@@ -1,0 +1,100 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.2
+Model:          Vanilla-YOLOv8m
+Architecture:   Baseline YOLOv8m (No Deformable Convolutions)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.8767
+  ID Switches (IDSW):              467
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9334
+  Mostly Tracked (MT):             69.4%
+  Mostly Lost (ML):                13.4%
+
+Computational Performance:
+  FPS (Frames Per Second):         73.39
+  GFLOPs:                          48.50
+  Processing Time:                 2h27m
+
+Counting Results:
+  Total Vehicle Count:             2351
+
+================================================================
+GATE CONTEXT - 3.2
+================================================================
+
+Characteristics:
+  - Long monitoring period (2.5-3.5 hours)
+  - Lower volume (~2,400 vehicles)
+  - Good MOTA performance (>0.88 most models)
+  - Lower traffic density
+  - Favorable tracking conditions
+
+================================================================
+RANKING (Among 9 models on Gate 3.2)
+================================================================
+
+  IDF1 (Identity):     #3 out of 9 (0.8767)
+  MOTA (Accuracy):     #8 out of 9 (0.9334)
+  IDSW (Lower Better): #8 out of 9 (467 switches)
+  FPS (Speed):         #1 out of 9 (73.39)
+  MT% (Coverage):      69.4%
+  ML% (Loss):          13.4%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #3)
+  ✓ Fast inference speed (73.39 FPS - rank #1)
+
+WEAKNESSES:
+  ✗ Lower tracking accuracy (MOTA rank: #8)
+  ✗ High ID switches (467 - rank #8)
+  ✗ Higher track loss (ML: 13.4%)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Real-time traffic monitoring (high FPS + good accuracy)
+  → Production deployment requiring speed + quality
+  → Multi-stream processing scenarios
+
+NOT RECOMMENDED FOR:
+  → High-accuracy detection requirements
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.8767 vs 0.8792 (-0.0025)
+MOTA:     0.9334 vs 0.9528 (-0.0194)
+IDSW:     467 vs 442 (+25)
+FPS:      73.39 vs 57.90 (+15.49)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #5.0 out of 9
+
+🏆 FASTEST inference on Gate 3.2
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.2 Traffic Monitoring
+Architecture: Vanilla-YOLOv8m
+Total Models Tested: 9
+================================================================

@@ -1,0 +1,37 @@
+================================================================================
+ STATISTICAL ANALYSIS RESULTS (BOOTSTRAPPED DATA N=5 per model)
+================================================================================
+
+--- TEST 1: ONE-WAY ANOVA (Vanilla vs. All Deformable Models) ---
+Hypothesis: Do Deformable models generally perform better than Vanilla?
+
+Dependent Variable: Recall
+            sum_sq    df         F    PR(>F)
+C(Type)   0.011051   1.0  4.550974  0.038647
+Residual  0.104412  43.0       NaN       NaN
+
+--- TEST 2: TWO-WAY ANOVA (Isolating the DCN Architecture) ---
+Hypothesis: Do DCN Version (v2 vs v3) and Placement (Backbone, FPN, PAN, Full) matter?
+
+Dependent Variable: mAP50-95
+                           sum_sq    df          F        PR(>F)
+C(Version)               0.020316   1.0  43.841391  1.819649e-07
+C(Placement)             0.015014   3.0  10.800095  4.651949e-05
+C(Version):C(Placement)  0.022821   3.0  16.415880  1.228240e-06
+Residual                 0.014828  32.0        NaN           NaN
+
+Dependent Variable: Recall
+                           sum_sq    df          F    PR(>F)
+C(Version)               0.024116   1.0  30.093909  0.000005
+C(Placement)             0.021665   3.0   9.011635  0.000179
+C(Version):C(Placement)  0.030739   3.0  12.786160  0.000012
+Residual                 0.025644  32.0        NaN       NaN
+
+--- TEST 3: ONE-WAY ANOVA (Best DCN vs Vanilla YOLOv8n) ---
+Hypothesis: Does the best optimized DCN architecture outperform standard convolutions?
+
+Comparing: DCNv3n-FPN vs Vanilla-YOLOv8n
+Dependent Variable: mAP50-95
+            sum_sq   df           F    PR(>F)
+C(Model)  0.021454  1.0  161.253485  0.000001
+Residual  0.001064  8.0         NaN       NaN

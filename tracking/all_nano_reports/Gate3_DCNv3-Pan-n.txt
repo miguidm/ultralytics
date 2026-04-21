@@ -1,0 +1,77 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          DCNv3-Pan
+Architecture:   YOLOv8n + DCNv3 PAN Neck
+Model Family:   DCNv3
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9987
+  ID Switches (IDSW):              915
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9974
+  Mostly Tracked (MT):             91.2%
+  Mostly Lost (ML):                0.2%
+  Fragmentations:                  3806
+
+Computational Performance:
+  FPS (Frames Per Second):         60.13
+  Processing Time:                 2h36m
+
+Counting Results:
+  Line Crossing Count:             5789
+
+================================================================
+RANKING ON GATE 3 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #4 out of 9 (0.9987)
+  MOTA (Accuracy):     #1 out of 9 (0.9974)
+  IDSW (Lower Better): #5 out of 9 (915 switches)
+  FPS (Speed):         #8 out of 9 (60.13)
+  MT% (Coverage):      91.2%
+  ML% (Loss):          0.2%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Top tracking accuracy (MOTA rank: #1)
+  ✓ Excellent track coverage (MT: 91.2%)
+  ✓ Minimal track loss (ML: 0.2%)
+
+WEAKNESSES:
+  ✗ Slower inference (rank #8)
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv2-Full)
+================================================================
+
+IDF1:     0.9987 vs 0.9987 (+0.0000)
+MOTA:     0.9974 vs 0.9973 (+0.0001)
+IDSW:     915 vs 643 (+272)
+FPS:      60.13 vs 102.06 (-41.93)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable performance
+Average Rank: #4.5 out of 9
+
+🏆 BEST tracking accuracy on Gate 3
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Model: DCNv3-Pan (Nano - 6.2M parameters)
+Rank: #4.5 out of 9 models
+================================================================

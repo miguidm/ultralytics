@@ -1,0 +1,50 @@
+DCNv2-FPN - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 14:56:42
+Model: /media/mydrive/GitHub/ultralytics/tracking/dcnv2-yolov8-neck-fpn.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 226 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         1.0000
+IDF1:         1.0000
+ID Switches:  0
+FPS:          22.12
+
+TRACKED OBJECTS (7 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          93         93        
+3      motorcycle   1          57         56        
+4      car          1          1          1         
+5      car          11         37         26        
+6      motorcycle   13         85         70        
+8      motorcycle   31         103        70        
+
+CLASSIFICATION SWITCHES: 2 total
+----------------------------------------
+Frame    ID     From         To          
+32       8      car          motorcycle  
+56       3      motorcycle   car         
+
+SWITCHES PER SECOND:
+  Sec 2: 1 - ID:8 car->motorcycle
+  Sec 3: 1 - ID:3 motorcycle->car
+
+Seconds with switches: 2/16
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:3: motorcycle -> car
+  ID:8: car -> motorcycle
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 0
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 0
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 0

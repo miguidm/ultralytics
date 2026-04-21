@@ -1,0 +1,97 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.5
+Model:          Vanilla-YOLOv8n
+Architecture:   Baseline YOLOv8n (Nano - Smallest/Fastest Version)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9289
+  ID Switches (IDSW):              1796
+  Class Switches:                  11403
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9177
+  Mostly Tracked (MT):             86.6%
+  Mostly Lost (ML):                0.8%
+
+Computational Performance:
+  FPS (Frames Per Second):         127.62
+  Processing Time:                 1h25m
+
+Counting Results:
+  Total Vehicle Count:             4090
+
+================================================================
+GATE CONTEXT - 3.5
+================================================================
+
+Characteristics:
+  - Moderate count: ~4,090 vehicles
+  - Processing time: 1h 25m
+  - Highest IDF1 across all gates (0.9289)
+  - Highest class switches (11,403)
+  - Diverse vehicle mix (cars, motorcycles, tricycles)
+
+================================================================
+RANKING (Among 5 gates for YOLOv8n)
+================================================================
+
+  IDF1 (Identity):     #1 out of 5 (0.9289)
+  MOTA (Accuracy):     #2 out of 5 (0.9177)
+  IDSW (Lower Better): #4 out of 5 (1796 switches)
+  FPS (Speed):         #3 out of 5 (127.62)
+  MT% (Coverage):      86.6%
+  ML% (Loss):          0.8%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Best IDF1 across all gates (0.9289 - rank #1)
+  ✓ Second best MOTA (0.9177 - rank #2)
+  ✓ Good overall balance of identity and accuracy metrics
+
+WEAKNESSES:
+  ✗ Highest class switches (11,403)
+  ✗ Higher ID switches (1796 - rank #4)
+  ✗ Highest ML% (0.8%)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+SUITABLE FOR:
+  → Applications requiring best identity tracking (re-ID)
+  → Mixed traffic scenes with diverse vehicle types
+  → Balanced real-time deployments
+
+================================================================
+COMPARISON WITH BEST MOTA (Gate 2.9)
+================================================================
+
+IDF1:     0.9289 vs 0.9193 (+0.0096)
+MOTA:     0.9177 vs 0.9185 (-0.0008)
+IDSW:     1796 vs 1590 (+206)
+FPS:      127.62 vs 125.56 (+2.06)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: EXCELLENT - Best identity tracking across all gates
+Average Rank: #2.5 out of 5
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.5 Traffic Monitoring
+Architecture: Vanilla-YOLOv8n
+Total Gates Tested: 5
+================================================================

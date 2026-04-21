@@ -1,0 +1,24 @@
+Occlusion Evaluation Report - DCNv2n-Liu
+============================================================
+Date: 2026-04-06 15:15:42
+Model: /home/migui/Downloads/dcnv2-yolov8-liu-20260318T004538Z-1-001/dcnv2-yolov8-liu/weights/best.pt
+Dataset: OccludedYOLO (1624 annotated occluded images)
+Confidence: 0.5 | IoU: 0.5
+
+Overall Metrics
+------------------------------
+mAP@0.5:       0.8146
+mAP@0.5:0.95:  0.6924
+Precision:     0.8994
+Recall:        0.6969
+Runtime:       8.6s
+
+Per-Class Metrics
+--------------------------------------------------
+Class        AP@0.5     Precision    Recall    
+car          0.9356     0.9711       0.8877    
+motorcycle   0.6948     0.8707       0.4923    
+tricycle     0.7582     0.9062       0.5686    
+bus          0.9950     1.0000       1.0000    
+van          0.9070     0.9213       0.8518    
+truck        0.5972     0.7273       0.3810    

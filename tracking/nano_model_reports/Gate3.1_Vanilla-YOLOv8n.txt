@@ -1,0 +1,96 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.1
+Model:          Vanilla-YOLOv8n
+Architecture:   Baseline YOLOv8n (Nano - Smallest/Fastest Version)
+Note:           Gate 3.5 video with Gate 3.1 counting line
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9189
+  ID Switches (IDSW):              1796
+  Class Switches:                  11403
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9177
+  Mostly Tracked (MT):             86.6%
+  Mostly Lost (ML):                0.8%
+
+Computational Performance:
+  FPS (Frames Per Second):         126.90
+  Processing Time:                 1h25m
+
+Counting Results:
+  Total Vehicle Count:             2308
+
+================================================================
+GATE CONTEXT - 3.1
+================================================================
+
+Characteristics:
+  - Lower count: ~2,308 vehicles (Gate 3.1 line on g35 video)
+  - Processing time: 1h 25m
+  - Same video as Gate 3.5 but different counting line
+  - Counting line: Gate3.1 (0.885,0.0) -> (0.885,0.194)
+
+================================================================
+RANKING (Among 5 gates for YOLOv8n)
+================================================================
+
+  IDF1 (Identity):     #4 out of 5 (0.9189)
+  MOTA (Accuracy):     #2 out of 5 (0.9177)
+  IDSW (Lower Better): #4 out of 5 (1796 switches)
+  FPS (Speed):         #4 out of 5 (126.90)
+  MT% (Coverage):      86.6%
+  ML% (Loss):          0.8%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Second best MOTA (0.9177 - tied rank #2)
+  ✓ Consistent tracking performance
+
+WEAKNESSES:
+  ✗ Lower vehicle count (2,308 - partial coverage via Gate 3.1 line)
+  ✗ Higher ID switches (1796 - rank #4)
+  ✗ Higher ML% (0.8%)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+SUITABLE FOR:
+  → Monitoring a specific lane/zone of Gate 3.5 traffic
+  → Cross-validation of Gate 3.5 tracking results
+  → Partial coverage use cases
+
+================================================================
+COMPARISON WITH BEST GATE IDF1 (Gate 3.5)
+================================================================
+
+IDF1:     0.9189 vs 0.9289 (-0.0100)
+MOTA:     0.9177 vs 0.9177 (0.0000)
+IDSW:     1796 vs 1796 (0)
+FPS:      126.90 vs 127.62 (-0.72)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Consistent accuracy on partial coverage line
+Average Rank: #3.5 out of 5
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.1 Counting Line on Gate 3.5 Video
+Architecture: Vanilla-YOLOv8n
+Total Gates Tested: 5
+================================================================

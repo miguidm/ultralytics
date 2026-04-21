@@ -1,0 +1,99 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.5
+Model:          DCNv3-Backbone
+Architecture:   YOLOv8m + DCNv3 Deformable Convolution (Backbone Only)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.8773
+  ID Switches (IDSW):              558
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.8876
+  Mostly Tracked (MT):             83.1%
+  Mostly Lost (ML):                12.4%
+
+Computational Performance:
+  FPS (Frames Per Second):         45.00
+  GFLOPs:                          71.08
+  Processing Time:                 3.98h
+
+Counting Results:
+  Total Vehicle Count:             4110
+
+================================================================
+GATE CONTEXT - 3.5
+================================================================
+
+Characteristics:
+  - High-speed processing scenario
+  - Average count: ~4,110 vehicles
+  - Processing time range: 2.48h - 6.48h
+  - Excellent tracking accuracy overall
+  - Moderate traffic density
+
+================================================================
+RANKING (Among 9 models on Gate 3.5)
+================================================================
+
+  IDF1 (Identity):     #2 out of 9 (0.8773)
+  MOTA (Accuracy):     #8 out of 9 (0.8876)
+  IDSW (Lower Better): #7 out of 9 (558 switches)
+  FPS (Speed):         #5 out of 9 (45.00)
+  MT% (Coverage):      83.1%
+  ML% (Loss):          12.4%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #2)
+  ✓ High track coverage (MT: 83.1%)
+
+WEAKNESSES:
+  ✗ Lower tracking accuracy (MOTA rank: #8)
+  ✗ High ID switches (558 - rank #7)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Maximum identity tracking quality
+  → Long-term trajectory analysis
+  → Re-identification applications
+  → Forensic video analysis
+
+NOT RECOMMENDED FOR:
+  → High-accuracy detection requirements
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.8773 vs 0.8793 (-0.0020)
+MOTA:     0.8876 vs 0.9528 (-0.0652)
+IDSW:     558 vs 459 (+99)
+FPS:      45.00 vs 38.90 (+6.10)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #5.5 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.5 Traffic Monitoring
+Architecture: DCNv3-Backbone
+Total Models Tested: 9
+================================================================

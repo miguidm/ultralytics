@@ -1,0 +1,78 @@
+================================================================
+YOLOv8n (NANO) TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.5
+Model:          Vanilla-YOLOv8n
+Architecture:   Baseline YOLOv8n Nano (6.2M parameters)
+Model Family:   Vanilla
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9989
+  ID Switches (IDSW):              1796
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9977
+  Mostly Tracked (MT):             86.6%
+  Mostly Lost (ML):                0.8%
+  Fragmentations:                  6695
+
+Computational Performance:
+  FPS (Frames Per Second):         127.62
+  Processing Time:                 1h25m
+
+Counting Results:
+  Line Crossing Count:             4090
+
+================================================================
+RANKING ON GATE 3.5 (Among 9 Nano Models)
+================================================================
+
+  IDF1 (Identity):     #3 out of 9 (0.9989)
+  MOTA (Accuracy):     #5 out of 9 (0.9977)
+  IDSW (Lower Better): #3 out of 9 (1796 switches)
+  FPS (Speed):         #1 out of 9 (127.62)
+  MT% (Coverage):      86.6%
+  ML% (Loss):          0.8%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #3)
+  ✓ Minimal ID switches (1796 - rank #3)
+  ✓ Fast inference speed (127.62 FPS - rank #1)
+  ✓ Ultra-fast real-time processing (127.62 FPS)
+
+WEAKNESSES:
+  None significant
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9989 vs 0.9991 (-0.0002)
+MOTA:     0.9977 vs 0.9982 (-0.0005)
+IDSW:     1796 vs 1757 (+39)
+FPS:      127.62 vs 56.43 (+71.19)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: GOOD - Strong performance overall
+Average Rank: #3.0 out of 9
+
+🏆 FASTEST inference on Gate 3.5
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.5 Traffic Monitoring
+Model: Vanilla-YOLOv8n (Nano - 6.2M parameters)
+Rank: #3.0 out of 9 models
+================================================================

@@ -1,0 +1,68 @@
+DCNv2-Liu - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 15:03:22
+Model: /media/mydrive/GitHub/ultralytics/tracking/dcnv2-yolov8n-liu-best.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 901 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9979
+IDF1:         0.9990
+ID Switches:  1
+FPS:          21.86
+
+TRACKED OBJECTS (20 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          92         92        
+3      motorcycle   1          56         56        
+4      car          1          38         37        
+5      motorcycle   12         85         68        
+6      car          27         27         1         
+7      motorcycle   33         97         63        
+9      motorcycle   108        108        1         
+10     car          376        514        139       
+11     car          383        457        75        
+12     tricycle     409        425        9         
+13     car          496        642        147       
+14     car          535        900        366       
+15     van          617        702        86        
+17     car          640        640        1         
+20     car          703        793        91        
+21     car          760        900        141       
+22     car          769        770        2         
+23     tricycle     789        817        15        
+24     car          874        883        9         
+
+CLASSIFICATION SWITCHES: 5 total
+----------------------------------------
+Frame    ID     From         To          
+68       5      motorcycle   tricycle    
+69       5      tricycle     motorcycle  
+623      15     car          van         
+681      15     van          car         
+702      15     car          van         
+
+SWITCHES PER SECOND:
+  Sec 4: 2 - ID:5 motorcycle->tricycle; ID:5 tricycle->motorcycle
+  Sec 41: 1 - ID:15 car->van
+  Sec 45: 1 - ID:15 van->car
+  Sec 46: 1 - ID:15 car->van
+
+Seconds with switches: 4/61
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:5: motorcycle -> tricycle -> motorcycle
+  ID:15: car -> van -> car -> van
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 2
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 1
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 3

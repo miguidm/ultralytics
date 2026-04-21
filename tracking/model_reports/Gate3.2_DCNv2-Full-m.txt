@@ -1,0 +1,96 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3.2
+Model:          DCNv2-Full
+Architecture:   YOLOv8m + DCNv2 Deformable Convolution (Full Integration)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.8724
+  ID Switches (IDSW):              368
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9416
+  Mostly Tracked (MT):             72.4%
+  Mostly Lost (ML):                12.4%
+
+Computational Performance:
+  FPS (Frames Per Second):         60.45
+  GFLOPs:                          51.20
+  Processing Time:                 2h50m
+
+Counting Results:
+  Total Vehicle Count:             2292
+
+================================================================
+GATE CONTEXT - 3.2
+================================================================
+
+Characteristics:
+  - Long monitoring period (2.5-3.5 hours)
+  - Lower volume (~2,400 vehicles)
+  - Good MOTA performance (>0.88 most models)
+  - Lower traffic density
+  - Favorable tracking conditions
+
+================================================================
+RANKING (Among 9 models on Gate 3.2)
+================================================================
+
+  IDF1 (Identity):     #4 out of 9 (0.8724)
+  MOTA (Accuracy):     #7 out of 9 (0.9416)
+  IDSW (Lower Better): #2 out of 9 (368 switches)
+  FPS (Speed):         #5 out of 9 (60.45)
+  MT% (Coverage):      72.4%
+  ML% (Loss):          12.4%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Minimal ID switches (368 - rank #2)
+
+WEAKNESSES:
+  ✗ Lower tracking accuracy (MOTA rank: #7)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Applications requiring minimal ID confusion
+  → Long-duration tracking scenarios
+  → Behavior pattern analysis
+
+NOT RECOMMENDED FOR:
+  → High-accuracy detection requirements
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.8724 vs 0.8792 (-0.0068)
+MOTA:     0.9416 vs 0.9528 (-0.0112)
+IDSW:     368 vs 442 (-74)
+FPS:      60.45 vs 57.90 (+2.55)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #4.5 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3.2 Traffic Monitoring
+Architecture: DCNv2-Full
+Total Models Tested: 9
+================================================================

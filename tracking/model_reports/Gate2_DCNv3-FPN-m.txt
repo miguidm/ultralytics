@@ -1,0 +1,95 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           2
+Model:          DCNv3-FPN
+Architecture:   YOLOv8m + DCNv3 Deformable Convolution (FPN Neck)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.8413
+  ID Switches (IDSW):              557
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.9947
+  Mostly Tracked (MT):             83.6%
+  Mostly Lost (ML):                9.4%
+
+Computational Performance:
+  FPS (Frames Per Second):         58.30
+  GFLOPs:                          37.10
+  Processing Time:                 3h04m
+
+Counting Results:
+  Total Vehicle Count:             3673
+
+================================================================
+GATE CONTEXT - 2
+================================================================
+
+Characteristics:
+  - Extended monitoring period (2-3 hours)
+  - Average count: ~3,670 vehicles
+  - Exceptional MOTA scores (>0.88 all models)
+  - Long-duration tracking stress test
+  - Moderate traffic volume
+
+================================================================
+RANKING (Among 9 models on Gate 2)
+================================================================
+
+  IDF1 (Identity):     #3 out of 9 (0.8413)
+  MOTA (Accuracy):     #2 out of 9 (0.9947)
+  IDSW (Lower Better): #7 out of 9 (557 switches)
+  FPS (Speed):         #6 out of 9 (58.30)
+  MT% (Coverage):      83.6%
+  ML% (Loss):          9.4%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ Excellent identity tracking (IDF1 rank: #3)
+  ✓ High tracking accuracy (MOTA rank: #2)
+  ✓ High track coverage (MT: 83.6%)
+  ✓ Low track loss (ML: 9.4%)
+
+WEAKNESSES:
+  ✗ High ID switches (557 - rank #7)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+SUITABLE FOR:
+  → General-purpose tracking applications
+  → Balanced speed/accuracy requirements
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-Full)
+================================================================
+
+IDF1:     0.8413 vs 0.8511 (-0.0098)
+MOTA:     0.9947 vs 0.9939 (+0.0008)
+IDSW:     557 vs 470 (+87)
+FPS:      58.30 vs 54.30 (+4.00)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #4.5 out of 9
+
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 2 Traffic Monitoring
+Architecture: DCNv3-FPN
+Total Models Tested: 9
+================================================================

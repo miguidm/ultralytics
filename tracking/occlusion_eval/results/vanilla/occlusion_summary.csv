@@ -1,0 +1,2 @@
+Model,mAP50,mAP50-95,Precision,Recall,AP50_car,P_car,R_car,AP50_motorcycle,P_motorcycle,R_motorcycle,AP50_tricycle,P_tricycle,R_tricycle,AP50_bus,P_bus,R_bus,AP50_van,P_van,R_van,AP50_truck,P_truck,R_truck,Runtime
+Vanilla-YOLOv8m,0.8926,0.7965,0.9487,0.8206,0.9642,0.9697,0.9492,0.8087,0.8848,0.6885,0.8627,0.9528,0.7451,0.9950,1.0000,1.0000,0.9527,0.9561,0.9218,0.7720,0.9286,0.6190,18.8s

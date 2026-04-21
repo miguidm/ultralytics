@@ -1,0 +1,101 @@
+================================================================
+TRACKING PERFORMANCE REPORT
+================================================================
+
+Gate:           3
+Model:          DCNv2-Backbone
+Architecture:   YOLOv8m + DCNv2 Deformable Convolution (Backbone Only)
+
+================================================================
+PERFORMANCE METRICS
+================================================================
+
+Identity Tracking:
+  IDF1 (Identity F1 Score):        0.9196
+  ID Switches (IDSW):              642
+
+Tracking Accuracy:
+  MOTA (Multi-Object Tracking):    0.7182
+  Mostly Tracked (MT):             84.5%
+  Mostly Lost (ML):                11.8%
+
+Computational Performance:
+  FPS (Frames Per Second):         64.40
+  GFLOPs:                          49.65
+  Processing Time:                 2.78h
+
+Counting Results:
+  Total Vehicle Count:             6550
+
+================================================================
+GATE CONTEXT - 3
+================================================================
+
+Characteristics:
+  - Highest vehicle volume (~6,400 avg)
+  - Challenging MOTA scores (~0.70-0.72)
+  - Difficult tracking environment
+  - Occlusions and complex traffic patterns
+  - Extended processing duration
+
+================================================================
+RANKING (Among 9 models on Gate 3)
+================================================================
+
+  IDF1 (Identity):     #8 out of 9 (0.9196)
+  MOTA (Accuracy):     #2 out of 9 (0.7182)
+  IDSW (Lower Better): #7 out of 9 (642 switches)
+  FPS (Speed):         #1 out of 9 (64.40)
+  MT% (Coverage):      84.5%
+  ML% (Loss):          11.8%
+
+================================================================
+PERFORMANCE ASSESSMENT
+================================================================
+
+STRENGTHS:
+  ✓ High tracking accuracy (MOTA rank: #2)
+  ✓ Fast inference speed (64.40 FPS - rank #1)
+  ✓ High track coverage (MT: 84.5%)
+
+WEAKNESSES:
+  ✗ Poor identity tracking (IDF1 rank: #8)
+  ✗ High ID switches (642 - rank #7)
+
+================================================================
+USE CASE RECOMMENDATIONS
+================================================================
+
+RECOMMENDED FOR:
+  → Real-time applications requiring maximum speed
+  → Resource-constrained environments
+  → Live monitoring dashboards
+
+NOT RECOMMENDED FOR:
+  → Identity-critical applications
+  → Long-term trajectory tracking
+
+================================================================
+COMPARISON WITH BEST MODEL (DCNv3-FPN)
+================================================================
+
+IDF1:     0.9196 vs 0.9387 (-0.0191)
+MOTA:     0.7182 vs 0.7063 (+0.0119)
+IDSW:     642 vs 611 (+31)
+FPS:      64.40 vs 58.60 (+5.80)
+
+================================================================
+CONCLUSION
+================================================================
+
+Overall Performance: MODERATE - Acceptable for general use
+Average Rank: #4.5 out of 9
+
+🏆 FASTEST inference on Gate 3
+
+================================================================
+Report Generated: March 2026
+Dataset: Gate 3 Traffic Monitoring
+Architecture: DCNv2-Backbone
+Total Models Tested: 9
+================================================================

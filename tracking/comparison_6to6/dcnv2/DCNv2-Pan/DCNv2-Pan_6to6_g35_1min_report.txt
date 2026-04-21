@@ -1,0 +1,75 @@
+DCNv2-Pan - 6to6_g35.mp4 Tracking Report
+============================================================
+Date: 2026-02-26 15:02:40
+Model: /media/mydrive/GitHub/ultralytics/tracking/dcvn2-yolov8-neck-pan-best.pt
+Video: /media/mydrive/GitHub/ultralytics/videos/6to6_g35.mp4
+Frames: 901 | FPS(video): 15
+
+TRACKING METRICS
+------------------------------
+MOTA:         0.9990
+IDF1:         0.9995
+ID Switches:  0
+FPS:          17.62
+
+TRACKED OBJECTS (15 total)
+------------------------------------------------------------
+ID     Class        First      Last       Frames    
+1      car          1          49         49        
+2      car          1          92         92        
+3      motorcycle   1          57         57        
+4      car          1          32         31        
+5      motorcycle   12         104        89        
+8      motorcycle   32         113        78        
+12     tricycle     306        900        569       
+13     car          376        514        139       
+14     car          383        458        76        
+15     car          496        641        146       
+18     car          534        900        367       
+19     van          618        703        85        
+21     car          703        793        91        
+22     car          759        900        142       
+23     car          875        875        1         
+
+CLASSIFICATION SWITCHES: 12 total
+----------------------------------------
+Frame    ID     From         To          
+34       8      car          motorcycle  
+57       3      motorcycle   car         
+623      19     car          van         
+640      19     van          car         
+641      19     car          van         
+643      19     van          car         
+644      19     car          van         
+682      19     van          car         
+700      19     car          van         
+701      19     van          car         
+881      22     car          van         
+882      22     van          car         
+
+SWITCHES PER SECOND:
+  Sec 2: 1 - ID:8 car->motorcycle
+  Sec 3: 1 - ID:3 motorcycle->car
+  Sec 41: 1 - ID:19 car->van
+  Sec 42: 4 - ID:19 van->car; ID:19 car->van; ID:19 van->car; ID:19 car->van
+  Sec 45: 1 - ID:19 van->car
+  Sec 46: 2 - ID:19 car->van; ID:19 van->car
+  Sec 58: 2 - ID:22 car->van; ID:22 van->car
+
+Seconds with switches: 7/61
+
+PER-OBJECT CLASS HISTORY (switched only):
+  ID:3: motorcycle -> car
+  ID:8: car -> motorcycle
+  ID:19: car -> van -> car -> van -> car -> van -> car -> van -> car
+  ID:22: car -> van -> car
+
+VEHICLE COUNTS (Line Crossing)
+------------------------------
+  CAR: 2
+  MOTORCYCLE: 0
+  TRICYCLE: 0
+  VAN: 1
+  BUS: 0
+  TRUCK: 0
+  TOTAL: 3
